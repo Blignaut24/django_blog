@@ -1,0 +1,26 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "Heroku",
+  "steps": [
+    {
+      "file": "codestar/urls.py",
+      "description": "**Deploy the Project: Heroku**\n\n- Refer to Notion notes and CI Lesson for instructions. ",
+      "line": 25
+    },
+    {
+      "file": "codestar/urls.py",
+      "description": "**2. Heroku: Update Deployment**\n\nAfter setting app the Heroku app config var do the following terminal steps:\n1. `pip3 install gunicorn~=20.1`\n2. `pip3 freeze --local > requirements.txt`\n\n**Why gunicorn?**\n- \n- Gunicorn, also known as Green \n  Unicorn, is a *Python Web Server Gateway Interface (WSGI) HTTP server*.\n- It helps make a Django \n  application *available on the web*.\n- While Django's own server is \n  great for local use, it's not suitable for public use.\n- Gunicorn bridges this gap by \n  *connecting your web server and the Django app*.\n- It *handles the HTTP requests* \n  that the app receives.\n",
+      "line": 27
+    },
+    {
+      "file": "Procfile",
+      "description": "**2. Heroku: Update Code for Deployment**\n\nCreate a Procfile in the root directory and add the following code to the file: \n\n`web: gunicorn codestar.wsgi`\n\n*Note:*\n- There is a space after the colon.",
+      "line": 1
+    },
+    {
+      "file": "codestar/settings.py",
+      "description": "**2. Heroku: Update Code for Deployment**\n\nTurn DEBUG to FALSE.\n\n\n**Why DEBUG = FALSE?**\n- Remember to switch DEBUG off for \n  security reasons when launching a web app\n- If DEBUG is **on**, the app  \n  displays comprehensive error pages that could potentially expose private data\n- With DEBUG turned ***off**, these \n  detailed error pages are disabled, improving the security of your web app\n\n**Note: Part 3 of Heroku Deployment is back in the Heroku Dashboard**",
+      "line": 26
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "Django Setup",
+  "steps": [
+    {
+      "title": "Django Setup",
+      "description": "**Note: Suspected Template Discripence between Template and Source Code**\n\nNeed to make adjustment of my code to match the source code in the following ways in the setting.py file in the codestar (folder):\n1. line 14-17 (remove: import os to import env)\n2. line 27-28 (remove and replace: SECRET KEY)\n3. line 33 (replace: ALLOWED_HOSTS)\n4. line 95 (replace: DATABASES)\n\n**KEY TAKE AWAYS:**\n- Use the *latest* Code Institute Template!\n- [Lesson Source Code](https://github.com/Code-Institute-Solutions/blog/blob/main/01_getting_set_up/01_create_project_app/codestar/settings.py)\n\n"
+    },
+    {
+      "file": "manage.py",
+      "description": "**Creating New Project: Install Django**\nUse the following command to install Django in the terminal: \n`pip3 install Django==4.2.1`\n\nNote: *Pay attention to what Django version you want to use.* ",
+      "line": 23,
+      "selection": {
+        "start": {
+          "line": 1,
+          "character": 3
+        },
+        "end": {
+          "line": 1,
+          "character": 24
+        }
+      }
+    },
+    {
+      "file": "manage.py",
+      "description": "**Creating New Project: Pip Freeze:**\n\nAfter every package you install you need to run a the following command that the packages get added to the requirements.txt file: \n\n`pip3 freeze > requirements.txt`",
+      "line": 24
+    },
+    {
+      "file": "codestar/settings.py",
+      "description": "**Creating New Project: Create New Project**\n\nUse the following built-in function in Django to create a new app (modular) using the following terminal command (example codestart):\n\n`django-admin startproject codestar .`\n\n*Note: the **. dot** means we're making a project in the current direcotory otherwise it makes folder inside a folder.* \n\n**Why?**\nThe django-admin startproject command requires a *project name* followed by a *directory name*.\n\n\n**Pro Tip:**\nOnce the project is created, you should see a directory structure similar to the following:\n```\nmanage.py\nmy_project/\n    __init__.py\n    settings.py\n    urls.py\n    asgi.py\n    wsgi.py\n```\n",
+      "line": 144,
+      "selection": {
+        "start": {
+          "line": 1,
+          "character": 3
+        },
+        "end": {
+          "line": 1,
+          "character": 24
+        }
+      }
+    },
+    {
+      "file": "codestar/settings.py",
+      "description": "**Add App to INSTALLED_APPS:**\n\n\n*Note: Remember to surround the app name with single qoutes and use a railling comma*",
+      "line": 42
+    },
+    {
+      "file": "blog/views.py",
+      "description": "**Import HttpResponse:**\n\nIn the views.py , you import HttpResponse from django.http athe the top of the file. \n\n`from django.http import HttpResponse`\n\n*Note: You have to use comma to separate the imports*",
+      "line": 2
+    },
+    {
+      "file": "blog/views.py",
+      "description": "**Add Viewfunction:**\n\nRetune the text \"Hello, Blog!\" using the view function. \n\n`def my_blog(request) :\n    return HttpResponse(\"Hello, Blog!\")`",
+      "line": 7
+    },
+    {
+      "file": "codestar/urls.py",
+      "description": "**Creating a New App: Import View**\n\n-   The first thing we need to do in our urls.py\n    file is to import the views. We can then\n    refer to these views in urlpatterns.\n-   In Python, we use the 'as' keyword to give a \n    *alias* (nickname) to something we import. So, \n    the views we imported will be nicknamed as index_views.\n\nThis code snippet demonstrate for example how to import a my_blog view.\n\n`from blog.views import my_blog`",
+      "line": 20
+    },
+    {
+      "file": "codestar/urls.py",
+      "description": "**Creating New APP: Add New Path to urlpatterns**\n\nCode demonstration of how to add new url path of the blog. \n\n```\ndef my_blog(request) :\n    return HttpResponse(\"Hello, Blog!\")\n```\n**Why**\nIn a Django project, the **path function** is like a guide. It takes three pieces of information:\n\n1. The *web page address* (URL pattern) that we want to set    \n   up. It’s like the destination we want our guide to lead us to.\n2. The *action (view)* to be performed when someone visits this web  \n   page. It's like the guide's plan for what to do when we arrive at our destination.\n3. A *simple nickname* for this action. It's like a codename we use to \n   refer to this plan later.\n\n*Note: Important note: As shown above, remember to put a / at the end of your URL patterns. If you don't, they won't work.*",
+      "line": 22
+    },
+    {
+      "file": "codestar/urls.py",
+      "description": "**Running the Server: Run Django Server**\n\nThe following terminal command runs the Django server.\n\n`python3 manage.py runserver`\n\n**Following Steps:**\n1. Opened port 8000 in a preview or browser tab. \n2. Copy and paste the hostname between the square brackets in \n    ALLOWED_HOSTS in the codestar/settings.py file, then save it.\n3. Append */blog* to the end of the URL in the browser.\n4. Add you confirmed that the text \"Hello, Blog!\" is displayed on the  \n   page?\n\nSolutions: [Source Code Solution](https://github.com/Code-Institute-Solutions/blog/tree/main/01_getting_set_up/01_create_project_app)\n",
+      "line": 26
+    }
+  ],
+  "isPrimary": true
+}

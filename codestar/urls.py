@@ -22,3 +22,5 @@ urlpatterns = [
     path("blog/", blog_views.my_blog, name='blog'),
     path('admin/', admin.site.urls),
 ]
+
+
