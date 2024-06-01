@@ -1,0 +1,51 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "3. Creating the Database",
+  "steps": [
+    {
+      "file": "codestar/settings.py",
+      "description": "**Creating PostgreSQL instance**\n\nThe first step it to loging [ElephantSQL](https://www.elephantsql.com/) and create an instance by following the steps below: \n\n1.  Click \"Create New Instance\" on \n    ElephantSQL.\n2.  Set up your plan with a name,      choose the \"Tiny Turtle\" (Free) plan, and select a region.\n3. Select a data centre near your location.\n4. Click \"Review.\"\n5. Confirm your details and click \"Create instance.\"\n6. Click on your newly named instance.\n7. Click on \"STATS\" and verify that the version of PostgreSQL is 12 or higher.\n8. If the version is correct, click on \"DETAILS\" and copy the URL.",
+      "line": 125
+    },
+    {
+      "file": "codestar/settings.py",
+      "description": "**Connnect Database to Code: Change Debug**\nSet DEBUG back to **True**. This will give you detailed error messages to help with fixing problems during development.",
+      "line": 27
+    },
+    {
+      "file": "env.py",
+      "description": "**Connecting Database to Code: Create env.py file**\n\nCreate a file named env.py at the top level of the project. You can either create a new file in the file structure or use the terminal command as shown.\n```\ntouch env.py\n\n```",
+      "line": 1
+    },
+    {
+      "file": ".gitignore",
+      "description": "**Creating Database to Code: .gitignore**\n\nOpen the **.gitignore** file and add **env.py** to prevent the secret data you will add to it from being pushed to.\n\n**Note:** If you have used a codeinstitute template then it will be there already.",
+      "line": 4
+    },
+    {
+      "file": "env.py",
+      "description": "**Connecting Database to the Code: import Python**\n\nIn your new env.py file, bring in Python's system module and use it to make the DATABASE_URL constant match the URL you took from ElephantSQL.\n\n```\nimport os\n\nos.environ.setdefault(\n    \"DATABASE_URL\", \"<your-database-URL>\")\n\n```\n**Note:** Don't forget to put quotes around the constant and your URL. The setdefault() method needs these to be string values.\n\n**Why?**\n- Creating a file (`env.py`) to store important variables for the Django project.\n- Saving the URL of the PostgreSQL database from ElephantSQL as a variable named `DATABASE_URL`.\n- This URL allows the Django application to connect and interact with the database.\n- Storing it in `env.py` keeps this sensitive information separate and secure.\n- Using the `os.environ.setdefault` function to set the `DATABASE_URL` variable to the URL from ElephantSQL.\n- This URL will be used unless it's already been set elsewhere in the environment.",
+      "line": 1
+    },
+    {
+      "file": "codestar/settings.py",
+      "description": "**Connnecting Database to Code: Linking the Settings and Environments Files**\n\nIn **`codestar/settings.py`**, import the appropriate packages.\n\n```\nimport os\nimport dj_database_url\nif os.path.isfile('env.py'):\n    import env\n```\n\n**Note:** You'll use `dj_database_url` in a future step. Now, let's link the `settings.py` file with the `env.py` file.\n\n**Why:**\n- `settings.py` is a file in a Django project that holds all the project's settings.\n- It's important to connect `settings.py` with `env.py`, a file that keeps environment variables, for safety.\n- This action brings in needed packages and links these two files.\n- We'll use the `dj_database_url` package to link Django to the database using a URL kept as an environment variable.\n- This way, we keep private database details out of the code, making the application safer.\n\n",
+      "line": 14
+    },
+    {
+      "file": "codestar/settings.py",
+      "description": "**Conneting Database to Code: Switching from SQLite3 to PostgreSQL Database**\n\nNext in the **settings.py** file, we need to comment out the local sqlite3 database connection.\n\n**Note:** Django provides this local sqlite3 database by default for development, but we are going to go with a production-ready PostgreSQL cloud database instead.\n\n**Why?**\n- SQLite3 is primarily intended for development and testing due to its file-based nature.\n- PostgreSQL is a more robust and scalable database management system suitable for production environments.\n- SQLite3 may not handle concurrent access, high volumes of data, or complex queries as well as PostgreSQL.\n- Switching from SQLite3 to PostgreSQL can improve the performance, reliability, and security of a Django application in a deployment setting.\n\n",
+      "line": 80
+    },
+    {
+      "file": "codestar/settings.py",
+      "description": "**Connecting Database to Code: Connecting to the DATABASE_URL Environment Variable**\n\nNext, in the settings.py file, link to the DATABASE_URL environment variable that you earlier added in the env.py file:\n\n```\nDATABASES = {\n    'default': dj_database_url.parse(os.environ.get(\"DATABASE_URL\"))\n}\n```\n**Why?**\n- The step establishes a crucial connection between the Django project and the database.\n- The `DATABASE_URL` represents the location where the database is stored.\n- Linking the `settings.py` file to the `DATABASE_URL` enables Django to access, retrieve, and store data in the database.\n- This allows the management of user data, content, and other dynamic aspects of the project.\n\n",
+      "line": 87
+    },
+    {
+      "file": "codestar/settings.py",
+      "description": "**Connecting Database to Code: Creating Database Tables with Django's Migrate Command**\n\nNow that your project is linked to the database, you can make database tables using Django's 'migrate' command:\n```\npython3 manage.py migrate\n```\n**Note:** These tables are for data from the current apps in Django.\n\n**Why?**\n- The 'migrate' command in Django informs the database about any changes made.\n- It updates the database to match models, which serve as blueprints for database tables.\n- Failing to run 'migrate' results in the database being unaware of changes, potentially disrupting data saving or retrieval.\n- Running the 'migrate' command is crucial to keep everything in sync.\n\n",
+      "line": 90
+    }
+  ]
+}
