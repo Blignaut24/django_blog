@@ -1,0 +1,76 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "5. Models Part 1 / Models",
+  "steps": [
+    {
+      "file": "blog/models.py",
+      "description": "**Q&A1.a Models Part 1 /Models: Database Attributes of the Post Model**\n\nIn **blog/models.py**, the Post model's attributes match HTML inputs in the admin panel. Each attribute accepts a specific Python data type for the database:\n\n*The `title attribute`, using `CharField()`, creates a one-line text input box. It takes Python string data type.*\n\n",
+      "line": 9,
+      "selection": {
+        "start": {
+          "line": 1,
+          "character": 1
+        },
+        "end": {
+          "line": 3,
+          "character": 158
+        }
+      }
+    },
+    {
+      "file": "blog/models.py",
+      "description": "**Q&A1.b Models Part 1 /Models: Database Attributes of the Post Model**\n\nIn **blog/models.py**, the Post model's attributes match HTML inputs in the admin panel. Each attribute accepts a specific Python data type for the database:\n\n*The `slug` attribute, which uses `SlugField()`, creates a one-line text input and accepts Python string data. A slug is a concise label consisting only of letters, numbers, underscores, or hyphens. It's utilized to create a meaningful URL path as an alternative to using a numerical identifier or database row ID.*",
+      "line": 10
+    },
+    {
+      "file": "blog/models.py",
+      "description": "**Q&A1.c Models Part 1 /Models: Database Attributes of the Post Model**\n\nIn **blog/models.py**, the Post model's attributes match HTML inputs in the admin panel. Each attribute accepts a specific Python data type for the database:\n\n*The `author` attribute employs `ForeignKey()`. This creates a dropdown list populated with User names from the database, which are strings. The selected User name will be displayed alongside the post on the website.*",
+      "line": 11
+    },
+    {
+      "file": "blog/models.py",
+      "description": "Q&A1.d Models Part 1 /Models: Database Attributes of the Post Model\n\nIn blog/models.py, the Post model's attributes match HTML inputs in the admin panel. Each attribute accepts a specific Python data type for the database:\n\n*The `content` attribute, which uses `TextField()`, creates a space for typing multiple lines. It can take Python string data.*\n",
+      "line": 14
+    },
+    {
+      "file": "blog/models.py",
+      "description": "**Q&A1.e Models Part 1 /Models: Database Attributes of the Post Model**\n\nIn blog/models.py, the Post model's attributes match HTML inputs in the admin panel. Each attribute accepts a specific Python data type for the database:\n\n*The `'status'` attribute, an `IntegerField()`, is utilized to select between 'Draft' or 'Published'. Ordinarily, `IntegerField` would generate a number picker. However, in this case, it has been modified to display a drop-down list with text options.*",
+      "line": 16
+    },
+    {
+      "file": "blog/models.py",
+      "description": "**Q&A2 Models Part 1 /Models: Database Attributes of the Post Model**\n\nThere is no input for the *\"Created on\" date* in the `models.py` attributes because we set the option auto_now_add=True. **This means that the system automatically uses the computer's timestamp at the moment when the form is submitted by pressing the Save button.**",
+      "line": 15,
+      "selection": {
+        "start": {
+          "line": 1,
+          "character": 1
+        },
+        "end": {
+          "line": 1,
+          "character": 70
+        }
+      }
+    },
+    {
+      "file": "blog/models.py",
+      "description": "**Q&A3 Models Part 1 /Models: Database Attributes of the Post Model**\n\n- The `status` field in the model is an `IntegerField`.\n- Instead of showing 0 or 1, it shows \"Draft\" or \"Published\".\n- This is done using the `choices` option and the `STATUS` constant.\n- The `choices` option maps 0 and 1 to \"Draft\" and \"Published\", making the dropdown options easier to understand.\n- In the `choices` option, pairs of values are used.\n- The first value (an integer) is what gets stored in the database.\n- The second value (a string) is what the user sees in the form input field.\n- While the user sees \"Draft\" or \"Published\", the database stores this as 0 or 1.\n- The default option is 0, showing that the `status` field is indeed an integer.",
+      "line": 16
+    },
+    {
+      "file": "blog/models.py",
+      "description": "**Q&A4 Models Part 1 /Models: Database Attributes of the Post Model**\n\nIn a Django project, the names you give to your models (which are like categories of information you want to store) appear in a slightly changed form on your admin page. For instance, if you have a model named 'Post', it will show up as 'Posts' on your admin page. Think of it like Django adding an 's' to make it plural. But if you name your model in plural form like 'Posts', Django will still add an 's' and it will show up as 'Postss'. This is consistent across all models, not just 'Post'. For example, 'User' will appear as 'Users' on the admin page.\n\n- In Django, model names appear in a slightly changed form on the admin page.\n- A model named 'Post' will show up as 'Posts' on the admin page.\n- Django adds an 's' to make it plural.\n- If a model is named in its plural form like 'Posts', Django will still add an 's' resulting in 'Postss'.\n- This naming convention is consistent across all models.\n- For example, 'User' will appear as 'Users' on the admin page.",
+      "line": 18
+    },
+    {
+      "file": "blog/models.py",
+      "description": "**Q&A.b. Models Part 1 /Models: Database Attributes of the Post Model**\n\n**Test Your Knowledge Sectoin**\n\nIn this Django project, `excerpt = models.TextField(blank=True)` creates a new 'excerpt' spot for each post. An 'excerpt' is like a quick preview of the post. `TextField` means this spot can hold lots of text. `blank=True` means it's okay to leave this spot empty.\n- `excerpt = models.TextField(blank=True)` adds a new 'excerpt' field for each post.\n- An 'excerpt' serves as a brief preview of the post.\n- `TextField` indicates that this field can contain a large amount of text.\n- `blank=True` allows this field to be left empty without causing errors.",
+      "line": 17
+    },
+    {
+      "file": "codestar/settings.py",
+      "description": "**Q&A.b. Models Part 1 /Models: Database Attributes of the Post Model**\n\n**Test Your Knowledge Section -b**\n\n*Note:* that during development, it's important to set **DEBUG to True**. This will ensure that you get detailed errors that can help with debugging.\n",
+      "line": 30
+    }
+  ]
+}

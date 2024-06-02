@@ -178,14 +178,19 @@
       "line": 32,
       "selection": {
         "start": {
-          "line": 2,
+          "line": 1,
           "character": 1
         },
         "end": {
-          "line": 2,
+          "line": 1,
           "character": 34
         }
       }
+    },
+    {
+      "file": "codestar/settings.py",
+      "description": "**c.19-20 Deployment:Heroku**\n\nSection: c. Deployment steps 19-20",
+      "line": 35
     }
   ]
 }
