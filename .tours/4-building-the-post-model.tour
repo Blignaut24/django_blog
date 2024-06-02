@@ -144,8 +144,48 @@
     },
     {
       "file": "codestar/settings.py",
-      "description": "**b.16 Use the model to update the database: Accessing Django Admin Panel**\n\nReturn to the terminal and start the Django server, open the app, append `/admin` to the URL in the browser and log in as the superuser.",
-      "line": 94
+      "description": "**b.16 Use the model to update the database: Accessing Django Admin Panel**\n\nReturn to the terminal and start the Django server, open the app, append `/admin` to the URL in the browser and log in as the superuser.\n\n```\nCSRF_TRUSTED_ORIGINS = ['https://8000-blignaut24-djangoblog-957szijfqvs.ws-eu114.gitpod.io',\n    \"https://*.herokuapp.com\"]\n```\n",
+      "line": 94,
+      "selection": {
+        "start": {
+          "line": 1,
+          "character": 1
+        },
+        "end": {
+          "line": 1,
+          "character": 76
+        }
+      }
+    },
+    {
+      "file": "codestar/settings.py",
+      "description": "**b.17 Use the model to update the database: Switching Debug Mode Off in Django Settings**\n\nOpen the `codestar/settings.py` file and replace *DEBUG = True* with **DEBUG = False**.\n",
+      "line": 31,
+      "selection": {
+        "start": {
+          "line": 1,
+          "character": 1
+        },
+        "end": {
+          "line": 1,
+          "character": 91
+        }
+      }
+    },
+    {
+      "file": "codestar/settings.py",
+      "description": "**c.18 Deployment:Update Github**\ngit commit -m \"adds a Post model\"\n",
+      "line": 32,
+      "selection": {
+        "start": {
+          "line": 2,
+          "character": 1
+        },
+        "end": {
+          "line": 2,
+          "character": 34
+        }
+      }
     }
   ]
 }
