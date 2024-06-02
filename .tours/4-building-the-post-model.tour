@@ -1,0 +1,151 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "4. Building the POST Model",
+  "steps": [
+    {
+      "file": "codestar/settings.py",
+      "description": "**Building the Post Model: Precoding admin steps**\n\n1. **Github Stories:** Move your \"Manage posts\" and \"Create drafts\" user stories into In Progress.\n\n2. **Entity Relationship Diagram (ERD):** Have an Entity Relationship Diagram on hand for your Post model.",
+      "line": 131
+    },
+    {
+      "file": "codestar/settings.py",
+      "description": "**A.3. Create the Model Code: *Enabling Debug Mode in Django Settings**\n\nReturn to your workspace and open the\n codestar/settings.py file. Change the value\nof DEBUG back to True. This will ensure that you receive detailed error messages, making debugging easier during development.",
+      "line": 33
+    },
+    {
+      "file": "blog/models.py",
+      "description": "**A.4. Create the Model Code: Adding User Model to the blog/models.py File**\n\nOpen your project workspace and open your blog/models.py file. Add a new import at the top for the User model.\n\n```\nfrom django.contrib.auth.models import Use\n```\n*Why is this code snippet important?*\n- The statement `from django.contrib.auth.models import User` is important in a Django project.\n- It allows the use of Django's built-in User model.\n- The User model includes key fields and methods for user authentication and authorization.\n- This statement simplifies the creation, management, and authentication of users.\n- It eliminates the need to build these functionalities from scratch.\n\n\n",
+      "line": 2
+    },
+    {
+      "file": "blog/models.py",
+      "description": "**A.5.Creating the Model Code: \"Creating the Post Class in Django Model\"**\n\nCreate a class named Post below the comment inheriting from the Model class.\n`class Post(models.Model):`\n\n*Why is important?*\n- The line `class Post(models.Model):` in a Django project sets up a new 'Post' database table.\n- Models in Django define what data looks like, including its important parts and actions.\n- The 'Post' model determines the structure of blog post data such as title, content, author, etc.\n- This is a key step in setting up your database structure.",
+      "line": 8
+    },
+    {
+      "file": "blog/models.py",
+      "description": "**A.6. Creating the Model Code: \"Creating the Post Class in Django Model\"**\n\nIn the Post model, add an attribute title defined as a character field with a max length of 200 characters.\n\n`title = models.CharField(max_length=200, unique=True)`\n\n*Note:*This note means that each blog post should have a different title. This helps to avoid any confusion for your users, as they won't see multiple posts with the same name.\n\n*Why is it important?*\n- This code creates a 'title' field in the blog post's data model in a Django project.\n- The 'title' is set as a text field, limited to 200 characters.\n- Each title must be unique, ensuring no two blog posts have the same title.\n- This rule helps avoid mix-ups and makes it easier to locate a specific pos\n",
+      "line": 9,
+      "selection": {
+        "start": {
+          "line": 1,
+          "character": 1
+        },
+        "end": {
+          "line": 5,
+          "character": 1
+        }
+      }
+    },
+    {
+      "file": "blog/models.py",
+      "description": "**A.7 Create the model code: Adding a 'slug' Attribute to the Post Model**\n\nIn the Post model, add an attribute slug defined as a slug field with a max length of 200 characters.\n\n`slug = models.SlugField(max_length=200, unique=True)`\n\n*Note:*\n- In publishing, a **`slug`** is a **short name for an article that is still in production.**\n- The term originates from the lead casts used in print typesetting.\n- Django was initially created for the newspaper industry.\n- **In Django, the slug is used to build a URL for each post.**\n- More information about this topic will be covered in an upcoming lesson.\n\n\n\n\n\n",
+      "line": 10,
+      "selection": {
+        "start": {
+          "line": 1,
+          "character": 3
+        },
+        "end": {
+          "line": 1,
+          "character": 29
+        }
+      }
+    },
+    {
+      "file": "blog/models.py",
+      "description": "**A.8 Create the model code: Adding an 'Author' Attribute to the 'Post' Model**\n\nIn the Post model, add an attribute author defined as a Foreign Key to the User model.\n\n```\nauthor = models.ForeignKey(\n    User, on_delete=models.CASCADE, related_name=\"blog_posts\"\n)\n```\n\n*Note:*\n- One user can create multiple posts, showing a **one-to-many connection** or a **Foreign Key**.\n- If a user's profile is removed, all their posts are automatically removed too.\n\n*Why is this important?*\n- In Django, the 'Post' model has an 'author' attribute linked to the User model.\n- This creates a one-to-many relationship, with each post having one creator.\n- This organization ensures accountability.\n- If a user profile is deleted, the 'on_delete=models.CASCADE' feature will delete all posts by that user.\n- This statement emphasizes that every post must be associated with a creator or author. Thus, anonymous posting or posting without attribution to a specific individual or entity is not allowed.\n\n",
+      "line": 11
+    },
+    {
+      "file": "blog/models.py",
+      "description": "**A.9 Create the model code: Adding 'Content' Attribute to the Post Model**\n\nIn the Post model, add an attribute content defined as a text field.\n\n`content = models.TextField()`\n\n*Note:*This means the content of the blog post or the main text that the readers will see.\n\n*Why is it important?*\n- The 'content' attribute of the Post model in a Django project is crucial.\n- It contains the main text of the blog post.\n- Without this attribute, we cannot save or display the main content of each blog post.\n\n\n\n\n\n\n",
+      "line": 14
+    },
+    {
+      "file": "blog/models.py",
+      "description": "**A.10 Create the model code: Adding a 'Created On' Attribute to the Post Model**\n\nIn the Post model, add an attribute `created_on` defined as a date time field.\n\n\n`created_on = models.DateTimeField(auto_now_add=True)`\n\n*Note:*The `auto_now_add=True` setting automatically sets the date and time to when a new blog post is made.\n\n\n\n",
+      "line": 15,
+      "selection": {
+        "start": {
+          "line": 1,
+          "character": 1
+        },
+        "end": {
+          "line": 1,
+          "character": 82
+        }
+      }
+    },
+    {
+      "file": "blog/models.py",
+      "description": "**A.11.1 Create the model code: Adding 'Status' Attribute to the Post Model**\n\nIn the Post model, add an attribute status defined as an integer field with a default of 0.\n\n`status = models.IntegerField(choices=STATUS, default=0)`\n\n*Why is this important?* \n\nIn Django's 'Post' model, 'status' determines a blog post's visibility, with '0' indicating a draft and '1' a published post.\n- In Django, the 'status' in the 'Post' model decides blog post visibility.\n- '0' signifies a draft post, and '1' signifies a published post.\n- New posts default to the 'draft' status ('0').\n- Writers may modify drafts until they're ready for publication.\n- When a post is ready, its status changes to 'published' ('1').\n\n\n\n",
+      "line": 16,
+      "selection": {
+        "start": {
+          "line": 1,
+          "character": 1
+        },
+        "end": {
+          "line": 1,
+          "character": 78
+        }
+      }
+    },
+    {
+      "file": "blog/models.py",
+      "description": "**A.11.2 Create the model code: Adding 'Status' Attribute to the Post Model**\n\nAs you can see, this uses a constant STATUS. Create this constant above the class as a tuple.\n\n`STATUS = ((0, \"Draft\"), (1, \"Published\"))`\n\n*Note:*\nIn simple terms, when you're creating a blog post, it is initially saved as a 'draft' (which we represent with the number zero). Only when you decide to 'publish' it (which we represent with the number one) does it become visible to the public. By default, it's always saved as a draft first.\n\n",
+      "line": 5
+    },
+    {
+      "file": "blog/models.py",
+      "description": "**b.12 Use the model to update the database: Converting the Post Model into Database Table Structure Instructions**\n\nThe terminal command:\n\n`python3 manage.py makemigrations blog`\n\n*Note:* A blog/migrations/0001_initial.py file is made. It tells what table to make.\n\n*Why is it important?* The command `python3 manage.py` makem igrations blog in Django updates the database according to changes in the Post model, creating a plan for database modifications.\n",
+      "line": 17,
+      "selection": {
+        "start": {
+          "line": 1,
+          "character": 1
+        },
+        "end": {
+          "line": 1,
+          "character": 45
+        }
+      }
+    },
+    {
+      "file": "blog/models.py",
+      "description": "**b.13 Use the model to update the database: Creating a Database Table in Django**\n\nNow we need to create that table in the database. Use this terminal command:\n\n`python3 manage.py migrate blog`\n\n*Why is this important?*\n- It applies changes from models (blueprint of your database) to your actual database.\n- The command creates or alters tables in the database according to the structure defined in models.\n- This process is similar to turning architectural blueprints into a real building.\n- Without this step, your database won't sync with your Django models.\n- As a result, you won't be able to store or retrieve data as intended.",
+      "line": 18
+    },
+    {
+      "file": "blog/admin.py",
+      "description": "**b.14.1 Use the model to update the database: Registering the Post Model in Django Admin Panel**\n\n```\nfrom .models import Post\n\n# Register your models here.\nadmin.site.register(Post)\n```\n*Note:*\n- Allows creation, update, and deletion of blog posts from the admin panel.\n- Refrain from adding any posts currently as more fields will be added to the tables in an upcoming topic.\n\n*Why is this important?*\n- Django project models, like the 'Post' model, should be registered in the admin panel for easy data management.\n- The 'Post' model represents blog posts in the database.\n- After registering the 'Post' model, users can create, modify, and delete blog posts from the admin panel. This aids non-technical users in managing content without database or code interaction.\n- The model should only be used when fully developed. In this case, additional fields are planned to be added to the 'Post' model.\n- It is advised to avoid adding any posts for the time being as using incomplete models might cause database issues or create inconsistent data..\n",
+      "line": 2,
+      "selection": {
+        "start": {
+          "line": 1,
+          "character": 1
+        },
+        "end": {
+          "line": 19,
+          "character": 1
+        }
+      }
+    },
+    {
+      "file": "blog/admin.py",
+      "description": "**b.14.2 Use the model to update the database: Registering the Post Model in Django Admin Panel**\n\n```\nfrom .models import Post\n\n# Register your models here.\nadmin.site.register(Post)\n```\n*Note:*\n- Allows creation, update, and deletion of blog posts from the admin panel.\n- Refrain from adding any posts currently as more fields will be added to the tables in an upcoming topic.\n\n*Why is this important?*\n- Django project models, like the 'Post' model, should be registered in the admin panel for easy data management.\n- The 'Post' model represents blog posts in the database.\n- After registering the 'Post' model, users can create, modify, and delete blog posts from the admin panel. This aids non-technical users in managing content without database or code interaction.\n- The model should only be used when fully developed. In this case, additional fields are planned to be added to the 'Post' model.\n- It is advised to avoid adding any posts for the time being as using incomplete models might cause database issues or create inconsistent data..\n",
+      "line": 5
+    },
+    {
+      "file": "codestar/settings.py",
+      "description": "****b.15 Use the model to update the database: Adding Trusted Origins in Django Settings**\n\n```\nCSRF_TRUSTED_ORIGINS = [\n    \"https://*.codeanyapp.com\",\n    \"https://*.herokuapp.com\"\n]\n```\n*Note:*\n- This is a list of the trusted origins for requests.\n- You need to add both your local development server URL domain and your production server URL domain.\n- This allows you to add blog post content from the admin dashboard.\n- The subdomain is wildcarded with a `*`\n\n*Why is it important?*\n- This is a list of the trusted origins for requests.\n- You need to add both your local development server URL domain and your production server URL domain.\n- This allows you to add blog post content from the admin dashboard.\n- The subdomain is wildcarded with a `*`\n- Trusted origins are essential in Django projects for security and operational reasons.\n- Trusted origins are web domains that your Django application acknowledges as safe sources for incoming requests.\n- Both your local development server domain and your production server domain are added as trusted origins.\n- This ensures that your application accepts requests from these domains and maintains application functionality.\n- The '*' wildcard in the subdomain makes the settings applicable to all subdomains under a specific domain, providing more flexibility.\n- Without these settings, your Django application may reject valid requests from trusted sources, potentially disrupting functionality.\n\n\n",
+      "line": 90
+    },
+    {
+      "file": "codestar/settings.py",
+      "description": "**b.16 Use the model to update the database: Accessing Django Admin Panel**\n\nReturn to the terminal and start the Django server, open the app, append `/admin` to the URL in the browser and log in as the superuser.",
+      "line": 94
+    }
+  ]
+}

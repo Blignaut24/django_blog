@@ -4,16 +4,7 @@
   "steps": [
     {
       "file": "codestar/settings.py",
-      "description": "**Connecting Database to the Code: import Python**\n\nIn your new env.py file, bring in Python's system module and use it to make the DATABASE_URL constant match the URL you took from ElephantSQL.\n\n```\nimport os\n\nos.environ.setdefault(\n    \"DATABASE_URL\", \"<your-database-URL>\")\n\n```\n**Note:** Don't forget to put quotes around the constant and your URL. The setdefault() method needs these to be string values.\n\n**Why?**\n- Creating a file (`env.py`) to store important variables for the Django project.\n- Saving the URL of the PostgreSQL database from ElephantSQL as a variable named `DATABASE_URL`.\n- This URL allows the Django application to connect and interact with the database.\n- Storing it in `env.py` keeps this sensitive information separate and secure.\n- Using the `os.environ.setdefault` function to set the `DATABASE_URL` variable to the URL from ElephantSQL.\n- This URL will be used unless it's already been set elsewhere in the environment.",
-      "line": 87
-    },
-    {
-      "title": "3. Creating the Database",
-      "description": ""
-    },
-    {
-      "file": "codestar/settings.py",
-      "description": "**Creating PostgreSQL instance**\n\nThe first step it to loging [ElephantSQL](https://www.elephantsql.com/) and create an instance by following the steps below: \n\n1.  Click \"Create New Instance\" on \n    ElephantSQL.\n2.  Set up your plan with a name,      choose the \"Tiny Turtle\" (Free) plan, and select a region.\n3. Select a data centre near your location.\n4. Click \"Review.\"\n5. Confirm your details and click \"Create instance.\"\n6. Click on your newly named instance.\n7. Click on \"STATS\" and verify that the version of PostgreSQL is 12 or higher.\n8. If the version is correct, click on \"DETAILS\" and copy the URL.",
+      "description": "**A. Creating PostgreSQL instance**\n\nThe first step it to loging [ElephantSQL](https://www.elephantsql.com/) and create an instance by following the steps below: \n\n1.  Click \"Create New Instance\" on \n    ElephantSQL.\n2.  Set up your plan with a name,      choose the \"Tiny Turtle\" (Free) plan, and select a region.\n3. Select a data centre near your location.\n4. Click \"Review.\"\n5. Confirm your details and click \"Create instance.\"\n6. Click on your newly named instance.\n7. Click on \"STATS\" and verify that the version of PostgreSQL is 12 or higher.\n8. If the version is correct, click on \"DETAILS\" and copy the URL.",
       "line": 125
     },
     {
@@ -32,14 +23,18 @@
       "line": 4
     },
     {
+      "title": "3. Creating the Database",
+      "description": "**Connect Database to Code: Installing Required Packages**\n\nUse pip to install the two packages required to connect to your PostgreSQL database. Then, add them to the requirements file:\n\n`pip3 install dj-database-url~=0.5 psycopg2~=2.9`\n\n`pip3 freeze --local > requirements.txt`\n\n*Note:* psycopg2 is a tool that lets Python talk to PostgreSQL databases. The dj-database-url package is a helper for connecting Django to a database with a URL.\n\n *Why these terminal commands*\n - `psycopg2` is an essential tool for Django projects, serving as a bridge between Python (which Django is built on) and PostgreSQL, a database system.\n- `psycopg2` enables Python to interact with PostgreSQL, allowing your application to store and retrieve data as needed.\n- `dj-database-url` simplifies the process of connecting your Django project to your database.\n- Instead of manually configuring various settings, you provide a single URL, and `dj-database-url` handles the rest.\n- This convenience makes your database connection setup more efficient and less prone to errors.\n- A robust connection between your application and its database is vital for the \napplication's reliable data storage and retrieval.\n\n**Next Step**\n`pip3 freeze --local > requirements.txt`\n"
+    },
+    {
       "file": "env.py",
       "description": "**Connecting Database to the Code: import Python**\n\nIn your new env.py file, bring in Python's system module and use it to make the DATABASE_URL constant match the URL you took from ElephantSQL.\n\n```\nimport os\n\nos.environ.setdefault(\n    \"DATABASE_URL\", \"<your-database-URL>\")\n\n```\n**Note:** Don't forget to put quotes around the constant and your URL. The setdefault() method needs these to be string values.\n\n**Why?**\n- Creating a file (`env.py`) to store important variables for the Django project.\n- Saving the URL of the PostgreSQL database from ElephantSQL as a variable named `DATABASE_URL`.\n- This URL allows the Django application to connect and interact with the database.\n- Storing it in `env.py` keeps this sensitive information separate and secure.\n- Using the `os.environ.setdefault` function to set the `DATABASE_URL` variable to the URL from ElephantSQL.\n- This URL will be used unless it's already been set elsewhere in the environment.",
       "line": 1
     },
     {
       "file": "codestar/settings.py",
-      "description": "**Connnecting Database to Code: Linking the Settings and Environments Files**\n\nIn **`codestar/settings.py`**, import the appropriate packages.\n\n```\nimport os\nimport dj_database_url\nif os.path.isfile('env.py'):\n    import env\n```\n\n**Note:** You'll use `dj_database_url` in a future step. Now, let's link the `settings.py` file with the `env.py` file.\n\n**Why:**\n- `settings.py` is a file in a Django project that holds all the project's settings.\n- It's important to connect `settings.py` with `env.py`, a file that keeps environment variables, for safety.\n- This action brings in needed packages and links these two files.\n- We'll use the `dj_database_url` package to link Django to the database using a URL kept as an environment variable.\n- This way, we keep private database details out of the code, making the application safer.\n\n",
-      "line": 14
+      "description": "**Connecting Database to Code: Connecting to the DATABASE_URL Environment Variable**\n\nNext, in the settings.py file, link to the DATABASE_URL environment variable that you earlier added in the env.py file:\n\n```\nDATABASES = {\n    'default': dj_database_url.parse(os.environ.get(\"DATABASE_URL\"))\n}\n```\n**Why?**\n- The step establishes a crucial connection between the Django project and the database.\n- The `DATABASE_URL` represents the location where the database is stored.\n- Linking the `settings.py` file to the `DATABASE_URL` enables Django to access, retrieve, and store data in the database.\n- This allows the management of user data, content, and other dynamic aspects of the project.\n\n",
+      "line": 87
     },
     {
       "file": "codestar/settings.py",
@@ -48,8 +43,28 @@
     },
     {
       "file": "codestar/settings.py",
-      "description": "**Connecting Database to Code: Connecting to the DATABASE_URL Environment Variable**\n\nNext, in the settings.py file, link to the DATABASE_URL environment variable that you earlier added in the env.py file:\n\n```\nDATABASES = {\n    'default': dj_database_url.parse(os.environ.get(\"DATABASE_URL\"))\n}\n```\n**Why?**\n- The step establishes a crucial connection between the Django project and the database.\n- The `DATABASE_URL` represents the location where the database is stored.\n- Linking the `settings.py` file to the `DATABASE_URL` enables Django to access, retrieve, and store data in the database.\n- This allows the management of user data, content, and other dynamic aspects of the project.\n\n",
+      "description": "**Connecting Database to the Code: import Python**\n\nIn your new env.py file, bring in Python's system module and use it to make the DATABASE_URL constant match the URL you took from ElephantSQL.\n\n```\nimport os\n\nos.environ.setdefault(\n    \"DATABASE_URL\", \"<your-database-URL>\")\n\n```\n**Note:** Don't forget to put quotes around the constant and your URL. The setdefault() method needs these to be string values.\n\n**Why?**\n- Creating a file (`env.py`) to store important variables for the Django project.\n- Saving the URL of the PostgreSQL database from ElephantSQL as a variable named `DATABASE_URL`.\n- This URL allows the Django application to connect and interact with the database.\n- Storing it in `env.py` keeps this sensitive information separate and secure.\n- Using the `os.environ.setdefault` function to set the `DATABASE_URL` variable to the URL from ElephantSQL.\n- This URL will be used unless it's already been set elsewhere in the environment.",
       "line": 87
+    },
+    {
+      "file": "codestar/settings.py",
+      "description": "**b. Connect Database to Code: Creating Database Tables with Django's Migrate Command**\n\nNow that your project is connected to the database, you can create database tables with Django's migrate command:\n\n`python3 manage.py migrate`\n\n**Note:** These tables are for data from the current apps in Django.\n\n**Why is migrating important?**\n- The 'migrate' command in Django informs the database about any changes made.\n- It updates the database to match models, which serve as blueprints for database tables.\n- Failing to run 'migrate' results in the database being unaware of changes, potentially disrupting data saving or retrieval.\n- Running the 'migrate' command is crucial to keep everything in sync.\n\n",
+      "line": 132
+    },
+    {
+      "file": "codestar/settings.py",
+      "description": "**Connnecting Database to Code: Linking the Settings and Environments Files**\n\nIn **`codestar/settings.py`**, import the appropriate packages.\n\n```\nimport os\nimport dj_database_url\nif os.path.isfile('env.py'):\n    import env\n```\n\n**Note:** You'll use `dj_database_url` in a future step. Now, let's link the `settings.py` file with the `env.py` file.\n\n**Why:**\n- `settings.py` is a file in a Django project that holds all the project's settings.\n- It's important to connect `settings.py` with `env.py`, a file that keeps environment variables, for safety.\n- This action brings in needed packages and links these two files.\n- We'll use the `dj_database_url` package to link Django to the database using a URL kept as an environment variable.\n- This way, we keep private database details out of the code, making the application safer.\n\n",
+      "line": 14
+    },
+    {
+      "file": "codestar/settings.py",
+      "description": "**Enter Data Into the Database: Creating a Superuser for Database Access**\n\n```\npython3 manage.py createsuperuser\n```\n\n\n**Why SuperUser?**\nA Django superuser has complete control over the database and can utilize the built-in admin tool for simplified data management during development and testing.",
+      "line": 90
+    },
+    {
+      "file": "codestar/settings.py",
+      "description": "**Enter Data Into the Database: Viewing Stored Data in ElephantSQL**\n\n1. You can see where the data is stored by returning to ElephantSQL, clicking on BROWSER, Table queries, auth_user (public) and then Execute.\n\n2. You can see the superuser's email as a table entry.\n\n*Next Step:*\n1. Change the `DEBUG = False`\n2. Git add, commit and push your updated code to GitHub.\n\n`git add codestar/settings.py`\n`git commit -m \"deployment settings\"`\n`git push`\n\n3. Return to your Heroku dashboard and follow the instructions from step 24.\n\n",
+      "line": 93
     }
   ]
 }
