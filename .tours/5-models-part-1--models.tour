@@ -69,8 +69,93 @@
     },
     {
       "file": "codestar/settings.py",
-      "description": "**Q&A.b. Models Part 1 /Models: Database Attributes of the Post Model**\n\n**Test Your Knowledge Section -b**\n\n*Note:* that during development, it's important to set **DEBUG to True**. This will ensure that you get detailed errors that can help with debugging.\n",
-      "line": 30
+      "description": "**Q&A.b. Models Part 1 /Models: Database Attributes of the Post Model**\n\n**Test Your Knowledge Section -b**\n\n*Note:* that during development, it's important to set **DEBUG to True**. This will ensure that you get detailed errors that can help with debugging..\n",
+      "line": 30,
+      "selection": {
+        "start": {
+          "line": 1,
+          "character": 1
+        },
+        "end": {
+          "line": 1,
+          "character": 72
+        }
+      }
+    },
+    {
+      "file": "blog/migrations/0001_initial.py",
+      "description": "**Q&A.b. Models Part 1 /Inside Migration: Term**\n\nWhat do you think the file purpose is?\n- `0001_initial.py` is the initial migration file in a Django project.\n- It is automatically generated when a model is first created.\n- It outlines necessary changes to the database to reflect the structure of the new model.\n\n**Analogy: Building Blocks**\n\n*Think of `0001_initial.py` as the first step in building with LEGO blocks. It's like the base on which you'll start stacking other blocks.*\n\n\n",
+      "line": 1
+    },
+    {
+      "file": "blog/migrations/0001_initial.py",
+      "description": "**Q&A.b. Models Part 1 /Inside Migration: Terminal Commands**\n\nAt the terminal, type \n`python3 manage. py makemigrations`\n\n**What happens to your migrations directory?**\n\n- When using the 'makemigrations' command, Django creates a new migration file.\n- This is due to Django noticing a change in the model that needs to be updated in the database.\n- The files are numbered in sequence, and the file name gives a hint about what each migration does.\n- Because each migration is numbered, it's possible to reapply certain migrations if necessary.\n\n\n",
+      "line": 2
+    },
+    {
+      "file": "blog/migrations/0002_post_excerpt.py",
+      "description": "**Q&A.b. Models Part 1 /Inside Migration: File Explanation**\n\nOpen the file named `0002_post_excerpt.py` in the migrations directory of the blog directory and read through it. Consider the following questions:\n\n**a. What do you think is the significance of the dependencies?**\n\n*A dependencies list, which contains tuples of the app name (in this case, 'blog') and the migrations that must be applied before the current one. In our scenario, the dependency is '0001_initial', the file we just looked at. This is logical, as a field cannot be added to a model if the model does not yet exist.*\n\n**Python Tuples:**\n*A tuple in Python is a list of items that can't be changed. It's often used to store things that are related, like the position of a point in space.*\n\n\n**b. What operations are planned to be executed?**\n*b. An operations list which carries out changes to the database. In this case, we are adding a field. Though our list only contains one operation, if we were adding multiple fields or another model, those would also appear here.*\n\n",
+      "line": 1
+    },
+    {
+      "file": "blog/migrations/0002_post_excerpt.py",
+      "description": "**Q&A.b. Models Part 1 /Inside Migration: Terminal Commands**\n\nCan you guess the difference between makemigrations and migrate?\n\n\n- \n    - The `makemigrations` command creates a task list, noting changes made to models.\n    ```\n    python3 manage.py makemigrations\n    ```\n    - The `migrate` command carries out tasks from this list, applying changes to the database\n    ```\n    python3 manage.py migrate\n    ```\n\n\n\n",
+      "line": 2,
+      "selection": {
+        "start": {
+          "line": 1,
+          "character": 1
+        },
+        "end": {
+          "line": 1,
+          "character": 62
+        }
+      }
+    },
+    {
+      "file": "blog/migrations/0002_post_excerpt.py",
+      "description": "**Models Part 1 /Inside Migration: Terminal Commands**\n\n```\npython3 manage. py makemigrations\n-dry-run\n```\n*The command `python3 manage.py makemigrations --dry-run` in a Django project is like a dress rehearsal for a play. It allows you to see what changes would be made to your database, similar to how a dress rehearsal lets actors and crew see how the final performance will look, without any actual changes or consequences. It's a safe way to ensure everything will go as expected when you finally decide to apply these changes for real.*\n\n*The result of the `python3 manage.py makemigrations --dry-run` command is displayed in the terminal where the command is executed.*\n\nIf you are happy with what you see,\nyou must then run **makemigrations**\nnormally.\n\n\n**Top tip!** It follows that it's a good idea to keep our migrations quite\ntightly focused, as we do with our\ngit commits. Don't add or change\ntoo many features all at once, but\n**make migrations after one or more\nsmaller changes.**\n",
+      "line": 4
+    },
+    {
+      "file": "blog/models.py",
+      "description": "**Models Part 1 /Inside Migration: Add code to create field**\n\nApply your knowledge to add a field called updated_on to the Post model.",
+      "line": 18,
+      "selection": {
+        "start": {
+          "line": 1,
+          "character": 1
+        },
+        "end": {
+          "line": 1,
+          "character": 62
+        }
+      }
+    },
+    {
+      "file": "blog/models.py",
+      "description": "**Models Part 1 /Inside Migration: Add code to create datestamp**\n\nThis field should be the same type as `created_on` line 15, but should have the argument of `auto_now=True`.\n\nThe auto_now argument for the `updated_on field` sets the value to the current date and **time whenever the record is saved, not just when it is created.**\n\n",
+      "line": 19
+    },
+    {
+      "file": "blog/migrations/0003_post_updated_on.py",
+      "description": "**Models Part 1 e Migration: Explain this file purpose**\n\nPredict what the dependencies and operations lists will contain this time. Open the 0003_post_updated_on file to check if your prediction was correct.\n\n*This time, the dependencies are related to the previous migration, 0002_post_excerpt. The operations include adding a field with the provided details.*\n",
+      "line": 1
+    },
+    {
+      "file": "blog/migrations/0003_post_updated_on.py",
+      "description": "**Models Part 1  Migration: Excute Terminal Command**\n\nApply the migration to the database\n\n*Type python3 manage . py migrate at the\nterminal to apply the migrations to the\ndatabase.*\n\n```\npython3 manage.py migrate\n```\n\n",
+      "line": 2
+    },
+    {
+      "file": "blog/admin.py",
+      "description": "**Models Part 1 Inside admin.py: Theory**\n\n**1. What do you think the purpose of `admin.site.register(Post)` is?**\n*When we create a custom model and want it to appear on the admin site, we need to register it in the admin.py file using admin. site. register.*\n\n **2. Where does Post come from?**\n *The Post in the registration refers to the Post model that we've created. We import our custom Post model on line 2.*\n \n **3. What does the dot before 'models' on line 2 signify?**\n - The dot before `models` on line 2 indicates that `Post` is being imported from a file named `models` in the same directory as the `admin.py` file.\n- If there are more models to import, they can be separated with a comma.\n- For instance, if a `Comment` model is created in the future, it will also need to be imported.\n\n",
+      "line": 6
+    },
+    {
+      "file": "codestar/settings.py",
+      "description": "**Models Part 1 Inside admin.py: Theory**\n\n- **Cross-Site Request Forgery (CSRF)** is a security risk.\n- It occurs when a malicious website makes requests to another site, impersonating a user.\n- Django provides protection against CSRF attacks using the `CSRF_TRUSTED_ORIGINS` setting.\n- This setting only allows requests from specified hosts.\n- If the host setting is incorrect, Django denies access.\n\n",
+      "line": 92
     }
   ]
 }
