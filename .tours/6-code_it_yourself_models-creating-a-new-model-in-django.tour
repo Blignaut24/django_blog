@@ -1,0 +1,46 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "6. Code_it_yourself:_Models (Creating a new model in Django)",
+  "steps": [
+    {
+      "file": "blog/models.py",
+      "description": "**Code_it_yourself:_Models(Creat model)**\n\nPlan ERD see *I Think Therefore I Blog> Code It Yourself:Models> Challenge: Plan the comments*\n\n",
+      "line": 7
+    },
+    {
+      "file": "blog/models.py",
+      "description": "**Code_it_yourself:_Models(Creat model)**\n\n**Challenge:** \n1. Underneath the Post model, create a\nnew Comment model. Python convention\ndictates that we leave two blank lines\nbetween the end of one class and the\nstart of a new one.\n\n**Steps:**\n1. A class named Comment.\n\n**Solution:**\n```\nclass Comments(models.Model):\n```",
+      "line": 20
+    },
+    {
+      "file": "blog/models.py",
+      "description": "**Code_it_yourself:_Models(Creat model)**\n\n**Challenge:**\n2. Using the completed ERD and what you have learned from creating the Post model, add the correct fields.\n\n**Steps:**\n2. Inside the class, add the following attributes: post.\n    a. Should have a many-to-one relationship with the  Post model.\n    b. If a blog post is deleted the comments on it should also be deleted.\n    c. Have a related name of \"comments\"\n\n**Hints:**\n2. Have you set the ForeignKey relationships correctly?\n    The Post model for the post field and User model for the author field. e.g\n    ```post = models.ForeignKey(Post, …)\n    ```",
+      "line": 22
+    },
+    {
+      "file": "blog/models.py",
+      "description": "\n\n**Challenge:**\n3. All of the fields should have lower-case names and   \n    underscores in place of spaces.\n\n**Steps:**\n3. author.\n    a. Should have a many-to-one relationship with the built-in User model.\n    b. If a user account is deleted the user's comments will be deleted also.\n    c. Have a related name of \"commenter\".\n4. `body.`\n5. `approved.`\n    a. Should default to False.\n6. `created_on`.\n    a. Automatically populates when a comment is added but not when updated.\n\n**Hnts:**\n3. Have you set the on_delete attribute for the         \n    `ForeignKey` data types to `models.CASCADE`?\n\n    `on_delete=models.CASCADE`\n\n4. Have you set the `related_name` attributes correctly? \n   eg.\n\n    `related_name=\"comments\"`\n\n5. Have you used `models.TextField()` as your data type    \n    for  the `body` field?\n\n`body = models.TextField()`\n\n6. Have you used the `BooleanField` type for the \n    `approved field`? Did you set the `default` attribute to `False`?\n    ```\n    approved = \n    models.BooleanField(default=False)\n    ```\n\n7. Is your `created_on` field a `DateTimeField`? Have you\n    set the `auto_now_add` attribute like we did in the ` `Post` model?\n    ```\n    created_on = \n    models.DateTimeField(auto_now_add=True)\n    ```\n\n",
+      "line": 21
+    },
+    {
+      "file": "blog/admin.py",
+      "description": "**Code it yourself: Models - Challenge Run migrations and update admin.py**\n\n**Challenge: Part 1**\n1. Make sure your new model is saved.\n2. Make and apply the migrations to the database.\n\n**Steps: Part 1**\n1. Make sure all files are saved, including the models.py file.\n2. In the terminal, run the appropriate command to make the migrations. \n    ```\n    python3 manage.py makemigrations\n    ```\n3. In the terminal, run the appropriate command to migrate the changes to the database.\n    ```\n    python3 manage.py migrate\n    ```\n\n",
+      "line": 7,
+      "selection": {
+        "start": {
+          "line": 1,
+          "character": 1
+        },
+        "end": {
+          "line": 1,
+          "character": 76
+        }
+      }
+    },
+    {
+      "file": "blog/admin.py",
+      "description": "**Code it yourself: Models - Challenge Run migrations and update admin.py**\n\n**Challenge: Part 2**\n1. Register the new model in admin.py.\n2. Test the admin site to see if it contains the comments app, as shown in the lesson image.\n3. Add 3 or 4 comments to the blog posts you already created.\n    Note: You can approve each comment.\n4. Add, commit and push your code to GitHub.\n\n**Hints: Part 2**\n1. At the top of admin.py, did you import the Comment model from the .models file?\n    ```\n    from .models import Post, \n    Comment\n    ```\n2. Did you add the command to the admin.py file to register the Comment model?\n    `admin.site.register(Comment)`\n3. Did you save the admin.py file?\n4. Did you run the Django server from the terminal, append /admin to the URL path and log\n    in as the superuser?\n5. Did you click on the Add button in the Comments section and add 3 or 4 comments to       \n    different blog posts?\n\n**Solution: Part 2**\nYour admin.py file should now look like this:\n```\nfrom django.contrib import admin\nfrom .models import Post, Comment\n\n# Register your models here.\nadmin.site.register(Post)\nadmin.site.register(Comment)\n```\n*If yours looks like this, and the Comments model is now visible in the admin site, then well done!*\n\n\n",
+      "line": 8
+    }
+  ]
+}

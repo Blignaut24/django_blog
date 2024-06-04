@@ -156,6 +156,11 @@
       "file": "codestar/settings.py",
       "description": "**Models Part 1 Inside admin.py: Theory**\n\n- **Cross-Site Request Forgery (CSRF)** is a security risk.\n- It occurs when a malicious website makes requests to another site, impersonating a user.\n- Django provides protection against CSRF attacks using the `CSRF_TRUSTED_ORIGINS` setting.\n- This setting only allows requests from specified hosts.\n- If the host setting is incorrect, Django denies access.\n\n",
       "line": 92
+    },
+    {
+      "file": "blog/models.py",
+      "description": "**Models Part 1 Inside admin.py: Add users and blog posts**\n\nHeroku steps see *I Think Therefore I Blog> Models Part 1> Add users and blog posts*. \n",
+      "line": 20
     }
   ]
 }
