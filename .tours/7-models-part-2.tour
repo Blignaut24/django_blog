@@ -1,0 +1,36 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "7. Models Part 2",
+  "steps": [
+    {
+      "file": "blog/models.py",
+      "description": "**Models Part 2: Methods in Our Models**\n\n**Purpose of Lesson:**\nThis lesson explains how to use methods in Django programming. These methods work on single items in objects and help keep business rules in the model. We'll focus on adding a Meta class and the `__str__` method to a Post model. The Meta class helps order posts, and the `__str__` method lets us include field values in a string, making it easier to read and understand. We'll also talk about 'metadata' and why it's important in Django models. The lesson ends with a challenge to change the `__str__` method and a review of the improvements made to the model.\n\n*Model Methods:*\nFor example, if you had a date of birth column in a user table, then you could add a method to calculate a user's age.\n\n*Metadata (add models)*\nMetadata is data about data. For a Django model, that is any data other than the field.\n\n**Termnial Command: Runserver**\n```\npython manage.py runserver\n```\n- append `/admin`\n- Log in as the superuser. Click on Posts. \n- As you can see, your posts are titled differently from the main image, but in this challenge, you will match them through methods and metadata.",
+      "line": 30,
+      "selection": {
+        "start": {
+          "line": 1,
+          "character": 1
+        },
+        "end": {
+          "line": 1,
+          "character": 41
+        }
+      }
+    },
+    {
+      "file": "blog/models.py",
+      "description": "**Models Part 2: Methods in Our Models**\n\n**Part 1: Adding a Meta Class:**\n- Open the `blog/models.py` file. \n- Let's start by adding a class Meta to our Post model. \n*Note: You should add this at the bottom of the Post Model under the fields.*\n\n```\nclass Meta:\n        ordering = [\"-created_on\"]\n```\n\n*Note: -created_on*\n- The posts are now listed from oldest to newest creation time.\n- The '-' prefix on 'created_on' indicates the posts are displayed in descending order of creation date.\n- If no leading '-' is used, then the order is ascending.\n- If a '?' prefix is used, then the order is randomised.\n",
+      "line": 20
+    },
+    {
+      "file": "blog/models.py",
+      "description": "**Models Part 2: Methods in Our Models**\n\n**Part 2: Adding the __str__ method**\nOpen the `blog/models.py` file. Now, add a method to our Post model. \n\n*Note: Methods should always be below Meta classes.*\n\n```\n def __str__(self):\n        return f\"{self.title} | written by {self.author}\"\n```\n\n**Note: Expected Outcome**\n- Saved the [models.py](http://models.py/) file and refreshed the Post admin panel.\n- Can now read posts easily, no longer seen as Post object(n).\n- This change is due to the `__str__()` method.\n- The `__str__()` method allows us to use field values in the f-string by providing `self` as an argument.\n",
+      "line": 23
+    },
+    {
+      "file": "blog/models.py",
+      "description": "**Models Part 2: Methods in Our Models**\n\n**Meta class**\n- The `Meta` class provides additional details about the model, including a feature called `ordering`.\n- `Ordering` determines the order of the model's records.\n- In this case, `ordering` is set to a list with the `created_on` field.\n- This list can be modified to change the order of the records.\n- For instance, records can be sorted by `created_on` from the most recent to the oldest, followed by `author` in alphabetical order.\n```\nordering = [\"-created_on\", \"author\"]\n```\n\n**Why use a Meta class?**\n*A class Meta is useful when you want to add data that is not a database table field to your model.*\n\nThe class Meta in a model helps to include extra information that's not about the database, like field rules or data order. For example, it can help to show products from cheap to expensive in a Product model or show posts from new to old in a Post model.\n\n**__str__ Method**\nWe added a special feature to our blog posts called the \"**str**\" method. Think of it like giving each post a nickname that administrators, instead of tech experts, can easily recognize. This nickname is helpful when we're looking at posts on the control panel or the console, similar to how you might use names to identify your contacts in your phone's address book.\n\n**Other custom methods:**\nYou can include more methods like this in models to add functions, such as calculating a user's age from their birthday or adding a preferred title before a name. In web development, this helps keep our data tidy and easy to use.\n\n\n\n\n",
+      "line": 21
+    }
+  ]
+}
