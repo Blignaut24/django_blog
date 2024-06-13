@@ -1,0 +1,106 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "8. Views Part 1",
+  "steps": [
+    {
+      "file": "blog/urls.py",
+      "description": "**Building the Homepage with Django Generic Views**\n\n**Purpose:**\nIn these text-based steps, we'll create the main page for our blog using Django's generic views. Think of these as pre-existing building blocks: instead of making everything from scratch, Django has pre-written classes we can inherit from to build a class-based view. These classes handle everyday tasks for us.\n\n**Preparatory Steps:**\n1. Github Kanban: Move the View paginated list of posts user story into In Progress.\n2. In the **blog** directory, create a new Python file named `urls.py`.\n*This file is where we'll list our blog app-specific URLs.*\n\n",
+      "line": 1,
+      "selection": {
+        "start": {
+          "line": 1,
+          "character": 1
+        },
+        "end": {
+          "line": 6,
+          "character": 23
+        }
+      }
+    },
+    {
+      "file": "codestar/urls.py",
+      "description": "**Building the Homepage with Django Generic Views**\n\n**Preparatory Steps:**\n3. Open the `codestar/urls.py` file and delete the blog_views import. \n```\nfrom blog import views as blog_views\n```\n\n*We don't need it anymore because our blog now has its own URL file. We'll explain this in more detail in an upcoming topic*",
+      "line": 19
+    },
+    {
+      "file": "codestar/urls.py",
+      "description": "**Building the Homepage with Django Generic Views**\n\n**Preparatory Steps:**\n4. Ensure that include is imported from django.urls by appending it after path\n```\nfrom django.urls import path, \n```",
+      "line": 18
+    },
+    {
+      "file": "codestar/urls.py",
+      "description": "**Building the Homepage with Django Generic Views**\n\n**Preparatory Steps:**\n\n5. Also, replace the existing blog/ urlpattern with a new empty string urlpattern.\n\nThis pattern tells Django to look in the blog app URL file for any blog urlpatterns.\n\n~~path(\"blog/\", blog_views.blog,name='blog'),~~\n\n```\npath(\"\", include(\"blog.urls\"), name=\"blog-urls\"),\n```\n\n",
+      "line": 23
+    },
+    {
+      "file": "codestar/urls.py",
+      "description": "**Building the Homepage with Django Generic Views**\n\n**Preparatory Steps:**\n6. Next, we need to create a templates directory in the blog app, with another directory nested within, named blog. Django expects this file structure. To create the directory structure, use the following command in the terminal:\n\n**Terminal Command:**\n```\nmkdir -p blog/templates/blog\n```\n- The terminal command creates a directory structure for your Django project.\n- It creates a new directory named 'blog'.\n- Within 'blog', it creates another directory named 'templates'.\n- Inside 'templates', another directory named 'blog' is created.\n- This structure is useful for organizing the HTML templates of your Django application.",
+      "line": 26
+    },
+    {
+      "file": "blog/templates/blog/post_list.html",
+      "description": "**Building the Homepage with Django Generic Views**\n\n**Preparatory Steps:**\n7. In this new blog/templates/blog directory, create a new HTML file named `post_list.html` and paste the\n[HTML code provided here](https://github.com/Code-Institute-Solutions/blog/blob/main/06_views_part1/02_building_homepage/post_list.html)\n\n*Don’t worry about any of the templating language in the provided HTML code; this explanation is in an upcoming lesson.*",
+      "line": 1
+    },
+    {
+      "file": "blog/views.py",
+      "description": "**Building the Homepage with Django Generic Views**\n\n**Preparatory Steps:**\n8. In the blog/views.py file, delete the existing blog function-based view and the HttpResponse import.\n\n~~from django.http import HttpResponse~~\n\n# Create your views here.\n~~def blog(request):~~\n\n    ~~return HttpResponse(\"Hello Blog!\")~~",
+      "line": 2
+    },
+    {
+      "file": "blog/views.py",
+      "description": "**Building the Homepage with Django Generic Views**\n\n**Create a class-based view:**\n9. In the blog/views.py file, import generic from django.views and import the Post model.\n```\nfrom django.views import generic\nfrom .models import Post\n```",
+      "line": 3
+    },
+    {
+      "file": "blog/views.py",
+      "description": "**Building the Homepage with Django Generic Views**\n\n**Create a class-based view:**\n10. In the blog/views.py file, create a class-based view named PostList that inherits from the generic.ListView class to display all your posts.\n\n```\nclass PostList(generic.ListView):\n    model = Post\n```\n",
+      "line": 11
+    },
+    {
+      "file": "blog/urls.py",
+      "description": "**Building the Homepage with Django Generic Views**\n\n**Create a class-based view:**\n11. In the new empty blog/urls.py file, import the views file and path.\n\n```\nfrom . import views\nfrom django.urls import path\n```\n",
+      "line": 1
+    },
+    {
+      "file": "blog/urls.py",
+      "description": "**Building the Homepage with Django Generic Views**\n\n**Create a class-based view:**\n\n12. Below the imports, add a urlpattern for your *PostList* class-based view named home.\n\nAs the view is a class, you need an *as_view()* method, unlike the previous function-based view.\n\n```\nurlpatterns = [\n    path('', views.PostList.as_view(), name='home'),\n]\n```\n\n\n",
+      "line": 4
+    },
+    {
+      "file": "blog/urls.py",
+      "description": "**Building the Homepage with Django Generic Views**\n\n\n**Create a class-based view:**\n\n13. Run the server and view the new homepage. All posts in your database are displayed.",
+      "line": 7
+    },
+    {
+      "file": "blog/views.py",
+      "description": "**Building the Homepage with Django Generic Views**\n\n**Create a class-based view:**\n14. The advantage to using class-based generic views is that they are very terse, i.e. you do not need to add the HTML template name or list which posts you want to see. Let’s add these optional lines of code in the PostView class, ready for you to modify in the next topic.\n\n**Note:** *We can remove the model = Post as it is made redundant by the queryset explicitly stating all posts are displayed.*\n```\nclass PostList(generic.ListView):\n    ~~model = Post~~\n    queryset = Post.objects.all()\n    template_name = \"post_list.html\"\n```\n",
+      "line": 13
+    },
+    {
+      "file": "blog/views.py",
+      "description": "**Building the Homepage with Django Generic Views**\n\n**Create a class-based view:**\n15. Run the server and view the new homepage. As you can see, there is no change. Again, all the posts in your database are displayed.\n",
+      "line": 15
+    },
+    {
+      "file": "codestar/settings.py",
+      "description": "**Building the Homepage with Django Generic Views**\n\n**Deployment:**\n16. Open the **codestar/settings.py** file and replace DEBUG=True with `DEBUG=False`.",
+      "line": 30
+    },
+    {
+      "file": "codestar/settings.py",
+      "description": "**Building the Homepage with Django Generic Views**\n\n**Deployment:**\n17. Git add, commit and push your code.\n*generic post view*",
+      "line": 31,
+      "selection": {
+        "start": {
+          "line": 5,
+          "character": 2
+        },
+        "end": {
+          "line": 5,
+          "character": 19
+        }
+      }
+    }
+  ]
+}

@@ -36,6 +36,11 @@
       "file": "blog/models.py",
       "description": "**Models Part 2: Challenge Add Methods to Comment Model**\n\nIn the last topic, we added class Meta and a model method to the Post model. You are challenged to do the same for the Comment model in this topic.\n\nNote: You must have at least two comments included in your project.\n\n**Challenge**\n1. Add metadata to the Comment model that orders the comments with the oldest first.\n2. Add a Python str dunder method to the Comment model that returns a string in the format shown in the topic image.\n\n```\nclass Meta:\n        ordering = [\"created_on\"]\n\n    def __str__(self):\n        return f\"Comment {self.body} by {self.author}\"\n``\n\n",
       "line": 38
+    },
+    {
+      "file": "blog/models.py",
+      "description": "**Debugging Database**\n\n[YouTube Lesson with Snip](https://www.youtube.com/watch?v=9X-OhFCVM2o)\n\n**Lesson Goals:**\n- Modifying database models, like adding new fields or changing data types, can lead to errors.\n- To avoid these errors, provide default values for new fields.\n- If an error occurs, deleting migration files and field attributes can help.\n- Consider reversing migrations if data types are incompatible.\n- Plan your database structure in advance using an ERD diagram to prevent errors.\n- Django errors provide hints for fixing the issue.\n- If the errors are unclear, they can be searched online for assistance.\n\n**Terminal Command:**\n`python3 manage.py migrate blog 0`\n\n*The command python3 manage.py migrate blog 0 is used in a Django project to reverse all the migrations in the 'blog' application. This means it undoes all the database changes that were done by the migrations. Think of it as a \"reset\" button for your 'blog' application's database structure. It's useful when you want to start over with your database setup due to errors or changes in your database design.*",
+      "line": 19
     }
   ]
 }
