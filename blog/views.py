@@ -8,7 +8,13 @@ from .models import Post
 #def my_blog(request):
 #    return HttpResponse("Hello, Blog!")
 
-class PostList(generic.ListView):
+#class PostList(generic.ListView):
+
    # model = Post
-    queryset = Post.objects.all()
+   # queryset = Post.objects.all()
+   # template_name = "post_list.html"
+
+class PostList(generic.ListView):
+    queryset = Post.objects.filter(status=1)
     template_name = "post_list.html"
+
