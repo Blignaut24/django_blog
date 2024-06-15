@@ -126,6 +126,31 @@
       "file": "blog/views.py",
       "description": "**Views Part 1: Inside the LIst View**\n\n**Solution:**\n```\nclass PostList(generic.ListView):\n    queryset = Post.objects.filter(status=1)\n    template_name = \"post_list.html\n```\nThis means that we can now leave some posts in Draft while we finish them, and they will not show up on the live blog.\n\nAdd, commit and push your code to GitHub before continuing.",
       "line": 18
+    },
+    {
+      "file": "codestar/urls.py",
+      "description": "**Views Part 1: Importing urls**\n\n**Challenge & Explanation:**\n\n**2. Open the `urls.py` file in the `codestar` directory. What do you think `include` does in our `urlpatterns`? What does `blog.urls` point to inside the brackets?**\n\n- `include` is imported from `django.urls`, allowing another `urls.py` file to be used.\n- This is a standard practice in Django.\n- The project-level `urls.py` file should `include` all `urls.py` files from our apps, establishing our main URL configuration.\n- In our project, `blogs.urls` refers to the `urls.py` file in the `blog` app.\n",
+      "line": 26
+    },
+    {
+      "file": "blog/urls.py",
+      "description": "**Views Part 1: Importing urls**\n\n**Challenge & Explanation:**\n\n- Changing the path in the `blog/urls.py` from `''` to `'blog/'` and running the app may cause an error.\n- The error arises from updating the URL pattern from `''` (home page) to `'blog/'`.\n- To view blog posts, append `blog/` to the domain URL.\n- This demonstrates the simplicity of creating a URL structure for projects.\n- However, like models, the URL structure should be planned carefully before starting the project.\n",
+      "line": 7
+    },
+    {
+      "file": "codestar/urls.py",
+      "description": "**Views Part 1: Importing urls**\n\n**Challenge & Explanation:**\n\n4. Next, find the urls.py file in the codestar folder and open it. Replace the first argument in path from '' to 'codestar/'. What do you predict will change? How can you look at your blog post list after this? Check by running the app.\n\n- The project-level **urls.py** file is the top level of our URLs.\n- To view the post list, append /codestar/blog/ to your domain URL.\n- The project-wide **urls.py** file is used to determine our base URLs, for example, codestar/.\n- We can get into finer detail in the app-level **urls.py** file.\n- This could be used for a catalogue where products/ is defined in your project-level **urls.py** file, and categories, such as hardware/ or software/ were defined in your app-level file.\n\n",
+      "line": 28
+    },
+    {
+      "file": "codestar/urls.py",
+      "description": "**Views Part 1: Importing urls**\n\n**Challenge & Explanation:**\n\n**Django's URL dispatcher:**\n\n- When a user requests a certain URL, Django checks the `urls.py` files.\n- Django examines each URL pattern sequentially, stopping when a match is found with the requested URL.\n- URL patterns should be arranged from the simplest to the most detailed to ensure only one path matches.\n\nWhen it finds a matching URL pattern, then Django executes the view function associated with that URL. So, in our example above, our URL pattern now looks like this:\n```\nurlpatterns = [\n    path('blog/', views.PostList.as_view(), name='home'),\n]\n```\n- Django searches for a URL that matches 'blog/'\n- It then runs the 'PostList' view from our [views.py](http://views.py/) file\n- 'blog/' doesn't need a leading slash but has a trailing one\n- This allows us to create complex and useful URLs\n- These URLs can even include variables\n- Plan your URL structure before launching your site to avoid confusion.\n- Avoid changing URLs after the site is live as it can confuse users and search engines.\n- For further information, refer to the article by Sir Tim Berners-Lee, the inventor of the Worldwide Web.\n\n**URL Naming:**\n- Clear URLs that users can guess are ideal.\n- Choose a URL structure that fits your project.\n- For instance, 'about/' could be your 'About Me' page, and 'accounts/login/' could be your login page.\n- Avoid naming your URLs and view functions the same.\n- For example, the 'blog/' URL should not call a view function named 'blog'.\n- This can lead to confusion if URLs need to be changed later or if one view function has multiple URLs.\n- The Django documentation advises against linking URLs to Python function names.\n\n\n",
+      "line": 29
+    },
+    {
+      "file": "blog/urls.py",
+      "description": "**Views Part 1: Importing urls**\n\n**Purpose:**\n- Django manages URLs and connects them to views.\n- A URL, or web address, is a unique identifier for online resources such as HTML, CSS, or images.\n- URLs enable a web browser to locate any website.\n\n**Loose Coupling**\n*Loose coupling is like the relationship between a TV and its remote control. They both work independently of each other, yet they can still interact. The TV can function without the remote by using its buttons, and the remote can be used with different TVs. Similarly, in Django, having a separate 'urls.py' file for each app allows them to function independently, making the overall project more flexible.*\n\n- We made an extra **urls.py** file in the blog app, following Django's idea of loose coupling.\n- It's good to have a separate **urls.py** in each app.\n- Django doesn't automatically give a **urls.py** file at the app level.\n- Splitting **urls.py** files for each app follows Django's loose coupling idea.\n- Having a different **urls.py** for each app makes our apps more independent.\n- This way, changing URLs doesn't mess up the whole project.\n- It's best to keep your apps as independent as possible.\n- This makes it easy to move an app from one project to another.\n\n\n",
+      "line": 7
     }
   ]
 }
