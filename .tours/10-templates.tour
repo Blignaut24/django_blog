@@ -1,5 +1,106 @@
 {
   "$schema": "https://aka.ms/codetour-schema",
   "title": "10. Templates",
-  "steps": []
+  "steps": [
+    {
+      "file": "codestar/settings.py",
+      "description": "**Templates: The base template and homepage**\n\n**Purpose:**\n- The document provides instructions on creating a Django template.\n- The template mixes static and dynamic HTML.\n- The steps include creating a base.html template for all subsequent templates to inherit from.\n- An index.html template is created for a view listing all posts.\n- This will result in a change in the layout of posts on the home page.\n---\n**Theory: Prev Lesson YouTube**\n\n- **Django Template Language** (*DTL*)\n- **Static Files:**\n    - Files like CSS, JavaScript, or image files.\n    - Typically found in an assets directory in a regular HTML web app but Django requires them to be in a static directory.\n- **Dynamic Files**\n    - Files generated or altered based on user interactions, data from a database, or other dynamic conditions.\n    - Used to display personalised content, process form data or provide interactive features.",
+      "line": 115
+    },
+    {
+      "file": "codestar/settings.py",
+      "description": "**Templates: The base template and homepage**\n\n**Prepare the project for multiple tempate directories:**\n\n1. In codestar/settings.py, create a TEMPLATES_DIR constant to build a path for our subdirectory 'templates'.\n```\nTEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')\n```",
+      "line": 21,
+      "selection": {
+        "start": {
+          "line": 1,
+          "character": 1
+        },
+        "end": {
+          "line": 3,
+          "character": 58
+        }
+      }
+    },
+    {
+      "file": "codestar/settings.py",
+      "description": "**Templates: The base template and homepage**\n\n**Prepare the project for multiple tempate directories:**\n\n2. Scroll down in the codestar/settings.py file to TEMPLATES and add your newly created TEMPLATES_DIR constant to the list of 'DIRS'.\n\n```\n'DIRS': [TEMPLATES_DIR],\n```",
+      "line": 65
+    },
+    {
+      "file": "templates/base.html",
+      "description": "**Templates: The base template and homepage**\n\n**Prepare the project for multiple template directories:**\n\n3. Add a new top-level templates directory.\n",
+      "line": 1
+    },
+    {
+      "file": "templates/base.html",
+      "description": "**Templates: The base template and homepage**\n\n**Create Templates:**\n\n4. Add a new base.html file to your newly created top-level templates directory.\n\n5. Add all the code linked [here](https://github.com/Code-Institute-Solutions/blog/blob/main/08_templates/01_base_template/base.html) to the base.html file.\n",
+      "line": 2
+    },
+    {
+      "file": "blog/templates/blog/index.html",
+      "description": "**Templates: The base template and homepage**\n\n**Create Templates:**\n\n6. Add a new index.html file to your existing app-level blog/templates/blog directory.\n\n7. Add all the code linked [here](https://github.com/Code-Institute-Solutions/blog/blob/main/08_templates/01_base_template/index.html) to the index.html file.",
+      "line": 4
+    },
+    {
+      "file": "blog/views.py",
+      "description": "**Templates: The base template and homepage**\n\n**Create Templates:**\n8. Open the blog/views.py file and replace the existing template_name with the new template_name and add a paginate_by into the PostList class-based view.\n**remove:**\n```\ntemplate_name = \"post_list.html\"\n```\n\n**add:**\n```\ntemplate_name = \"blog/index.html\"\npaginate_by = 6\n```\n----\n9. You can now delete the redundant **post_list.html template**, as we've replaced it with the new index.html template.",
+      "line": 19
+    },
+    {
+      "file": "static/css/style.css",
+      "description": "**Templates: The base template and homepage**\n\n**Create Templates:**\n\n11. Create a top-level static directory with a css directory within it.\n----\n12. Create a style.css file in the css directory.\n----\n13. Add the[CSS code linked here](https://github.com/Code-Institute-Solutions/blog/blob/main/08_templates/01_base_template/style.css) whole project. As you are familiar with CSS and the focus of this project is Django, we will not be going into any detail. CSS for a web framework is the same as for any other web application.\n\n",
+      "line": 1
+    },
+    {
+      "file": "codestar/settings.py",
+      "description": "**Templates: The base template and homepage**\n\n**Create Templates:**\n14. Open the codestar/settings.py file and build a path for our subdirectory static so we can link to files in the static directory from a template.\n\n```\nSTATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]\n```",
+      "line": 133
+    },
+    {
+      "file": "templates/base.html",
+      "description": "**Templates: The base template and homepage**\n\n**Create Templates:**\n16. In the base.html, add a link for your custom CSS file css/style.css below all the other CSS files.\n\n```\n<!-- Custom CSS -->\n<link rel=\"stylesheet\" href=\"{% static 'css/style.css' %}\">\n```\n---\n17. Now, return to the homepage in the browser and do a hard refresh to see the CSS styling.\n\nNote: As always, when you have a new working code feature, git add, commit and push to GitHub.\n\n",
+      "line": 24
+    },
+    {
+      "file": "templates/base.html",
+      "description": "**Templates: Template Inheritance**\n\n**Purpose:**\nDjango's template inheritance allows for the repeated use of a base template, ensuring project consistency and saving time by eliminating repetitive tasks.",
+      "line": 4
+    },
+    {
+      "file": "templates/base.html",
+      "description": "**Templates: Template Inheritance**\n\n**Challenge & Explanation:**\nLook at the styled blog homepage, as seen in the topic image. Now, open the index.html and base.html files.\n\n1. *Which HTML file contains the header and footer? Which contains the code for the list of blog posts?*\n\n- The base.html file contains the header and footer.\n- The index.html file contains the code to display the list of blog posts.\n----\n2. *Can you identify the special bit of code in base.html that links it to index.html?*\n\nIn base.html, we have the following code\n\n```\n{% block content %}\n    <!-- Content Goes here -->\n{% endblock content %}\n```\n- A block is defined here.\n- The 'base.html' file serves as a skeleton HTML document.\n- The child templates are responsible for filling these blocks with content.\n\n----\n\n3. *What special bits of code in index.html link it to base.html?*\n\nIn index.html, we have two bits of code that link it back to base.html.\n\n```\n{% extends \"base.html\" %}\n{% block content %}\n\n<!-- index.html content starts here -->\n…\n<!-- index.html content ends here -->\n{% endblock %}\n```\n\n- We begin with the `extends` tag.\n- It shows that `index.html` is a subset of `base.html`.\n- Everything inside our section fills the matching parts in `base.html`.\n- This creates a complete web page.\n---\n# **Theory:**\n---\n\n## **Why inherit?**\n- For single-page projects, writing everything inside one HTML file might seem simpler, as there's no need to worry about blocks and extends.\n- For projects with multiple pages, defining a base HTML page is beneficial for maintaining site consistency.\n- **Consider the `base.html` page as a picture frame. Any picture can be placed inside, but the frame remains the same.**\n- Template inheritance aligns well with the DRY (Don't Repeat Yourself) programming principle.\n- Elements like the header, navigation bar, and footer are common across all pages.\n- By using inheritance, these elements only need to be written once. The content from each page is then injected into named blocks.\n- This approach ensures consistency and saves time.\n----\n\n## **Finding our templates**\n\n### **How does Django know where to find the templates?**\n\n\nThe `TEMPLATES` setting in the `settings.py` file helps Django find templates. It has two main parts:\n\n1. `DIRS`: This is a list showing where Django should look for templates. We add the `TEMPLATES_DIR` to this list, which we define at the start of `settings.py`.\n2. `APP_DIRS`: If this is `True`, Django will look for a `templates` folder in all our app folders.\n\nFor our project, we've set `TEMPLATES_DIR` to point to the `templates` folder in our main directory.\n----\n\n## **Bits about blocks**\nIn Django, `block` and `endblock` tags let you add content in a child template.\n\nHere's how it works:\n\n```bash\n{% block content %}\n    <!-- Add your content here -->\n{% endblock content %}\n\n```\n\nYou give each block a name, like `content` in our example. This is where you put your page content. You can name blocks anything you want. A template can have many blocks, and a child template can choose whether to fill them.\n\nFor example, you might have a `sidebar` block for a side navigation bar. In this project, we only have a `content` block, but you can add more blocks with different names in your projects.\n----\n\n## **Loading more than one block**\nYou don't have to make a new file for every `block` in your main template. For example, in the `sidebar` case, both `content` and `sidebar` would be in one file, `index.html`. When `index.html` is opened, Django fills only the blocks found in the child template. If a block isn't in the child template, Django leaves it blank.\n\nAlso, you can put default content in a block in your main template. If the child template fills that block, the default content gets replaced. For example, you can add this in `base.html`:\n\n```bash\n{% block content %}\n<p>This is my default paragraph</p>\n{% endblock content %}\n\n```\n\n\n\n\n",
+      "line": 7
+    },
+    {
+      "file": "blog/templates/blog/index.html",
+      "description": "**Templates: Variables and Control Structures**\n\n**Purpose:**\n\n- What is it? This is about variables and control structures.\n- What does it do? It lets us use programming parts in Django templates.\n- Why do I need it? This makes your templates more flexible and react to changing data.\n- You've learned about Django template tags that let a child template draw from a parent. Now, we'll look at ideas more common in regular programming, like variables and control structures.",
+      "line": 2
+    },
+    {
+      "file": "blog/templates/blog/index.html",
+      "description": "**Templates: Variables and Control Structures**\n\n**Challenge & Explanation:**\n\n## **Part 1: Index.html**\n1. As you look through the code for index.html, you will see some Django Template Language code contained in double braces {{ }} and some contained in a brace and percent sign: {% %}. What do you think the difference between them is?\n\n*There are 2 types of notation:*\n- The double brace notation {{ }} indicates a variable. When the template engine encounters a variable, it evaluates that variable and replaces it with the result. For example, {{ post.author }} will be replaced by the value of the author attribute from the post object.\n- The brace and percentage sign notation, {% %}, is what we call a tag. Tags are more complex than variables. Some of them, like the block tag, allow for text or HTML to be inserted. Others, like the for loop, control flow by performing loops or logical operations.\n----\n2. Look back at the code for index.html. Locate the second row class. Inside there, we have a for loop. What do you think post_list is? Where do you think this value comes from?\n\n*A for loop needs something to iterate over. In this case, the post _ list object. This object is passed into the template by the generic ListView, and contains the contents of the queryset that we defined earlier.*\n----\n3. After we display `post.created_on` and the closing div tags, there is another Django control structure:\n`{% if forloop.counter|divisibleby:3 %}`\nWhat do you think this does? What happens if you change the number 3 to 2?\n\n*This if statement checks to see how many times our for loop has run. If the counter is divisible by three, then it inserts another closing div tag and a new div with the class of row. This is so that we have a maximum of three posts per row on the homepage. If you change that number to 2 and refresh your project, you will see that you have three rows of two posts instead of two rows of three. This is a handy trick to remember when formatting your own list pages. Make sure you put the number back to 3 and save your index.html file before moving on.*\n----\n----\n## **Part 2: base.html**\n1.Now, let's go back to base.html in the top-level templates directory. In the navigation section, you will see an anchor tag with the class of \"navbar-brand\", which links back to the homepage. What do you notice is different about the href? Where do you think the value for 'home' comes from?\n\n*This is a Django Template Language tag. Inside the tag, we have url and a reference to 'home'. The url tag returns an absolute path reference which is a URL without the domain name. It does this, in our example, for the URL named 'home'. Where does it get this name from? Take a look at the blog/urls.py file, and you will see that our main view has the name of home. So, when Django encounters a url tag, it looks up the name of the URL and inserts it for us. We'll explore the benefits of this approach below.*\n----\n2. Scroll down further until you find this code:\n```\n<a class=\"nav-link\n  {% if request.path == home_url %}active{% endif %}\"\n  aria-current=\"page\" href=\"#\">\n```\n**Note:** *The formatting may differ from the layout here. Can you determine what is happening inside the class attribute? How is this connected to what is happening at the top of base.html in this line of code: {% url 'home' as home_url %}.*\n\nLet's start at the top of the file. Here, we use our now familiar url tag. This time, though, we are assigning the 'home' URL to a variable named home_url, which is what the as keyword does. Now, let's return to our if statement. It compares request.path, which is our current URL, with the home_url variable. If they're the same, then it inserts the word active into the class names.\n----\n----\n### **Theory:**\n----\n----\n\n#### **Unpicking the for Loop**\n- 'For' loops are used to iterate through lists, such as our list of posts.\n- HTML is written once, and the loop repeats it as needed.\n- The 'post_list' object is used, which is created by the 'ListView' in our `views.py` file.\n- Django assigns the name 'post_list', based on the model name 'Post' and the view type 'ListView'.\n- During the 'post_list' iteration, the results of each loop are stored in the 'post' variable.\n- This 'post' variable holds a single record from the database.\n- To display the values, the object name and the field name are separated by a dot, like 'post.author'.\n- The variable name 'post' can be any desired name. It could have been written as `{% for p in post_list %}` and `p.author`.\n\n#### **Unpicking the if statement**\n\n- The Django Template Language `if` tag functions the same as an if statement in Python.\n- If the current `request.path` equals the variable established at the top of `base.html`, the text `active` is added to the class.\n- `Request.path` is a string representing the full path to the requested page, excluding the domain.\n- Cannot nest a tag within another tag, so the `url` output was assigned to a variable.\n- Many Django Template Language tags require an `{% endfor %}` or `{% endif %}` tag. If these aren't included, Django will return an error when it attempts to render the template.\n\n#### **The benefits of the url tag**\n- The `url` tag is useful for avoiding repetition.\n- You won't need to edit every page with a static URL if your project's URL scheme changes.\n- Use named URLs in your `urls.py` and template files to prevent broken URLs.\n- This section is detailed, so ensure you understand before moving forward.",
+      "line": 1
+    },
+    {
+      "file": "blog/templates/blog/index.html",
+      "description": "**Templates: Variables and Control Structures**\n\n**Test Your Knowledge & Solution:**\n\n### **Part 1: Adding data**\n\n1. Open the index.html file and locate where the {{ post.title }} variable is displayed. We want to display the post's excerpt now too. Add a paragraph with the class of card-text beneath the h2 element.\n\nThe relevant part of your index.html code, should now look like this:\n```\n<a href=\"#\" class=\"post-link\">\n    <h2 class=\"card-title\">{{ post.title }}</h2>\n    <p class=\"card-text\">{{ post.excerpt }}</p>\n</a>\n```\n----\n",
+      "line": 21,
+      "selection": {
+        "start": {
+          "line": 1,
+          "character": 1
+        },
+        "end": {
+          "line": 5,
+          "character": 28
+        }
+      }
+    },
+    {
+      "file": "templates/base.html",
+      "description": "**Templates: Variables and Control Structures**\n\n**Test Your Knowledge & Solution:**\n\n### **Part 2: Adding a url **\n1. Switch back to base.html and scroll down to the navigation section where we analysed the if statement in the class. You'll notice that the href for this link is simply set to #. Use the url tag like we did earlier to insert the home URL.\n\nThe relevant part of your base.html code should now look like this:\n```\n<a class=\"nav-link\n  {% if request.path == home_url %}active{%endif%}\"\n  aria-current=\"page\" href=\"{% url 'home' %}\">\n```\n\nNote: As you only have 1 nav bar link here, you won't be able to see much of a difference. This text is black, whereas links for inactive pages will be grey.\n",
+      "line": 42
+    }
+  ]
 }
