@@ -51,6 +51,41 @@
       "file": "codestar/settings.py",
       "description": "**Rich Text & Reload: Admin Panel Power-Up**\n\n**View the changes to the Admin Page**\n\n10. Run the Django server and open in a browser\n    ```\n    python manage.py runserver\n    ```\n    **Note:** *Set to* `DEBUG = True`\n    \n11. Append `/admin` to the URL in the browser and log in with your *superuser credentials.*\n\n---\n\n**Django Admin Panel:**\n\n12. Click on Posts to see the new filter By status you added using the PostAdmin class on the right side.\n\n13. Click +Add to add a new post.\n\n14. Create a Published post using the example blog text content provided.\n\n15. Use the GUI menu to format the plain text content.\n\n    Make every heading bold.\n    Change the font of the code snippet to Courier New..\n    Save the post.\nNote: You won't be able to see this formatted text in the blog yet, as you have yet to create the view. However, you'll be able to see this formatted text any time you open the admin panel to create or edit a post.",
       "line": 48
+    },
+    {
+      "file": "blog/admin.py",
+      "description": "**Rich Text & Reload: Admin Panel Customisation**\n\n**Purpose:**\n**WHAT IS IT?\nIt's an improvement to the admin panel.**\n\n**WHAT DOES IT DO?**\n\n**It improves the admin panel's ease of use.**\n\n**WHY DO I NEED IT?**\n\n**It makes adding blog posts easier.**\n\n**Last time, you learned to change the post form in the admin area. Now, we'll make more changes to this form to make it easier for the superuser who adds blog posts.**",
+      "line": 18
+    },
+    {
+      "file": "blog/admin.py",
+      "description": "**Rich Text & Reload: Admin Panel Customisation**\n\n**Challenge & Explanation:**\n\n- Run Django server from the command line\n\t```\n\tpython manage.py runserver \n\t```\n- Open it in the browser\n- Append `/admin` to the URL and log in as the **superuser**\n- Navigate to `/admin/blog/post/`\n- Open the **blog/admin.py** file in your IDE",
+      "line": 19
+    },
+    {
+      "file": "blog/admin.py",
+      "description": "**Rich Text & Reload: Admin Panel Customisation**\n\n**Challenge & Explanation:**\n\n**Part 1: Comparing code with output**\n\n1. Can you compare the features in the PostAdmin class to the updates in the admin panel design? To answer this, please check these two pages in the admin panel:\n\n**a. The Posts page (three attributes).**\n    You can see the changes we made to summernote on two pages:\n\n    **a. Post Page:**\n\n    ![Post Page Diagram](assets/images/post_change.png)\n\n- The `list_display` attribute sets the fields to be seen on the Posts page of the admin dashboard, serving as the headers for the posts table.\n- The `search_fields` attribute speeds up searches by limiting the fields to be searched, a helpful feature when dealing with many posts.\n- The `list_filter` attribute adds a filter to the admin page sidebar for post status, letting the superuser sort posts by draft or published status.\n---\n\n    **b. The Add Post page (two attributes):**\n\n    ![Post Page Diagram](assets/images/add_post_page.png)\n\n- The `prepopulated_fields` attribute automatically creates a slug based on the input title.\n- The `summernote_fields` attribute applies the rich-text editor to the content, replacing the old textarea input.",
+      "line": 20
+    },
+    {
+      "file": "blog/admin.py",
+      "description": "**Rich Text & Reload: Admin Panel Customisation**\n\n**Challenge & Explanation:**\n\n2. **Part 2: Further Modifying the Admin Panel**\n\nIn **blog/admin.py**, append a new value of created_on to the list_display attribute. What do you think will change in the admin panel with this new list value appended? Save your file and reload the admin panel Posts page to check if your prediction is correct.\n\n```\nlist_display = ('title', 'slug', 'status', 'created_on')\n```\n- `created_on` is added to the `list_display` attribute.\n- This change will show this field on the admin Posts page.\n- A new column titled CREATED ON will be made.\n- This new column will be to the right of the Select post to change table.\n- The dates will be shown in this new column.\n",
+      "line": 8
+    },
+    {
+      "file": "codestar/settings.py",
+      "description": "**Rich Text & Reload: Admin Panel Customisation**\n\n**Challenge & Explanation:**\n\n3. **Part 3: Installing Django-Summernote**\nAfter the installation of django-summernote, we made some updates to the admin.py file. Could you remember the other three steps required to get the package operational? To find the changes in the code, consider using the search tool of your code editor and search for \"summernote\".\n\n**After installing django-summernote, you also added it to:**\n    1. The `INSTALLED_APPS` in **settings.py**,.\n    2. The urlpatterns path in **urls.py**.\n    3. `python3 manage.py migrations`\n\n**Note:** *The other Python packages installed to date have only required to be added to the requirements file. The additional steps here are closer to what we would do with a Django app. Essentially django_summernote is a Django app with urls.py, admin.py and migrations files.*\n",
+      "line": 45
+    },
+    {
+      "file": "codestar/settings.py",
+      "description": "**Rich Text & Reload: Admin Panel Customisation**\n\n**Challenge & Explanation: Theory**\n\n**1. The power of admin panel customisation:**\n\n- The Django admin site allows trusted users to manage the project's content.\n- It's a tool for internal use within the web app, not for customers.\n- The admin site is designed to be practical for technical users.\n- You can customize the admin page to simplify it for your superusers.\n- In the context of a blog, this could mean:\n    - Showing only necessary fields\n    - Enabling quick searches on titles\n    - Filtering by published status\n    - Automatically filling the slug field\n    - Enabling rich-text content entry\n---\n\n**2. Installing django-summernote:**\n- Adding `'django_summernote'` to the `INSTALLED_APPS` makes it a Django app.\n- This allows the `python3 manage.py migrate` command to see the app and create new django_summernote database tables.\n- Including the Summernote `urlspaths` in the `codestar/urls.py` file links the `django_summernote` app to the `codestar` project.\n- The django-summernote python package was added as `'django_summernote'` to the `INSTALLED_APPS.`\n- A common pattern is that a dash in a package name changes to an underscore in a Django app name.\n---\n\n**3. Admin Panel Access:**\n- The admin panel is for the superuser, a trusted individual who may not have technical knowledge.\n- Strong passwords are crucial for superusers as they can create, read, update, and delete all database records, accessing everything except users' encrypted passwords.\n- Customizing the admin panel aims to simplify its usage for the superuser.\n- For developers, customizing the admin panel can help demonstrate a project to non-technical team members, clients, or potential employers.\n---\n\n**4. Who cannot acess the admin page**\n- Don't give admin access to everyday readers or commenters to prevent data tampering.\n- We will create forms for users to comment on blog posts.\n- Users can fully interact with their comments.\n- Only a superuser can fully interact with blog posts.\n---\n\n",
+      "line": 47
+    },
+    {
+      "file": "blog/admin.py",
+      "description": "**Rich Text & Reload: Admin Panel Customisation**\n\n**Test Your Knowledge:**\nOpen the blog/admin.py file and add the following functionality.\n\n1. *Enable faster `'content'` searches.*\n2. *Modify the right-hand filter panel to match the image.*\n\n---\n**Solution:**\n```\nclass PostAdmin(SummernoteModelAdmin):\n\n    list_display = ('title', 'slug', 'status', 'created_on')\n    search_fields = ['title', 'content']\n    list_filter = ('status', 'created_on',)\n    prepopulated_fields = {'slug': ('title',)}\n    summernote_fields = ('content',)\n```\n\n",
+      "line": 9
     }
   ]
 }
