@@ -1,0 +1,56 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "9. Rich Text Reload",
+  "steps": [
+    {
+      "file": "codestar/settings.py",
+      "description": "**Rich Text & Reload: Admin Panel Power-Up**\n\n**Purpose:**\n- We'll enhance the admin panel for easier blog post addition and edits using **Summernote**, a robust text editor.\n- **Summernote** transforms the admin page to allow rich text formatting like headings and paragraphs, unlike Django's plain text. **It embeds a **'what you see is what you get' (WYSIWYG)** editor**\n- **Summernote** provides a 'what you see is what you get' editor for a live preview of content, simplifying editing.\n- We'll modify the post form using Django's features so that the slug auto-fills from the title, and posts can be sorted by status.",
+      "line": 37
+    },
+    {
+      "file": "codestar/settings.py",
+      "description": "**Rich Text & Reload: Admin Panel Power-Up**\n\n**Install and Wire Up the Packages:**\n\n1. **Terminal Command**: *django-summernote package*\n```\npip3 install django-summernote~=0.8.20.0\n```\n\n2. Add the django-summernote package to the **requirements.txt file**\n```\npip freeze > requirements.txt\n``",
+      "line": 57
+    },
+    {
+      "file": "codestar/settings.py",
+      "description": "**Rich Text & Reload: Admin Panel Power-Up**\n\n**Install and Wire Up the Package:**\n\n3. **Open the *codestar/settings.py* file**\n\nAppend django_summernote to the **INSTALLED_APPS**.\n```\n'django_summernote',\n```\n\n**Note:**\n *The dash in the package name is replaced with an underscore in the INSTALLED_APPS list.Remember the quotes and trailing comma.*",
+      "line": 45
+    },
+    {
+      "file": "codestar/urls.py",
+      "description": "**Rich Text & Reload: Admin Panel Power-Up**\n\n**Install and Wire Up the Packages:**\n\n3. **Open the `codestar/urls.py` file** \n    \n    Include the Summernote urlpattern.\n    - As `django_summernote` is an app, we need to include its `urls.py` file.\n    - Remember to add the trailing comma after the path.\n    - The path should look like this: `path('summernote/', include('django_summernote.urls')),`.\n    - A reminder: In the future, as we add more paths, it's a good idea to sort the string paths alphabetically. Keep the empty string path at the end.",
+      "line": 24
+    },
+    {
+      "file": "blog/admin.py",
+      "description": "**Rich Text & Reload: Admin Panel Power-Up**\n\n**Update the Blog App to use Summernote**\n\n5. Open the **blog/admin.py** file and import the class `SummernoteModelAdmin` from the **django_summernote/admin.py** file.\n\n```\nfrom django_summernote.admin import SummernoteModelAdmin\n```\n\n**Note:** *The ready-made **SummernoteModelAdmin** class defines the text editor, enabling you to access its functionality in the admin panel for your posts.*",
+      "line": 3
+    },
+    {
+      "file": "blog/admin.py",
+      "description": "**Rich Text & Reload: Admin Panel Power-Up**\n\n**Update the Blog App to use Summernote**\n\n6. *Below the imports*, but *above the existing registered models*, in the **blog/admin.py file**, add a class named `PostAdmin`\n\nThis code will give your admin panel greater functionality and clarity. We'll discuss this in more detail soon.\n\n```\nclass PostAdmin(SummernoteModelAdmin):\n\n    list_display = ('title', 'slug', 'status')\n    search_fields = ['title']\n    list_filter = ('status',)\n    prepopulated_fields = {'slug': ('title',)}\n    summernote_fields = ('content',)\n```\n\n**Note:** *In the prepopulated_fields, the tuple containing the single value of title requires a trailing comma.*",
+      "line": 5
+    },
+    {
+      "file": "blog/admin.py",
+      "description": "**Rich Text & Reload: Admin Panel Power-Up**\n\n**Update the Blog App to use Summernote**\n\n7. **Add** an `@admin.register()` decorator above the `PostAdmin` class and pass in the Post model as an argument.\n\n**Note:**\n- The **decorator is a method** used for registering a class.\n- This method differs from the standard model registration done earlier.\n- By using a class and registering it with a decorator, the models' appearance on the admin site can be customized.\n- This approach is more Python-friendly.",
+      "line": 5
+    },
+    {
+      "file": "blog/admin.py",
+      "description": "**Rich Text & Reload: Admin Panel Power-Up**\n\n**Update the Blog App to use Summernote**\n\n8. Now we have a decorator above the PostAdmin class; delete the existing Post model registration.\n**Remove:**\n```\nadmin.site.register(Post)\n```",
+      "line": 15
+    },
+    {
+      "file": "blog/admin.py",
+      "description": "**Rich Text & Reload: Admin Panel Power-Up**\n\n**Update the Blog App to use Summernote**\n\n9. Apply the migrations for the django_summernote app.\n\n**Terminal Command:**\n```\npython3 manage.py migrate\n```",
+      "line": 17
+    },
+    {
+      "file": "codestar/settings.py",
+      "description": "**Rich Text & Reload: Admin Panel Power-Up**\n\n**View the changes to the Admin Page**\n\n10. Run the Django server and open in a browser\n    ```\n    python manage.py runserver\n    ```\n\n11. Append `/admin` to the URL in the browser and log in with your *superuser credentials.*\n\n---\n\n**Django Admin Panel:**\n\n12. Click on Posts to see the new filter By status you added using the PostAdmin class on the right side.\n\n13. Click +Add to add a new post.\n\n14. Create a Published post using the example blog text content provided.\n\n15. Use the GUI menu to format the plain text content.\n\n    Make every heading bold.\n    Change the font of the code snippet to Courier New..\n    Save the post.\nNote: You won't be able to see this formatted text in the blog yet, as you have yet to create the view. However, you'll be able to see this formatted text any time you open the admin panel to create or edit a post.",
+      "line": 48
+    }
+  ]
+}
