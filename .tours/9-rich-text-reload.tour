@@ -86,6 +86,36 @@
       "file": "blog/admin.py",
       "description": "**Rich Text & Reload: Admin Panel Customisation**\n\n**Test Your Knowledge:**\nOpen the blog/admin.py file and add the following functionality.\n\n1. *Enable faster `'content'` searches.*\n2. *Modify the right-hand filter panel to match the image.*\n\n---\n**Solution:**\n```\nclass PostAdmin(SummernoteModelAdmin):\n\n    list_display = ('title', 'slug', 'status', 'created_on')\n    search_fields = ['title', 'content']\n    list_filter = ('status', 'created_on',)\n    prepopulated_fields = {'slug': ('title',)}\n    summernote_fields = ('content',)\n```\n\n",
       "line": 9
+    },
+    {
+      "file": "blog/fixtures/posts.json",
+      "description": "**Rich Text and Reload: Adding More Posts***\n\n**Purpose:**\n\n*WHAT DOES IT DO?*\nStores pre-written data for a database in the same format as the relevant database table(s).**\n\n*WHY DO I NEED IT?*\nTo quickly populate a database table with multiple entries.\n\n- Django's 'fixtures' will be discussed in this guide.\n- So far, blog posts have been manually added through the admin panel for testing.\n- Many posts will soon be required for lessons like pagination, which is time-consuming to add individually.\n- Fixtures assist in transferring data into databases.\n- A fixture can be thought of as a custom data file for your database.\n- It can be used to save data or to populate a database for development.\n- A JSON fixture will be used, but Django also supports XML and YAML.\n- Steps to get started will be provided below.\n",
+      "line": 1
+    },
+    {
+      "file": "blog/fixtures/posts.json",
+      "description": "**Rich Text and Reload: Adding More Posts***\n\n**Adding Fixtures:**\n\n1. Open your project in your IDE and add a directory within your blog app named fixtures.\n\n2. Within the blog/fixtures directory, create a new file named posts.json\n\n\n3. Copy and paste the JSON from this source file to your posts.json file.\n\n4. Now load the data to the database table using the fixture name of posts. Django knows where to look for the file, as it is stored in the fixtures directory by default, e.g. blog/fixtures/posts.json\n\n**Terminal Command:**\n```\npython3 manage.py loaddata posts\n```\n\n\n\n",
+      "line": 2,
+      "selection": {
+        "start": {
+          "line": 1,
+          "character": 1
+        },
+        "end": {
+          "line": 3,
+          "character": 21
+        }
+      }
+    },
+    {
+      "file": ".gitignore",
+      "description": "**Rich Text and Reload: Adding More Posts***\n\n**Adding Fixtures:**\n\n\n5. You can now add `blog/fixtures/` to the **.gitignore** file.\n\n**Note:** *You can keep the directory locally, as this technique will be helpful in the future if you run into database errors.*",
+      "line": 10
+    },
+    {
+      "file": ".gitignore",
+      "description": "**Rich Text and Reload: Adding More Posts**\n\n**View Data:**\n\n6. Run the Django server in the workspace terminal and open the browser. Append **/admin** to the browser URL. Log in to the admin dashboard with the superuser credentials (if you are not already).\n\n\n\n7. Click on Posts and view the newly added posts.\n\n**Note:** \n\n*The newly added posts appear to have been created on a date before the ones you added yourself. The created_on date for the newly added posts is the date in the JSON file, not the current date. Therefore, they appear older than the posts you added from the admin panel.*\n---\n**Review:**\n\n- This section explains how to use fixtures to add posts, a different method from using the admin panel.\n- Fixtures are useful in Django development when you need a lot of data for testing or showing a code's result.\n- If an error wipes your database table, fixtures can help refill it quickly.\n- Developers can use this method to fill a database with fake data to show a working project to co-workers, clients, or potential employers.",
+      "line": 11
     }
   ]
 }
