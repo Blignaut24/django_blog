@@ -121,6 +121,71 @@
       "file": "blog/templates/blog/index.html",
       "description": "**Templates: Pagination**\n\n**Explanation & Test Your Knowledge:**\n\n*Put the value back to 6. When you go onto the second page of blog posts, what changes are there to the URL? Where does Django get the code for the URL?*\n\n```\n<a href=\"?page={{ page_obj.next_page_number }}\"\n  class=\"page-link\">\n```\n\n- When you switch to the second page, Django adds `?page=2` to the URL.\n- This helps the `ListView` show the second page of posts.\n- The `ListView` takes care of all the pagination work.\n- The URL is made by the Next button's anchor tag.\n\n**Note:** \n\n*The formatting may differ from the layout here.*\n\n## **More Info:**\n - [The Page Object](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FSD101_WTS+2/courseware/56a2da0940b4411d8a38c2b093a22c60/c592ed45498e440587b764e29891b2fc/)\n\n\n\n\n",
       "line": 45
+    },
+    {
+      "file": "codestar/settings.py",
+      "description": "**Templates: Deployment with static files**\n\n**Purppose:**\n\n- Static files are needed to make your app work when you put it online.\n- They handle the non-changing parts of your app.\n- These files are gathered in a 'staticfiles' directory to help your online app run correctly.\n- Deploying with static files ensures your app looks just as good online as it does on your computer.\n- A Python package called WhiteNoise is used for this purpo\n\n----\n\n## **Install and setup the Python Packages:**\n\n**Note:** *This package lets your Heroku app share its own static files, so you don't need to use outside file hosting services like a content delivery network (CDN)*\n\n1. **Terminal Command: Python Package**\n```\npip3 install whitenoise~=5.3.0\n```\nWhiteNoise is a Python package that simplifies working with static files in your web applications. You can think of it like a librarian for your web app's files. When you use WhiteNoise, it's like telling this librarian to manage your app's bookshelf. It organizes all the static 'books' (like images, CSS, and JavaScript files) so that they're easy to find and access, which helps your web application run smoothly and look great. To use WhiteNoise, you would install it using the command pip3 install whitenoise~=5.3.0.\n\n2. **Save Requirements.txt**\nAdd the package to your requirements.txt file.\n\n```\npip3 freeze --local > requirements.txt\n```\n\n\n",
+      "line": 18,
+      "selection": {
+        "start": {
+          "line": 13,
+          "character": 6
+        },
+        "end": {
+          "line": 13,
+          "character": 44
+        }
+      }
+    },
+    {
+      "file": "codestar/settings.py",
+      "description": "**Templates: Deployment with static files**\n\n**Install and setup the Python Packages:**\n\n3. Wire up WhiteNoise to Django's MIDDLEWARE in the **codestar/settings.py** file.\n\n**Note:** *The WhiteNoise middleware must be placed directly after the Django `SecurityMiddleware`.*\n\n```\n'whitenoise.middleware.WhiteNoiseMiddleware',\n\n```",
+      "line": 52
+    },
+    {
+      "file": "codestar/settings.py",
+      "description": "**Templates: Deployment with static files**\n\n**Create a staticfiles directory and collect the static files**\n\n4. Also, in the **codestar/settings.py** file, add a `STATIC_ROOT path`.\n```\nSTATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\n```\n\n5. Run the **collectstatic command** in the terminal to collect the static files into a **staticfiles directory**.\n\n```\npython3 manage.py collectstatic\n```\n**Note:** *The command has created a staticfiles directory that you can see in the left-hand explorer panel. We will explain this in detail in the next topic.*",
+      "line": 135,
+      "selection": {
+        "start": {
+          "line": 13,
+          "character": 1
+        },
+        "end": {
+          "line": 13,
+          "character": 32
+        }
+      }
+    },
+    {
+      "file": "codestar/settings.py",
+      "description": "**Templates: Deployment with static files**\n\n**Deployment**\n\n6. From the **terminal**, check the *Python version* used in your IDE.\n```\npython3 -V\n```\n\n7. Look up the [supported runtimes](https://devcenter.heroku.com/articles/python-support#specifying-a-python-version) here and copy the runtime closest to the one used in your IDE.\n\nIn this case, my IDE used 3.9.17, so I will choose python-3.9.18 as it is also a revision of version 3.9. Heroku periodically updates the supported runtimes.\n\n----\n**Runtime:**\n- A runtime is akin to a stage for a play.\n- *The stage provides the right environment for actors to perform; similarly, the runtime provides the right environment for a program to run.*\n- The runtime is the software that helps your program (comparable to the script of the play) interact with the hardware (analogous to the stage props and lighting).\n- Choosing a \"runtime\" for your program is similar to choosing the right stage for your play.\n----\n",
+      "line": 136
+    },
+    {
+      "file": "codestar/runtime.txt",
+      "description": "**Templates: Deployment with static files**\n\n**Deployment**\n\n\n8. Add a **runtime.txt** file to your app's root directory.\n\n*A runtime file specifies an exact Python version number to use in Heroku.*\n\n9. Add the Python version you copied from the list of supported runtimes to your **runtime.txt** file.\n\n\n",
+      "line": 1
+    },
+    {
+      "file": "codestar/settings.py",
+      "description": "**Templates: Deployment with static files**\n\n**Deployment**\n\n10. Set DEBUG to False. Git add, commit and push the code to GitHub.\n```\ngit add --all\ngit commit -m \"enable serving of static files\"\ngit push origin main\n```\n11. Go to the **Heroku dashboard** for your deployed project. To review the look and layout of your hosted app, first, click **Open app**.\n\n12. Return to the Heroku dashboard, and click on the **Settings tab** and the **Reveal config vars** button. Remove the **DISABLE_COLLECTSTATIC key/value pair**.\n\n**Note:** *This environment variable prevented collectstatic from running on deploy up till now, but as static files are set up, we can remove this.*\n\n13. Click on the Deploy tab, scroll down, choose the main branch and press Deploy Branch.\n\n",
+      "line": 31
+    },
+    {
+      "file": "runtime.txt",
+      "description": "**Templates: Deployment with static files**\n\n**Deployment**\n\n8. Add a **runtime.txt** file to your app's root directory.\n\n*A runtime file specifies an exact Python version number to use in Heroku.*\n\n9. Add the Python version you copied from the list of supported runtimes to your **runtime.txt file**.\n",
+      "line": 1,
+      "selection": {
+        "start": {
+          "line": 1,
+          "character": 1
+        },
+        "end": {
+          "line": 10,
+          "character": 1
+        }
+      }
     }
   ]
 }
