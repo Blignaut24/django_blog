@@ -169,23 +169,23 @@
     },
     {
       "file": "codestar/settings.py",
-      "description": "**Templates: Deployment with static files**\n\n**Deployment**\n\n10. Set DEBUG to False. Git add, commit and push the code to GitHub.\n```\ngit add --all\ngit commit -m \"enable serving of static files\"\ngit push origin main\n```\n11. Go to the **Heroku dashboard** for your deployed project. To review the look and layout of your hosted app, first, click **Open app**.\n\n12. Return to the Heroku dashboard, and click on the **Settings tab** and the **Reveal config vars** button. Remove the **DISABLE_COLLECTSTATIC key/value pair**.\n\n**Note:** *This environment variable prevented collectstatic from running on deploy up till now, but as static files are set up, we can remove this.*\n\n13. Click on the Deploy tab, scroll down, choose the main branch and press Deploy Branch.\n\n",
+      "description": "**Templates: Deployment with static files**\n\n**Deployment**\n\n10. Set DEBUG to False. Git add, commit and push the code to GitHub.\n```\ngit add --all\ngit commit -m \"enable serving of static files\"\ngit push origin main\n```\n**git add --all** *The git add --all command is like packing everything in your room into a moving box. It tells Git to get all the changes you made in your project (like new, changed, or removed files) ready for the next 'commit'. A 'commit' is like taping the box shut and writing on it, so it's ready to be moved (or in Git, saved).*\n\n11. Go to the **Heroku dashboard** for your deployed project. To review the look and layout of your hosted app, first, click **Open app**.\n\n12. Return to the Heroku dashboard, and click on the **Settings tab** and the **Reveal config vars** button. Remove the **DISABLE_COLLECTSTATIC key/value pair**.\n\n**Note:** *This environment variable prevented collectstatic from running on deploy up till now, but as static files are set up, we can remove this.*\n\n13. Click on the **Deploy tab**, scroll down, choose the main branch and press **Deploy Branch**.\n\n14. Open the Heroku-hosted app to see that it is now styled just like the local development app.\n\n### **Remember:** *Set **DEBUG** to True in settings.py in readiness for the next topic.*",
       "line": 31
     },
     {
-      "file": "runtime.txt",
-      "description": "**Templates: Deployment with static files**\n\n**Deployment**\n\n8. Add a **runtime.txt** file to your app's root directory.\n\n*A runtime file specifies an exact Python version number to use in Heroku.*\n\n9. Add the Python version you copied from the list of supported runtimes to your **runtime.txt file**.\n",
-      "line": 1,
-      "selection": {
-        "start": {
-          "line": 1,
-          "character": 1
-        },
-        "end": {
-          "line": 10,
-          "character": 1
-        }
-      }
+      "file": "static/js/ script.js",
+      "description": "**Templates: What are static files?**\n\n***Purpose:**\n\n- *Static files are simple files*\n    1. admin\n    2. css\n    3. summernote / staticfiles\n- They allow Django to deliver simple files\n- They are needed to share CSS, JavaScript and static images through Heroku\n- We have learned how to get Django to share these simple files\n- We need to understand more about what simple files are, why we need a special package to share them, and why we can't just have everything on Herok\n\n-----\n## **Theory**\n-----\n\n### **1. What is the static files directory?**\n\n- Django collects all static files (like CSS, JavaScript or images) from each installed application in a directory called `staticfiles` when you run `collectstatic`.\n- This is set in the `STATIC_ROOT` setting in **settings.py**.\n- Whenever you add or modify a static file, make sure to run `collectstatic`.\n- You can upload the `staticfiles` directory to GitHub and deploy it to Heroku.\n- With the help of a tool called `whitenoise`, Django will serve all our CSS, JavaScript, and images from this directory.\n- Heroku reminds us to run `collectstatic` whenever we make a change to make our work easier.\n\n### **2. Disabling COLLECTSTATIC**\n- Heroku is a platform that simplifies handling Django projects.\n- Heroku runs `collectstatic` automatically.\n- `collectstatic` aids with static files.\n- *If Heroku's `DISABLE_COLLECTSTATIC` setting is enabled, it doesn't run `collectstatic` during project deployment.*\n- The lack of styles in the admin dashboard on Heroku is due to this.\n- The build logs show this process.\n- *REMOVING `DISABLE_COLLECTSTATIC` allows Heroku to manage static files on deployment.*\n- *No need to run `collectstatic` unless not using Heroku or `DEBUG` is False.*\n- `whitenoise` is needed because Django's static file management is not suitable for live environments.\n- Django's `runserver` is not secure or scalable enough for live use.\n- In a live setting, `gunicorn` is used for the project and `whitenoise` for static files.\n\n### **3. Middleware**\n\n- Django's middleware is a helper that operates between a web request and response.\n- Middleware can modify both the request and response.\n- It improves the request, response, and view, comparable to how extra toppings enhance a burger.\n- The Whitenoise middleware specifically alters the response to retrieve static files from the 'staticfiles' directory.\n- These static files are then provided when a user visits the site.\n\n**Note:** *Middleware often needs to be **loaded in a particular order**. The documentation for a piece of middleware will tell you where it needs to be in the MIDDLEWARE list in settings.py.*\n\n### **4. And finally, runtime.txt**\n\n- Heroku requires a `runtime.txt` file to identify the correct Python version for the project.\n- This file ensures consistency between your computer and the Heroku server.\n- Always refer to Heroku's guides for the supported Python versions before deploying your project on Heroku.",
+      "line": 1
+    },
+    {
+      "file": "static/js/ script.js",
+      "description": "**Templates: What are static files?**\n\n***Test Your Knowledge & Solutions**\n\n1. Inside your static directory, create a new directory called js; inside that, create a file called script.js.\n\n2. Add a console.log statement to print a message to the console.\n    *static/js/script.js*\n```\nconsole.log(\"Life, The Universe and Everything!\");\n```",
+      "line": 2
+    },
+    {
+      "file": "templates/base.html",
+      "description": "**Templates: What are static files?**\n\n***Test Your Knowledge & Solutions**\n\n3. Above the closing `</body>` tag in **base.html** add a *new script element*.\n\n4. Using the same static Django Template Language tag that we use for the css/style.css, *set the src to open your **js/script.js** file*.\n\n5. Run your project in your development environment, and navigate to the homepage. Using Developer Tools, check to see that the message is logged to the console.\n\n- Your message should be visible in the browser console both locally and after you have deployed.\n\n**Note:** *If you get an error in the console saying that script.js could not be loaded, ensure that you have saved the file and that it is in the correct directory*\n",
+      "line": 82
     }
   ]
 }
