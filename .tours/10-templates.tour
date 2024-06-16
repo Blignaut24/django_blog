@@ -101,6 +101,26 @@
       "file": "templates/base.html",
       "description": "**Templates: Variables and Control Structures**\n\n**Test Your Knowledge & Solution:**\n\n### **Part 2: Adding a url **\n1. Switch back to base.html and scroll down to the navigation section where we analysed the if statement in the class. You'll notice that the href for this link is simply set to #. Use the url tag like we did earlier to insert the home URL.\n\nThe relevant part of your base.html code should now look like this:\n```\n<a class=\"nav-link\n  {% if request.path == home_url %}active{%endif%}\"\n  aria-current=\"page\" href=\"{% url 'home' %}\">\n```\n\nNote: As you only have 1 nav bar link here, you won't be able to see much of a difference. This text is black, whereas links for inactive pages will be grey.\n",
       "line": 42
+    },
+    {
+      "file": "blog/views.py",
+      "description": "**Templates: Pagination**\n\n**Purpose:**\n\n**Pagination:** *is a tool that splits content into separate pages. It makes it easier for users to read and manage long lists of content.*\n\n## **What is Pagination?**\n\nThink of pagination as a book's table of contents, but for your Django project. Just like how a table of contents helps you jump to different chapters in a book, Pagination helps break down your online content into different \"pages\".\n\n## **Why use Pagination?**\n\nImagine if a book didn't have a table of contents or page numbers, and you had to flip through each page to find a chapter. Frustrating, right? This is exactly what pagination helps to avoid in your Django Project. It helps manage and organize your content, making it easier for users to find what they need.\n\n## **How does Django use Pagination?**\n\nIn a Django project, pagination is like an automatic page-maker. It takes all your content, and then breaks it down into separate \"pages\" for you. This makes viewing and navigating through your Django project much simpler and user-friendly.\n\n",
+      "line": 22
+    },
+    {
+      "file": "blog/views.py",
+      "description": "**Templates: Pagination**\n\n**Explanation & Test Your Knowledge:**\nThis code snippet controls the **pagination setting** in the `Postlist view`.\n",
+      "line": 21
+    },
+    {
+      "file": "blog/templates/blog/index.html",
+      "description": "**Templates: Pagination**\n\n**Explanation & Test Your Knowledge:**\n\n*4. Where is the code that creates the Next button? Try to find it in index.html. Why is there no Next button on the last page?*\n\n### **The 'Next' button's code is in 'index.html'. It shows up in two steps:**\n\n1. If there are more than 6 posts, the `is_paginated` value becomes `True`. If it's `True`, the buttons are shown.\n\n2. Inside the `if` statement, there's another `if` statement to decide if the 'Next' button should be shown. If the remaining posts are less than or equal to the `paginate_by` setting (meaning it's the last page), Django makes `page_obj.has_next` `False`. This hides the button. ",
+      "line": 41
+    },
+    {
+      "file": "blog/templates/blog/index.html",
+      "description": "**Templates: Pagination**\n\n**Explanation & Test Your Knowledge:**\n\n*Put the value back to 6. When you go onto the second page of blog posts, what changes are there to the URL? Where does Django get the code for the URL?*\n\n```\n<a href=\"?page={{ page_obj.next_page_number }}\"\n  class=\"page-link\">\n```\n\n- When you switch to the second page, Django adds `?page=2` to the URL.\n- This helps the `ListView` show the second page of posts.\n- The `ListView` takes care of all the pagination work.\n- The URL is made by the Next button's anchor tag.\n\n**Note:** \n\n*The formatting may differ from the layout here.*\n\n## **More Info:**\n - [The Page Object](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FSD101_WTS+2/courseware/56a2da0940b4411d8a38c2b093a22c60/c592ed45498e440587b764e29891b2fc/)\n\n\n\n\n",
+      "line": 45
     }
   ]
 }
