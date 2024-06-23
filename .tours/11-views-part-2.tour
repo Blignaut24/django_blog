@@ -1,0 +1,51 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "11. Views Part 2",
+  "steps": [
+    {
+      "file": "blog/urls.py",
+      "description": "**I Think Therefore I Blog > Views part 2 > Building a blog post view**\n\nStep 3",
+      "line": 6,
+      "selection": {
+        "start": {
+          "line": 1,
+          "character": 1
+        },
+        "end": {
+          "line": 1,
+          "character": 72
+        }
+      }
+    },
+    {
+      "file": "blog/templates/blog/index.html",
+      "description": "**I Think Therefore I Blog > Views part 2 > Building a blog post view**\n\nStep 4. Within the index.html template's for-\nloop, update the anchor element to\npoint to the post_detail view.",
+      "line": 21
+    },
+    {
+      "file": "blog/views.py",
+      "description": "**I Think Therefore I Blog > Views part 2 > Building a blog post view**\n\n5. Open the blog/views.py file and add\na post_detail function-based view.",
+      "line": 20
+    },
+    {
+      "file": "blog/views.py",
+      "description": "**I Think Therefore I Blog > Views part 2 > Building a blog post view**\n\n6. Append the method to the import from django. shortcuts.\n7. Create an images directory in the existing static directory.\n8. Download a default image-from-here to your computer. Then upload it to the static/images directory.\n",
+      "line": 1,
+      "selection": {
+        "start": {
+          "line": 1,
+          "character": 1
+        },
+        "end": {
+          "line": 1,
+          "character": 72
+        }
+      }
+    },
+    {
+      "file": "blog/templates/blog/post_detail.html",
+      "description": "**I Think Therefore I Blog > Views part 2 > Building a blog post view**\n\n9. Create a new post_detail.html file in the blog/templates/blog directory.\n10. Open the post_detail.html file and add all of the code in this file.\nNote: This code includes the link to the static image you just uploaded.\n11. Collect the new static files to the staticfiles directory. Type yes when prompted to\noverwrite the existing files.\npython3 manage. py collectstatic\nNote: Only the one new image file in static was copied to staticfilesl",
+      "line": 1
+    }
+  ]
+}
