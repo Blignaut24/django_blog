@@ -44,7 +44,7 @@
     },
     {
       "file": "blog/templates/blog/post_detail.html",
-      "description": "**I Think Therefore I Blog > Views part 2 > Building a blog post view**\n\n9. Create a new post_detail.html file in the blog/templates/blog directory.\n10. Open the post_detail.html file and add all of the code in this file.\nNote: This code includes the link to the static image you just uploaded.\n11. Collect the new static files to the staticfiles directory. Type yes when prompted to\noverwrite the existing files.\npython3 manage. py collectstatic\nNote: Only the one new image file in static was copied to staticfilesl",
+      "description": "**I Think Therefore I Blog > Views part 2 > Building a blog post view**\n\n9. Create a new post_detail.html file in the blog/templates/blog directory.\n10. Open the post_detail.html file and add all of the code in this file.\nNote: This code includes the link to the static image you just uploaded.\n11. Collect the new static files to the staticfiles directory. Type yes when prompted to\noverwrite the existing files.\npython3 manage. py collectstatic\nNote: Only the one new image file in static was copied to staticfilesl\n\n**Deployment:**\n12. Set DEBUG to False. Cit add, commit\nand push the code to GitHub.\n```\ngit add ——all\ngit commit -m \"added post_detail view\"\ngit push origin main\n```\n13. Open your project's Heroku dashboard and click the deploy tab\nand Deploy Branch.\n\n14. Open the app.\n\n15. Click on any of the posts to view it in detail.\n\nNote: The default image is used for all\nposts.\n\n17. Set your DEBUG value to True.\n",
       "line": 1
     }
   ]
