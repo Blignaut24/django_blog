@@ -76,6 +76,36 @@
       "file": "templates/base.html",
       "description": "\n25. Open the base.html template, and add the following code to display messages between the nav and the main elements.\n\n</nav>\n<!-- displaying Django messages -->\n<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col-md-8 offset-md-2\">\n      {% for message in messages %}\n      <div class=\"alert {{ message.tags }} alert-dismissible\n        fade show\" id=\"msg\" role=\"alert\">\n        {{ message | safe }}\n        <button type=\"button\" class=\"btn-close\"\n          data-bs-dismiss=\"alert\" aria-label=\"Close\"></button>\n      </div>\n      {% endfor %}\n    </div>\n  </div>\n</div>\n<main class=\"flex-shrink-0 main-bg\">",
       "line": 76
+    },
+    {
+      "file": "about/admin.py",
+      "description": "Part 2 - Prerequisites:\nI. Now, because we want you to focus on\ncreating the form, we have provided\nsome starter code for you. Update the\nfollowing files with the supplied code:\n• about/admin.py\n• about/models.py\n• about/templates/about/about.html\nRead through the supplied code so that you\ncan understand the changes! We have\ncreated a new model, so what will you need\nto do?",
+      "line": 1
+    },
+    {
+      "file": "about/templates/about/about.html",
+      "description": "Have you copied and pasted the content from each of the supplied files? Have you run the correct commands to make the migrations and migrate the changes?\npython3 manage.py makemigrations\n\npython3 manage.py migrate",
+      "line": 32
+    },
+    {
+      "file": "about/forms.py",
+      "description": "Part 3 - Creating the app\n\nHave you created the forms.py file correctly?\nHave you imported the new model in forms.py?\nfrom .models import CollaborateRequest\nHave you imported the forms from Django's standard library?\nfrom django import forms\nHave you created a CollaborateForm class with a Meta class inside?\nHave you specified the correct model in the Meta class?\nmodel = CollaborateRequest\nHave you added the correct fields to the form?\nfields = ('name', 'email', 'message')",
+      "line": 1
+    },
+    {
+      "file": "about/views.py",
+      "description": "In the views.py file, have you added everything?\nHave you imported the form you created?\nfrom .forms import CollaborateForm\nInside the about_me view, have you assigned the form to a variable?\ncollaborate_form = CollaborateForm()\nHave you passed this variable into the template context?\nreturn render(\n    request,\n    \"about/about.html\",\n    {\n        \"about\": about,\n        \"collaborate_form\": collaborate_form,\n    },",
+      "line": 1
+    },
+    {
+      "file": "about/views.py",
+      "description": "",
+      "line": 1
+    },
+    {
+      "file": "about/templates/about/about.html",
+      "description": "Have you added all that is needed to the about.html template?\nHave you loaded the Crispy Forms tags at the top of the file?\n{% load crispy_forms_tags %}\nDid you create an HTML form with the correct method?\n<form method=\"post\"></form>\nInside the form, did you render the form using the Crispy filter?\n{{ collaborate_form | crispy }}\nHave you added a CSRF token tag inside the form?\n{% csrf_token %}\nDid you follow the instructions in the HTML file to create a button with the right Bootstrap class inside the form?\n<button class=\"btn btn-secondary\" \n  type=\"submit\">Submit</button>",
+      "line": 1
     }
   ]
 }
