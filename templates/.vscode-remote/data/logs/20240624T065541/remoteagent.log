@@ -1,0 +1,57 @@
+2024-06-24 06:55:41.686 [info] 
+
+
+
+
+2024-06-24 06:55:41.704 [info] Extension host agent started.
+2024-06-24 06:55:41.827 [info] Extension 'gitpod.gitpod-theme' v0.0.2 is already installed. Use '--force' option to update to latest version or provide '@<version>' to install a specific version, for example: 'gitpod.gitpod-theme@1.2.3'.
+2024-06-24 06:55:41.827 [info] Extension 'github.vscode-pull-request-github' v0.90.0 is already installed. Use '--force' option to update to latest version or provide '@<version>' to install a specific version, for example: 'github.vscode-pull-request-github@1.2.3'.
+2024-06-24 06:55:51.687 [info] [100.64.193.241][655a87df][ManagementConnection] New connection established.
+2024-06-24 06:55:51.688 [info] [100.64.239.96][28a0f074][ExtensionHostConnection] New connection established.
+2024-06-24 06:55:51.956 [info] [100.64.239.96][28a0f074][ExtensionHostConnection] <505> Launched Extension Host Process.
+2024-06-24 07:32:35.034 [info] [100.64.239.96][3294785d][ManagementConnection] New connection established.
+2024-06-24 07:32:36.436 [info] [100.64.239.96][b861289d][ExtensionHostConnection] New connection established.
+2024-06-24 07:32:36.439 [info] [100.64.239.96][b861289d][ExtensionHostConnection] <4992> Launched Extension Host Process.
+2024-06-24 07:32:50.599 [warning] RequestStore#acceptReply was called without receiving a matching request 131
+2024-06-24 07:32:50.600 [warning] RequestStore#acceptReply was called without receiving a matching request 132
+2024-06-24 07:32:50.600 [warning] RequestStore#acceptReply was called without receiving a matching request 133
+2024-06-24 07:32:50.600 [warning] RequestStore#acceptReply was called without receiving a matching request 134
+2024-06-24 07:32:50.600 [warning] RequestStore#acceptReply was called without receiving a matching request 135
+2024-06-24 07:32:50.600 [warning] RequestStore#acceptReply was called without receiving a matching request 136
+2024-06-24 07:32:50.600 [warning] RequestStore#acceptReply was called without receiving a matching request 137
+2024-06-24 07:32:50.600 [warning] RequestStore#acceptReply was called without receiving a matching request 138
+2024-06-24 07:32:50.600 [warning] RequestStore#acceptReply was called without receiving a matching request 139
+2024-06-24 07:32:50.600 [warning] RequestStore#acceptReply was called without receiving a matching request 140
+2024-06-24 07:32:50.600 [warning] RequestStore#acceptReply was called without receiving a matching request 141
+2024-06-24 07:32:50.600 [warning] RequestStore#acceptReply was called without receiving a matching request 142
+2024-06-24 07:32:50.600 [warning] RequestStore#acceptReply was called without receiving a matching request 143
+2024-06-24 07:32:50.600 [warning] RequestStore#acceptReply was called without receiving a matching request 144
+2024-06-24 07:32:50.600 [warning] RequestStore#acceptReply was called without receiving a matching request 145
+2024-06-24 07:32:50.600 [warning] RequestStore#acceptReply was called without receiving a matching request 146
+2024-06-24 07:32:50.600 [warning] RequestStore#acceptReply was called without receiving a matching request 147
+2024-06-24 07:32:50.600 [warning] RequestStore#acceptReply was called without receiving a matching request 148
+2024-06-24 07:32:50.600 [warning] RequestStore#acceptReply was called without receiving a matching request 149
+2024-06-24 07:32:50.600 [warning] RequestStore#acceptReply was called without receiving a matching request 150
+2024-06-24 07:32:50.600 [warning] RequestStore#acceptReply was called without receiving a matching request 151
+2024-06-24 07:32:50.600 [warning] RequestStore#acceptReply was called without receiving a matching request 152
+2024-06-24 07:32:50.600 [warning] RequestStore#acceptReply was called without receiving a matching request 153
+2024-06-24 07:32:50.601 [warning] RequestStore#acceptReply was called without receiving a matching request 154
+2024-06-24 07:32:50.601 [warning] RequestStore#acceptReply was called without receiving a matching request 155
+2024-06-24 07:32:50.601 [warning] RequestStore#acceptReply was called without receiving a matching request 156
+2024-06-24 07:32:50.601 [warning] RequestStore#acceptReply was called without receiving a matching request 157
+2024-06-24 07:32:50.601 [warning] RequestStore#acceptReply was called without receiving a matching request 158
+2024-06-24 07:32:50.601 [warning] RequestStore#acceptReply was called without receiving a matching request 159
+2024-06-24 07:32:50.601 [warning] RequestStore#acceptReply was called without receiving a matching request 160
+2024-06-24 07:32:50.601 [warning] RequestStore#acceptReply was called without receiving a matching request 161
+2024-06-24 07:32:50.601 [warning] RequestStore#acceptReply was called without receiving a matching request 162
+2024-06-24 07:32:50.601 [warning] RequestStore#acceptReply was called without receiving a matching request 163
+2024-06-24 07:32:50.601 [warning] RequestStore#acceptReply was called without receiving a matching request 164
+2024-06-24 07:32:50.601 [warning] RequestStore#acceptReply was called without receiving a matching request 165
+2024-06-24 07:32:50.601 [warning] RequestStore#acceptReply was called without receiving a matching request 166
+2024-06-24 07:32:50.601 [warning] RequestStore#acceptReply was called without receiving a matching request 167
+2024-06-24 07:32:50.601 [warning] RequestStore#acceptReply was called without receiving a matching request 168
+2024-06-24 07:32:50.601 [warning] RequestStore#acceptReply was called without receiving a matching request 169
+2024-06-24 07:42:20.564 [info] [100.64.239.96][3294785d][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2024-06-24 07:42:20.611 [info] [100.64.239.96][b861289d][ExtensionHostConnection] <4992> Extension Host Process exited with code: 0, signal: null.
+2024-06-24 08:59:27.391 [info] [100.64.193.241][655a87df][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2024-06-24 08:59:27.453 [info] [100.64.239.96][28a0f074][ExtensionHostConnection] <505> Extension Host Process exited with code: 0, signal: null.

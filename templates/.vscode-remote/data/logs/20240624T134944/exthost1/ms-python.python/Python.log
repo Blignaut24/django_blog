@@ -1,0 +1,9 @@
+2024-06-24 13:49:55.477 [info] Default formatter is set to null for workspace /workspace/django_blog
+2024-06-24 13:49:55.526 [info] Test server listening.
+2024-06-24 13:49:55.527 [info] Python interpreter path: ~/.pyenv/shims/python
+2024-06-24 13:49:55.690 [info] > ~/.pyenv/bin/pyenv which python
+2024-06-24 13:49:55.690 [info] cwd: .
+2024-06-24 13:49:57.842 [info] Starting Jedi language server for django_blog.
+2024-06-24 13:52:31.031 [info] Discover tests for workspace name: django_blog - uri: /workspace/django_blog/about/models.py
+2024-06-24 13:59:39.437 [info] Discover tests for workspace name: django_blog - uri: /workspace/django_blog/about/views.py
+2024-06-24 14:18:17.897 [info] Discover tests for workspace name: django_blog - uri: /workspace/django_blog/codestar/settings.py

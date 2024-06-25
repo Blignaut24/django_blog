@@ -1,0 +1,412 @@
+2024-06-23 19:48:08.762 [info] Log level: Info
+2024-06-23 19:48:08.762 [info] Validating found git in: "git"
+2024-06-23 19:48:08.762 [info] Using git "2.43.2" from "git"
+2024-06-23 19:48:08.762 [info] > git rev-parse --show-toplevel [1ms]
+2024-06-23 19:48:08.762 [info] > git rev-parse --git-dir --git-common-dir [1ms]
+2024-06-23 19:48:08.762 [info] Open repository: /workspace/django_blog
+2024-06-23 19:48:08.762 [info] > git config --get commit.template [3ms]
+2024-06-23 19:48:08.762 [info] > git rev-parse --show-toplevel [2ms]
+2024-06-23 19:48:08.762 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2024-06-23 19:48:08.762 [info] > git rev-parse --show-toplevel [1ms]
+2024-06-23 19:48:08.762 [warning] ENOENT: no such file or directory, open '/workspace/django_blog/.git/refs/remotes/origin/main'
+2024-06-23 19:48:08.762 [info] > git rev-parse refs/remotes/origin/main [66ms]
+2024-06-23 19:48:08.762 [info] > git rev-parse --show-toplevel [9ms]
+2024-06-23 19:48:08.762 [info] > git status -z -uall [3ms]
+2024-06-23 19:48:08.762 [info] > git merge-base refs/heads/main refs/remotes/origin/main [7ms]
+2024-06-23 19:48:08.762 [info] > git rev-parse --show-toplevel [12ms]
+2024-06-23 19:48:08.762 [info] > git config --get commit.template [6ms]
+2024-06-23 19:48:08.762 [info] > git rev-list --count --left-right refs/heads/main...refs/remotes/origin/main [4ms]
+2024-06-23 19:48:08.762 [info] > git rev-parse --show-toplevel [71ms]
+2024-06-23 19:48:08.762 [info] > git diff --name-status -z --diff-filter=ADMR 4fbb0fb743a9177b3b444223ea816fc1eddd07b1...refs/remotes/origin/main [70ms]
+2024-06-23 19:48:08.762 [info] > git rev-parse --show-toplevel [1ms]
+2024-06-23 19:48:08.762 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [4ms]
+2024-06-23 19:48:08.762 [warning] ENOENT: no such file or directory, open '/workspace/django_blog/.git/refs/remotes/origin/main'
+2024-06-23 19:48:08.762 [info] > git rev-parse --show-toplevel [3ms]
+2024-06-23 19:48:08.762 [info] > git rev-parse refs/remotes/origin/main [3ms]
+2024-06-23 19:48:08.762 [info] > git status -z -uall [5ms]
+2024-06-23 19:48:08.764 [info] > git rev-parse --show-toplevel [5ms]
+2024-06-23 19:48:08.768 [info] > git rev-parse --show-toplevel [1ms]
+2024-06-23 19:48:08.842 [info] > git rev-parse --show-toplevel [72ms]
+2024-06-23 19:48:08.847 [info] > git rev-parse --show-toplevel [3ms]
+2024-06-23 19:48:09.391 [info] > git check-ignore -v -z --stdin [7ms]
+2024-06-23 19:48:09.757 [info] > git show --textconv :codestar/settings.py [3ms]
+2024-06-23 19:48:09.758 [info] > git ls-files --stage -- /workspace/django_blog/codestar/settings.py [2ms]
+2024-06-23 19:48:09.786 [info] > git cat-file -s 2a3d3976fcbb6ae5fbc98ed66f05ed70c4ca8dd5 [26ms]
+2024-06-23 19:48:11.244 [info] > git config --local branch.main.github-pr-owner-number [98ms]
+2024-06-23 19:48:11.244 [warning] git config failed: Failed to execute git
+2024-06-23 19:53:10.790 [info] > git config --local branch.main.github-pr-owner-number [1ms]
+2024-06-23 19:53:10.790 [warning] git config failed: Failed to execute git
+2024-06-23 19:58:10.795 [info] > git config --local branch.main.github-pr-owner-number [1ms]
+2024-06-23 19:58:10.795 [warning] git config failed: Failed to execute git
+2024-06-23 20:03:10.801 [info] > git config --local branch.main.github-pr-owner-number [1ms]
+2024-06-23 20:03:10.801 [warning] git config failed: Failed to execute git
+2024-06-23 20:08:10.807 [info] > git config --local branch.main.github-pr-owner-number [0ms]
+2024-06-23 20:08:10.807 [warning] git config failed: Failed to execute git
+2024-06-23 20:09:31.412 [info] > git config --get commit.template [3ms]
+2024-06-23 20:09:31.413 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-06-23 20:09:31.415 [warning] ENOENT: no such file or directory, open '/workspace/django_blog/.git/refs/remotes/origin/main'
+2024-06-23 20:09:31.416 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2024-06-23 20:09:31.420 [info] > git status -z -uall [2ms]
+2024-06-23 20:09:37.823 [info] > git config --get commit.template [3ms]
+2024-06-23 20:09:37.824 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-06-23 20:09:37.826 [warning] ENOENT: no such file or directory, open '/workspace/django_blog/.git/refs/remotes/origin/main'
+2024-06-23 20:09:37.827 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2024-06-23 20:09:37.831 [info] > git status -z -uall [2ms]
+2024-06-23 20:09:42.841 [info] > git config --get commit.template [3ms]
+2024-06-23 20:09:42.841 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-06-23 20:09:42.843 [warning] ENOENT: no such file or directory, open '/workspace/django_blog/.git/refs/remotes/origin/main'
+2024-06-23 20:09:42.844 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2024-06-23 20:09:42.848 [info] > git status -z -uall [2ms]
+2024-06-23 20:09:49.753 [info] > git config --get commit.template [3ms]
+2024-06-23 20:09:49.754 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-06-23 20:09:49.756 [warning] ENOENT: no such file or directory, open '/workspace/django_blog/.git/refs/remotes/origin/main'
+2024-06-23 20:09:49.757 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2024-06-23 20:09:49.761 [info] > git status -z -uall [2ms]
+2024-06-23 20:09:54.769 [info] > git config --get commit.template [3ms]
+2024-06-23 20:09:54.770 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-06-23 20:09:54.772 [warning] ENOENT: no such file or directory, open '/workspace/django_blog/.git/refs/remotes/origin/main'
+2024-06-23 20:09:54.773 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2024-06-23 20:09:54.777 [info] > git status -z -uall [2ms]
+2024-06-23 20:10:00.499 [info] > git config --get commit.template [3ms]
+2024-06-23 20:10:00.500 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-06-23 20:10:00.502 [warning] ENOENT: no such file or directory, open '/workspace/django_blog/.git/refs/remotes/origin/main'
+2024-06-23 20:10:00.504 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2024-06-23 20:10:00.507 [info] > git status -z -uall [1ms]
+2024-06-23 20:10:49.613 [info] > git config --get commit.template [3ms]
+2024-06-23 20:10:49.614 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-06-23 20:10:49.616 [warning] ENOENT: no such file or directory, open '/workspace/django_blog/.git/refs/remotes/origin/main'
+2024-06-23 20:10:49.617 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2024-06-23 20:10:49.621 [info] > git status -z -uall [2ms]
+2024-06-23 20:11:39.292 [info] > git config --get commit.template [1ms]
+2024-06-23 20:11:39.295 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-06-23 20:11:39.298 [warning] ENOENT: no such file or directory, open '/workspace/django_blog/.git/refs/remotes/origin/main'
+2024-06-23 20:11:39.298 [info] > git rev-parse refs/remotes/origin/main [0ms]
+2024-06-23 20:11:39.303 [info] > git status -z -uall [2ms]
+2024-06-23 20:11:44.309 [info] > git config --get commit.template [1ms]
+2024-06-23 20:11:44.313 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2024-06-23 20:11:44.315 [warning] ENOENT: no such file or directory, open '/workspace/django_blog/.git/refs/remotes/origin/main'
+2024-06-23 20:11:44.316 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2024-06-23 20:11:44.320 [info] > git status -z -uall [2ms]
+2024-06-23 20:11:49.328 [info] > git config --get commit.template [4ms]
+2024-06-23 20:11:49.328 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2024-06-23 20:11:49.330 [warning] ENOENT: no such file or directory, open '/workspace/django_blog/.git/refs/remotes/origin/main'
+2024-06-23 20:11:49.331 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2024-06-23 20:11:49.335 [info] > git status -z -uall [2ms]
+2024-06-23 20:13:10.811 [info] > git config --local branch.main.github-pr-owner-number [0ms]
+2024-06-23 20:13:10.811 [warning] git config failed: Failed to execute git
+2024-06-23 20:16:26.004 [info] > git check-ignore -v -z --stdin [1ms]
+2024-06-23 20:16:27.333 [info] > git show --textconv :blog/urls.py [3ms]
+2024-06-23 20:16:27.333 [info] > git ls-files --stage -- /workspace/django_blog/blog/urls.py [1ms]
+2024-06-23 20:16:27.337 [info] > git cat-file -s 33f9baac4ca4ae22fb03ed62f0def0c6b84c2c16 [1ms]
+2024-06-23 20:16:32.476 [info] > git config --get commit.template [3ms]
+2024-06-23 20:16:32.477 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-06-23 20:16:32.479 [warning] ENOENT: no such file or directory, open '/workspace/django_blog/.git/refs/remotes/origin/main'
+2024-06-23 20:16:32.480 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2024-06-23 20:16:32.484 [info] > git status -z -uall [2ms]
+2024-06-23 20:16:59.610 [info] > git check-ignore -v -z --stdin [1ms]
+2024-06-23 20:18:10.816 [info] > git config --local branch.main.github-pr-owner-number [1ms]
+2024-06-23 20:18:10.816 [warning] git config failed: Failed to execute git
+2024-06-23 20:21:34.556 [info] > git check-ignore -v -z --stdin [1ms]
+2024-06-23 20:21:36.146 [info] > git show --textconv :blog/templates/blog/index.html [3ms]
+2024-06-23 20:21:36.147 [info] > git ls-files --stage -- /workspace/django_blog/blog/templates/blog/index.html [1ms]
+2024-06-23 20:21:36.150 [info] > git cat-file -s f268b10cbbeb3010addc5233787bd83165702d49 [1ms]
+2024-06-23 20:22:38.643 [info] > git config --get commit.template [3ms]
+2024-06-23 20:22:38.644 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2024-06-23 20:22:38.646 [warning] ENOENT: no such file or directory, open '/workspace/django_blog/.git/refs/remotes/origin/main'
+2024-06-23 20:22:38.647 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2024-06-23 20:22:38.651 [info] > git status -z -uall [2ms]
+2024-06-23 20:22:43.660 [info] > git config --get commit.template [3ms]
+2024-06-23 20:22:43.661 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2024-06-23 20:22:43.663 [warning] ENOENT: no such file or directory, open '/workspace/django_blog/.git/refs/remotes/origin/main'
+2024-06-23 20:22:43.664 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2024-06-23 20:22:43.668 [info] > git status -z -uall [2ms]
+2024-06-23 20:22:48.676 [info] > git config --get commit.template [3ms]
+2024-06-23 20:22:48.676 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-06-23 20:22:48.679 [warning] ENOENT: no such file or directory, open '/workspace/django_blog/.git/refs/remotes/origin/main'
+2024-06-23 20:22:48.680 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2024-06-23 20:22:48.684 [info] > git status -z -uall [2ms]
+2024-06-23 20:23:10.821 [info] > git config --local branch.main.github-pr-owner-number [1ms]
+2024-06-23 20:23:10.821 [warning] git config failed: Failed to execute git
+2024-06-23 20:24:05.476 [info] > git config --get commit.template [4ms]
+2024-06-23 20:24:05.476 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-06-23 20:24:05.479 [warning] ENOENT: no such file or directory, open '/workspace/django_blog/.git/refs/remotes/origin/main'
+2024-06-23 20:24:05.480 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2024-06-23 20:24:05.484 [info] > git status -z -uall [2ms]
+2024-06-23 20:24:19.997 [info] > git show --textconv :blog/urls.py [4ms]
+2024-06-23 20:24:19.998 [info] > git ls-files --stage -- /workspace/django_blog/blog/urls.py [2ms]
+2024-06-23 20:24:20.002 [info] > git cat-file -s 33f9baac4ca4ae22fb03ed62f0def0c6b84c2c16 [2ms]
+2024-06-23 20:25:27.012 [info] > git config --get commit.template [3ms]
+2024-06-23 20:25:27.012 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-06-23 20:25:27.015 [warning] ENOENT: no such file or directory, open '/workspace/django_blog/.git/refs/remotes/origin/main'
+2024-06-23 20:25:27.016 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2024-06-23 20:25:27.020 [info] > git status -z -uall [2ms]
+2024-06-23 20:25:30.648 [info] > git show --textconv :blog/templates/blog/index.html [3ms]
+2024-06-23 20:25:30.649 [info] > git ls-files --stage -- /workspace/django_blog/blog/templates/blog/index.html [1ms]
+2024-06-23 20:25:30.652 [info] > git cat-file -s f268b10cbbeb3010addc5233787bd83165702d49 [1ms]
+2024-06-23 20:26:35.125 [info] > git config --get commit.template [3ms]
+2024-06-23 20:26:35.126 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-06-23 20:26:35.128 [warning] ENOENT: no such file or directory, open '/workspace/django_blog/.git/refs/remotes/origin/main'
+2024-06-23 20:26:35.129 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2024-06-23 20:26:35.133 [info] > git status -z -uall [2ms]
+2024-06-23 20:26:48.576 [info] > git show --textconv :blog/views.py [3ms]
+2024-06-23 20:26:48.577 [info] > git ls-files --stage -- /workspace/django_blog/blog/views.py [1ms]
+2024-06-23 20:26:48.580 [info] > git cat-file -s ce2998965bc7bcf391dc04c3531f78b642304c32 [1ms]
+2024-06-23 20:28:10.826 [info] > git config --local branch.main.github-pr-owner-number [1ms]
+2024-06-23 20:28:10.826 [warning] git config failed: Failed to execute git
+2024-06-23 20:28:24.326 [info] > git config --get commit.template [3ms]
+2024-06-23 20:28:24.327 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-06-23 20:28:24.330 [warning] ENOENT: no such file or directory, open '/workspace/django_blog/.git/refs/remotes/origin/main'
+2024-06-23 20:28:24.330 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2024-06-23 20:28:24.335 [info] > git status -z -uall [1ms]
+2024-06-23 20:28:29.343 [info] > git config --get commit.template [3ms]
+2024-06-23 20:28:29.344 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-06-23 20:28:29.346 [warning] ENOENT: no such file or directory, open '/workspace/django_blog/.git/refs/remotes/origin/main'
+2024-06-23 20:28:29.347 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2024-06-23 20:28:29.351 [info] > git status -z -uall [2ms]
+2024-06-23 20:28:42.225 [info] > git config --get commit.template [3ms]
+2024-06-23 20:28:42.225 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-06-23 20:28:42.228 [warning] ENOENT: no such file or directory, open '/workspace/django_blog/.git/refs/remotes/origin/main'
+2024-06-23 20:28:42.228 [info] > git rev-parse refs/remotes/origin/main [0ms]
+2024-06-23 20:28:42.232 [info] > git status -z -uall [1ms]
+2024-06-23 20:28:47.240 [info] > git config --get commit.template [3ms]
+2024-06-23 20:28:47.241 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-06-23 20:28:47.243 [warning] ENOENT: no such file or directory, open '/workspace/django_blog/.git/refs/remotes/origin/main'
+2024-06-23 20:28:47.244 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2024-06-23 20:28:47.248 [info] > git status -z -uall [2ms]
+2024-06-23 20:28:52.256 [info] > git config --get commit.template [3ms]
+2024-06-23 20:28:52.257 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-06-23 20:28:52.259 [warning] ENOENT: no such file or directory, open '/workspace/django_blog/.git/refs/remotes/origin/main'
+2024-06-23 20:28:52.260 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2024-06-23 20:28:52.264 [info] > git status -z -uall [2ms]
+2024-06-23 20:28:57.271 [info] > git config --get commit.template [3ms]
+2024-06-23 20:28:57.272 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-06-23 20:28:57.274 [warning] ENOENT: no such file or directory, open '/workspace/django_blog/.git/refs/remotes/origin/main'
+2024-06-23 20:28:57.275 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2024-06-23 20:28:57.279 [info] > git status -z -uall [1ms]
+2024-06-23 20:29:02.287 [info] > git config --get commit.template [3ms]
+2024-06-23 20:29:02.287 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-06-23 20:29:02.289 [warning] ENOENT: no such file or directory, open '/workspace/django_blog/.git/refs/remotes/origin/main'
+2024-06-23 20:29:02.290 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2024-06-23 20:29:02.294 [info] > git status -z -uall [2ms]
+2024-06-23 20:29:07.302 [info] > git config --get commit.template [3ms]
+2024-06-23 20:29:07.302 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-06-23 20:29:07.304 [warning] ENOENT: no such file or directory, open '/workspace/django_blog/.git/refs/remotes/origin/main'
+2024-06-23 20:29:07.305 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2024-06-23 20:29:07.309 [info] > git status -z -uall [2ms]
+2024-06-23 20:29:12.317 [info] > git config --get commit.template [4ms]
+2024-06-23 20:29:12.318 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-06-23 20:29:12.320 [warning] ENOENT: no such file or directory, open '/workspace/django_blog/.git/refs/remotes/origin/main'
+2024-06-23 20:29:12.321 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2024-06-23 20:29:12.325 [info] > git status -z -uall [2ms]
+2024-06-23 20:29:32.241 [info] > git config --get commit.template [3ms]
+2024-06-23 20:29:32.242 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-06-23 20:29:32.244 [warning] ENOENT: no such file or directory, open '/workspace/django_blog/.git/refs/remotes/origin/main'
+2024-06-23 20:29:32.245 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2024-06-23 20:29:32.249 [info] > git status -z -uall [2ms]
+2024-06-23 20:29:33.290 [info] > git show --textconv :blog/templates/blog/index.html [3ms]
+2024-06-23 20:29:33.291 [info] > git ls-files --stage -- /workspace/django_blog/blog/templates/blog/index.html [1ms]
+2024-06-23 20:29:33.294 [info] > git cat-file -s f268b10cbbeb3010addc5233787bd83165702d49 [1ms]
+2024-06-23 20:30:10.139 [info] > git config --get commit.template [3ms]
+2024-06-23 20:30:10.140 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-06-23 20:30:10.142 [warning] ENOENT: no such file or directory, open '/workspace/django_blog/.git/refs/remotes/origin/main'
+2024-06-23 20:30:10.143 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2024-06-23 20:30:10.147 [info] > git status -z -uall [2ms]
+2024-06-23 20:30:43.996 [info] > git config --get commit.template [5ms]
+2024-06-23 20:30:43.997 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [4ms]
+2024-06-23 20:30:43.999 [warning] ENOENT: no such file or directory, open '/workspace/django_blog/.git/refs/remotes/origin/main'
+2024-06-23 20:30:44.000 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2024-06-23 20:30:44.005 [info] > git status -z -uall [2ms]
+2024-06-23 20:31:32.462 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [4ms]
+2024-06-23 20:31:32.462 [info] > git config --get commit.template [7ms]
+2024-06-23 20:31:32.465 [warning] ENOENT: no such file or directory, open '/workspace/django_blog/.git/refs/remotes/origin/main'
+2024-06-23 20:31:32.466 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2024-06-23 20:31:32.471 [info] > git status -z -uall [2ms]
+2024-06-23 20:31:48.316 [info] > git config --get commit.template [3ms]
+2024-06-23 20:31:48.317 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-06-23 20:31:48.319 [warning] ENOENT: no such file or directory, open '/workspace/django_blog/.git/refs/remotes/origin/main'
+2024-06-23 20:31:48.320 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2024-06-23 20:31:48.324 [info] > git status -z -uall [1ms]
+2024-06-23 20:32:05.881 [info] > git check-ignore -v -z --stdin [1ms]
+2024-06-23 20:32:25.664 [info] > git check-ignore -v -z --stdin [1ms]
+2024-06-23 20:32:26.171 [info] > git config --get commit.template [3ms]
+2024-06-23 20:32:26.172 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2024-06-23 20:32:26.174 [warning] ENOENT: no such file or directory, open '/workspace/django_blog/.git/refs/remotes/origin/main'
+2024-06-23 20:32:26.175 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2024-06-23 20:32:26.179 [info] > git status -z -uall [2ms]
+2024-06-23 20:33:10.831 [info] > git config --local branch.main.github-pr-owner-number [1ms]
+2024-06-23 20:33:10.831 [warning] git config failed: Failed to execute git
+2024-06-23 20:33:29.328 [info] > git config --get commit.template [1ms]
+2024-06-23 20:33:29.332 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-06-23 20:33:29.335 [warning] ENOENT: no such file or directory, open '/workspace/django_blog/.git/refs/remotes/origin/main'
+2024-06-23 20:33:29.336 [info] > git rev-parse refs/remotes/origin/main [0ms]
+2024-06-23 20:33:29.340 [info] > git status -z -uall [2ms]
+2024-06-23 20:34:18.809 [info] > git check-ignore -v -z --stdin [1ms]
+2024-06-23 20:34:19.320 [info] > git config --get commit.template [5ms]
+2024-06-23 20:34:19.320 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-06-23 20:34:19.323 [warning] ENOENT: no such file or directory, open '/workspace/django_blog/.git/refs/remotes/origin/main'
+2024-06-23 20:34:19.323 [info] > git rev-parse refs/remotes/origin/main [0ms]
+2024-06-23 20:34:19.328 [info] > git status -z -uall [2ms]
+2024-06-23 20:34:36.216 [info] > git show --textconv :blog/templates/blog/index.html [3ms]
+2024-06-23 20:34:36.216 [info] > git ls-files --stage -- /workspace/django_blog/blog/templates/blog/index.html [1ms]
+2024-06-23 20:34:36.220 [info] > git cat-file -s f268b10cbbeb3010addc5233787bd83165702d49 [1ms]
+2024-06-23 20:35:05.880 [info] > git show --textconv :blog/templates/blog/post_detail.html [3ms]
+2024-06-23 20:35:05.881 [info] > git ls-files --stage -- /workspace/django_blog/blog/templates/blog/post_detail.html [1ms]
+2024-06-23 20:35:06.042 [info] > git check-ignore -v -z --stdin [1ms]
+2024-06-23 20:35:06.548 [info] > git config --get commit.template [3ms]
+2024-06-23 20:35:06.549 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2024-06-23 20:35:06.551 [warning] ENOENT: no such file or directory, open '/workspace/django_blog/.git/refs/remotes/origin/main'
+2024-06-23 20:35:06.552 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2024-06-23 20:35:06.556 [info] > git status -z -uall [2ms]
+2024-06-23 20:35:22.287 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2024-06-23 20:35:22.288 [info] > git config --get commit.template [6ms]
+2024-06-23 20:35:22.294 [warning] ENOENT: no such file or directory, open '/workspace/django_blog/.git/refs/remotes/origin/main'
+2024-06-23 20:35:22.295 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2024-06-23 20:35:22.299 [info] > git status -z -uall [2ms]
+2024-06-23 20:35:22.604 [info] > git show --textconv :blog/views.py [3ms]
+2024-06-23 20:35:22.605 [info] > git ls-files --stage -- /workspace/django_blog/blog/views.py [1ms]
+2024-06-23 20:35:22.608 [info] > git cat-file -s ce2998965bc7bcf391dc04c3531f78b642304c32 [1ms]
+2024-06-23 20:36:35.367 [info] > git config --get commit.template [3ms]
+2024-06-23 20:36:35.367 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-06-23 20:36:35.369 [warning] ENOENT: no such file or directory, open '/workspace/django_blog/.git/refs/remotes/origin/main'
+2024-06-23 20:36:35.370 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2024-06-23 20:36:35.375 [info] > git status -z -uall [2ms]
+2024-06-23 20:36:53.438 [info] > git config --get commit.template [3ms]
+2024-06-23 20:36:53.438 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-06-23 20:36:53.441 [warning] ENOENT: no such file or directory, open '/workspace/django_blog/.git/refs/remotes/origin/main'
+2024-06-23 20:36:53.441 [info] > git rev-parse refs/remotes/origin/main [0ms]
+2024-06-23 20:36:53.446 [info] > git status -z -uall [2ms]
+2024-06-23 20:38:10.836 [info] > git config --local branch.main.github-pr-owner-number [1ms]
+2024-06-23 20:38:10.836 [warning] git config failed: Failed to execute git
+2024-06-23 20:38:58.664 [info] > git config --get commit.template [3ms]
+2024-06-23 20:38:58.664 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-06-23 20:38:58.666 [warning] ENOENT: no such file or directory, open '/workspace/django_blog/.git/refs/remotes/origin/main'
+2024-06-23 20:38:58.667 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2024-06-23 20:38:58.671 [info] > git status -z -uall [1ms]
+2024-06-23 20:39:23.714 [info] > git config --get commit.template [3ms]
+2024-06-23 20:39:23.715 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-06-23 20:39:23.717 [warning] ENOENT: no such file or directory, open '/workspace/django_blog/.git/refs/remotes/origin/main'
+2024-06-23 20:39:23.718 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2024-06-23 20:39:23.730 [info] > git status -z -uall [10ms]
+2024-06-23 20:39:23.842 [info] > git ls-files --stage -- /workspace/django_blog/blog/templates/blog/post_detail.html [1ms]
+2024-06-23 20:39:23.874 [info] > git show --textconv :blog/templates/blog/post_detail.html [1ms]
+2024-06-23 20:39:28.739 [info] > git config --get commit.template [4ms]
+2024-06-23 20:39:28.740 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2024-06-23 20:39:28.742 [warning] ENOENT: no such file or directory, open '/workspace/django_blog/.git/refs/remotes/origin/main'
+2024-06-23 20:39:28.743 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2024-06-23 20:39:28.747 [info] > git status -z -uall [2ms]
+2024-06-23 20:39:28.792 [info] > git ls-files --stage -- /workspace/django_blog/blog/templates/blog/post_detail.html [1ms]
+2024-06-23 20:39:28.827 [info] > git show --textconv :blog/templates/blog/post_detail.html [1ms]
+2024-06-23 20:40:26.257 [info] > git config --get commit.template [3ms]
+2024-06-23 20:40:26.257 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-06-23 20:40:26.260 [warning] ENOENT: no such file or directory, open '/workspace/django_blog/.git/refs/remotes/origin/main'
+2024-06-23 20:40:26.261 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2024-06-23 20:40:26.265 [info] > git status -z -uall [2ms]
+2024-06-23 20:40:26.385 [info] > git ls-files --stage -- /workspace/django_blog/blog/templates/blog/post_detail.html [1ms]
+2024-06-23 20:40:26.389 [info] > git cat-file -s 9a352bf4d05afee499e20fdd83a6c9acc036e76b [1ms]
+2024-06-23 20:40:26.421 [info] > git show --textconv :blog/templates/blog/post_detail.html [1ms]
+2024-06-23 20:40:50.934 [info] > git config --get commit.template [3ms]
+2024-06-23 20:40:50.934 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-06-23 20:40:50.937 [warning] ENOENT: no such file or directory, open '/workspace/django_blog/.git/refs/remotes/origin/main'
+2024-06-23 20:40:50.938 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2024-06-23 20:40:50.942 [info] > git status -z -uall [2ms]
+2024-06-23 20:40:51.044 [info] > git merge-base refs/heads/main refs/remotes/origin/main [99ms]
+2024-06-23 20:40:51.047 [info] > git rev-list --count --left-right refs/heads/main...refs/remotes/origin/main [1ms]
+2024-06-23 20:40:51.056 [info] > git diff --name-status -z --diff-filter=ADMR 4fbb0fb743a9177b3b444223ea816fc1eddd07b1...refs/remotes/origin/main [6ms]
+2024-06-23 20:40:51.085 [info] > git config --local branch.main.github-pr-owner-number [1ms]
+2024-06-23 20:40:51.085 [warning] git config failed: Failed to execute git
+2024-06-23 20:40:51.112 [info] > git ls-files --stage -- /workspace/django_blog/blog/templates/blog/post_detail.html [1ms]
+2024-06-23 20:40:51.116 [info] > git cat-file -s 9a352bf4d05afee499e20fdd83a6c9acc036e76b [1ms]
+2024-06-23 20:40:51.183 [info] > git show --textconv :blog/templates/blog/post_detail.html [1ms]
+2024-06-23 20:40:59.514 [info] > git config --get commit.template [3ms]
+2024-06-23 20:40:59.514 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-06-23 20:40:59.518 [info] > git status -z -uall [1ms]
+2024-06-23 20:40:59.524 [info] > git merge-base refs/heads/main refs/remotes/origin/main [3ms]
+2024-06-23 20:40:59.528 [info] > git rev-list --count --left-right refs/heads/main...refs/remotes/origin/main [1ms]
+2024-06-23 20:40:59.532 [info] > git diff --name-status -z --diff-filter=ADMR 276b2445af8650ff8e2d8dcc9d30b0398a076413...refs/remotes/origin/main [1ms]
+2024-06-23 20:40:59.653 [info] > git config --local branch.main.github-pr-owner-number [94ms]
+2024-06-23 20:40:59.653 [warning] git config failed: Failed to execute git
+2024-06-23 20:40:59.712 [info] > git ls-files --stage -- /workspace/django_blog/blog/templates/blog/post_detail.html [1ms]
+2024-06-23 20:40:59.716 [info] > git cat-file -s 9a352bf4d05afee499e20fdd83a6c9acc036e76b [1ms]
+2024-06-23 20:40:59.751 [info] > git show --textconv :blog/templates/blog/post_detail.html [1ms]
+2024-06-23 20:41:10.479 [info] > git show --textconv :codestar/settings.py [3ms]
+2024-06-23 20:41:10.480 [info] > git ls-files --stage -- /workspace/django_blog/codestar/settings.py [1ms]
+2024-06-23 20:41:10.483 [info] > git cat-file -s 4c77f5120f16539858bdef7fb2dd23c695232a0d [1ms]
+2024-06-23 20:41:20.361 [info] > git config --get commit.template [4ms]
+2024-06-23 20:41:20.361 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-06-23 20:41:20.365 [info] > git status -z -uall [1ms]
+2024-06-23 20:43:10.842 [info] > git config --local branch.main.github-pr-owner-number [1ms]
+2024-06-23 20:43:10.842 [warning] git config failed: Failed to execute git
+2024-06-23 20:43:22.868 [info] > git show --textconv :blog/templates/blog/post_detail.html [3ms]
+2024-06-23 20:43:22.869 [info] > git ls-files --stage -- /workspace/django_blog/blog/templates/blog/post_detail.html [1ms]
+2024-06-23 20:43:22.872 [info] > git cat-file -s 9a352bf4d05afee499e20fdd83a6c9acc036e76b [1ms]
+2024-06-23 20:45:59.595 [info] > git config --get commit.template [4ms]
+2024-06-23 20:45:59.595 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-06-23 20:45:59.600 [info] > git status -z -uall [2ms]
+2024-06-23 20:47:01.088 [info] > git show --textconv :codestar/settings.py [3ms]
+2024-06-23 20:47:01.089 [info] > git ls-files --stage -- /workspace/django_blog/codestar/settings.py [1ms]
+2024-06-23 20:47:01.093 [info] > git cat-file -s 4c77f5120f16539858bdef7fb2dd23c695232a0d [1ms]
+2024-06-23 20:47:07.319 [info] > git config --get commit.template [4ms]
+2024-06-23 20:47:07.319 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-06-23 20:47:07.324 [info] > git status -z -uall [2ms]
+2024-06-23 20:47:08.785 [info] > git ls-files --stage -- /workspace/django_blog/codestar/settings.py [1ms]
+2024-06-23 20:47:08.789 [info] > git cat-file -s 4c77f5120f16539858bdef7fb2dd23c695232a0d [1ms]
+2024-06-23 20:47:08.826 [info] > git show --textconv :codestar/settings.py [2ms]
+2024-06-23 20:47:12.332 [info] > git config --get commit.template [3ms]
+2024-06-23 20:47:12.332 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-06-23 20:47:12.336 [info] > git status -z -uall [1ms]
+2024-06-23 20:47:13.784 [info] > git ls-files --stage -- /workspace/django_blog/codestar/settings.py [1ms]
+2024-06-23 20:47:13.787 [info] > git cat-file -s 4c77f5120f16539858bdef7fb2dd23c695232a0d [1ms]
+2024-06-23 20:47:13.820 [info] > git show --textconv :codestar/settings.py [1ms]
+2024-06-23 20:48:10.850 [info] > git config --local branch.main.github-pr-owner-number [1ms]
+2024-06-23 20:48:10.850 [warning] git config failed: Failed to execute git
+2024-06-23 20:49:36.828 [info] > git config --get commit.template [1ms]
+2024-06-23 20:49:36.832 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-06-23 20:49:36.837 [info] > git status -z -uall [2ms]
+2024-06-23 20:49:37.113 [info] > git show --textconv :blog/urls.py [2ms]
+2024-06-23 20:49:37.113 [info] > git ls-files --stage -- /workspace/django_blog/blog/urls.py [1ms]
+2024-06-23 20:49:37.117 [info] > git cat-file -s 67800c92f386d9999b92594602acc02f3d48ee77 [1ms]
+2024-06-23 20:53:10.855 [info] > git config --local branch.main.github-pr-owner-number [1ms]
+2024-06-23 20:53:10.855 [warning] git config failed: Failed to execute git
+2024-06-23 20:53:27.676 [info] > git show --textconv :blog/templates/blog/index.html [3ms]
+2024-06-23 20:53:27.677 [info] > git ls-files --stage -- /workspace/django_blog/blog/templates/blog/index.html [1ms]
+2024-06-23 20:53:27.680 [info] > git cat-file -s c132d1cf80e73928309da743adc0a47b65771227 [1ms]
+2024-06-23 20:54:14.800 [info] > git show --textconv :blog/urls.py [3ms]
+2024-06-23 20:54:14.800 [info] > git ls-files --stage -- /workspace/django_blog/blog/urls.py [1ms]
+2024-06-23 20:54:14.805 [info] > git cat-file -s 67800c92f386d9999b92594602acc02f3d48ee77 [1ms]
+2024-06-23 20:58:10.860 [info] > git config --local branch.main.github-pr-owner-number [1ms]
+2024-06-23 20:58:10.860 [warning] git config failed: Failed to execute git
+2024-06-23 21:03:10.865 [info] > git config --local branch.main.github-pr-owner-number [1ms]
+2024-06-23 21:03:10.865 [warning] git config failed: Failed to execute git
+2024-06-23 21:03:31.303 [info] > git show --textconv :blog/templates/blog/post_detail.html [3ms]
+2024-06-23 21:03:31.304 [info] > git ls-files --stage -- /workspace/django_blog/blog/templates/blog/post_detail.html [1ms]
+2024-06-23 21:03:31.307 [info] > git cat-file -s 9a352bf4d05afee499e20fdd83a6c9acc036e76b [1ms]
+2024-06-23 21:08:10.870 [info] > git config --local branch.main.github-pr-owner-number [1ms]
+2024-06-23 21:08:10.870 [warning] git config failed: Failed to execute git
+2024-06-23 21:13:10.875 [info] > git config --local branch.main.github-pr-owner-number [0ms]
+2024-06-23 21:13:10.875 [warning] git config failed: Failed to execute git
+2024-06-23 21:18:10.880 [info] > git config --local branch.main.github-pr-owner-number [0ms]
+2024-06-23 21:18:10.880 [warning] git config failed: Failed to execute git
+2024-06-23 21:23:10.884 [info] > git config --local branch.main.github-pr-owner-number [1ms]
+2024-06-23 21:23:10.884 [warning] git config failed: Failed to execute git
+2024-06-23 21:28:10.889 [info] > git config --local branch.main.github-pr-owner-number [1ms]
+2024-06-23 21:28:10.889 [warning] git config failed: Failed to execute git
+2024-06-23 21:33:10.894 [info] > git config --local branch.main.github-pr-owner-number [1ms]
+2024-06-23 21:33:10.894 [warning] git config failed: Failed to execute git
+2024-06-23 21:38:10.900 [info] > git config --local branch.main.github-pr-owner-number [1ms]
+2024-06-23 21:38:10.900 [warning] git config failed: Failed to execute git
+2024-06-23 21:43:10.906 [info] > git config --local branch.main.github-pr-owner-number [1ms]
+2024-06-23 21:43:10.906 [warning] git config failed: Failed to execute git
+2024-06-23 21:48:10.910 [info] > git config --local branch.main.github-pr-owner-number [1ms]
+2024-06-23 21:48:10.910 [warning] git config failed: Failed to execute git
+2024-06-23 21:53:10.915 [info] > git config --local branch.main.github-pr-owner-number [1ms]
+2024-06-23 21:53:10.915 [warning] git config failed: Failed to execute git
+2024-06-23 21:58:10.920 [info] > git config --local branch.main.github-pr-owner-number [1ms]
+2024-06-23 21:58:10.920 [warning] git config failed: Failed to execute git
+2024-06-23 22:03:10.925 [info] > git config --local branch.main.github-pr-owner-number [1ms]
+2024-06-23 22:03:10.925 [warning] git config failed: Failed to execute git
+2024-06-23 22:08:10.930 [info] > git config --local branch.main.github-pr-owner-number [0ms]
+2024-06-23 22:08:10.930 [warning] git config failed: Failed to execute git
+2024-06-23 22:13:10.935 [info] > git config --local branch.main.github-pr-owner-number [1ms]
+2024-06-23 22:13:10.935 [warning] git config failed: Failed to execute git
+2024-06-23 22:18:10.940 [info] > git config --local branch.main.github-pr-owner-number [1ms]
+2024-06-23 22:18:10.940 [warning] git config failed: Failed to execute git

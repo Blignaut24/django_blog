@@ -1,0 +1,23 @@
+2024-06-23 19:45:02.769 [info] 
+
+
+
+
+2024-06-23 19:45:02.787 [info] Extension host agent started.
+2024-06-23 19:45:02.919 [info] Extension 'gitpod.gitpod-theme' v0.0.2 is already installed. Use '--force' option to update to latest version or provide '@<version>' to install a specific version, for example: 'gitpod.gitpod-theme@1.2.3'.
+2024-06-23 19:45:02.919 [info] Extension 'github.vscode-pull-request-github' v0.90.0 is already installed. Use '--force' option to update to latest version or provide '@<version>' to install a specific version, for example: 'github.vscode-pull-request-github@1.2.3'.
+2024-06-23 19:45:12.018 [info] [100.64.179.18][6d8902bf][ManagementConnection] New connection established.
+2024-06-23 19:45:12.022 [info] [100.64.224.160][80dea7af][ExtensionHostConnection] New connection established.
+2024-06-23 19:45:12.306 [info] [100.64.224.160][80dea7af][ExtensionHostConnection] <511> Launched Extension Host Process.
+2024-06-23 19:47:34.374 [info] [100.64.179.18][6d8902bf][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2024-06-23 19:47:34.419 [info] [100.64.224.160][80dea7af][ExtensionHostConnection] <511> Extension Host Process exited with code: 0, signal: null.
+2024-06-23 19:48:06.011 [info] [100.64.179.18][392b4022][ManagementConnection] New connection established.
+2024-06-23 19:48:06.015 [info] [100.64.179.18][567e152e][ExtensionHostConnection] New connection established.
+2024-06-23 19:48:06.019 [info] [100.64.179.18][567e152e][ExtensionHostConnection] <1420> Launched Extension Host Process.
+2024-06-23 20:23:05.729 [info] Getting Manifest... vsls-contrib.codetour
+2024-06-23 20:23:05.962 [info] Installing extension: vsls-contrib.codetour file:///workspace/.vscode-remote/extensions/extensions.json
+2024-06-23 20:23:06.350 [info] Extracted extension to file:///workspace/.vscode-remote/extensions/vsls-contrib.codetour-0.0.59-universal: vsls-contrib.codetour
+2024-06-23 20:23:06.351 [info] Renamed to /workspace/.vscode-remote/extensions/vsls-contrib.codetour-0.0.59-universal
+2024-06-23 20:23:06.406 [info] Extension installed successfully: vsls-contrib.codetour file:///workspace/.vscode-remote/extensions/extensions.json
+2024-06-23 22:21:18.509 [info] [100.64.179.18][392b4022][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2024-06-23 22:21:18.564 [info] [100.64.179.18][567e152e][ExtensionHostConnection] <1420> Extension Host Process exited with code: 0, signal: null.

@@ -1,0 +1,27 @@
+2024-06-23 19:48:10.076 [warning] /home/gitpod/.ssh/config: ENOENT: no such file or directory, open '/home/gitpod/.ssh/config'
+2024-06-23 19:48:10.076 [info] Activation> Extension version: 0.90.0
+2024-06-23 19:48:10.782 [info] Looking for git repository
+2024-06-23 19:48:10.782 [info] Found 0 repositories during activation
+2024-06-23 19:48:10.782 [info] Git repository found, initializing review manager and pr tree view.
+2024-06-23 19:48:10.785 [info] Registering git provider
+2024-06-23 19:48:10.785 [info] Review+0> Validate state in progress
+2024-06-23 19:48:10.785 [info] Review+0> Validating state...
+2024-06-23 19:48:10.837 [info] Found GitHub remote for folder /workspace/django_blog
+2024-06-23 19:48:11.141 [info] Trying to use globalState for assignableUsers.
+2024-06-23 19:48:11.244 [info] Review+0> No matching pull request metadata found locally for current branch main
+2024-06-23 19:48:11.335 [info] Using globalState assignableUsers for 1.
+2024-06-23 19:48:11.504 [info] Review+0> No matching pull request metadata found on GitHub for current branch main
+2024-06-23 20:09:31.424 [info] Repo state for file:///workspace/django_blog changed.
+2024-06-23 20:09:31.424 [info] Repo file:///workspace/django_blog has already been setup.
+2024-06-23 20:40:50.947 [info] Review+0> Validate state in progress
+2024-06-23 20:40:50.947 [info] Review+0> Validating state...
+2024-06-23 20:40:51.080 [info] Found GitHub remote for folder /workspace/django_blog
+2024-06-23 20:40:51.081 [info] Using in-memory cached assignable users.
+2024-06-23 20:40:51.085 [info] Review+0> No matching pull request metadata found locally for current branch main
+2024-06-23 20:40:51.332 [info] Review+0> No matching pull request metadata found on GitHub for current branch main
+2024-06-23 20:40:59.524 [info] Review+0> Validate state in progress
+2024-06-23 20:40:59.524 [info] Review+0> Validating state...
+2024-06-23 20:40:59.555 [info] Found GitHub remote for folder /workspace/django_blog
+2024-06-23 20:40:59.556 [info] Using in-memory cached assignable users.
+2024-06-23 20:40:59.653 [info] Review+0> No matching pull request metadata found locally for current branch main
+2024-06-23 20:40:59.888 [info] Review+0> No matching pull request metadata found on GitHub for current branch main

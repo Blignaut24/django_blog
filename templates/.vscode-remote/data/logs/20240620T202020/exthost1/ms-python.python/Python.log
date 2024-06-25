@@ -1,0 +1,17 @@
+2024-06-20 20:21:57.460 [info] Default formatter is set to null for workspace /workspace/django_blog
+2024-06-20 20:21:57.460 [info] Test server listening.
+2024-06-20 20:21:57.460 [info] > conda info --json
+2024-06-20 20:21:57.460 [info] > hatch env show --json
+2024-06-20 20:21:57.460 [info] cwd: .
+2024-06-20 20:21:57.460 [info] > ~/.pyenv/bin/pyenv which python
+2024-06-20 20:21:57.460 [info] cwd: .
+2024-06-20 20:21:57.460 [info] Found: /bin/python3 --> /bin/python3.10
+2024-06-20 20:21:57.461 [info] Found: /bin/python3.10 --> /bin/python3.10
+2024-06-20 20:21:57.478 [info] > ~/.pyenv/shims/python -I /workspace/.vscode-remote/extensions/ms-python.python-2024.4.1-universal/python_files/get_output_via_markers.py /workspace/.vscode-remote/extensions/ms-python.python-2024.4.1-universal/python_files/interpreterInfo.py
+2024-06-20 20:21:57.480 [info] Found: /usr/bin/python3 --> /usr/bin/python3.10
+2024-06-20 20:21:57.481 [info] Found: /usr/bin/python3.10 --> /usr/bin/python3.10
+2024-06-20 20:21:57.551 [info] > ~/.pyenv/versions/3.12.3/bin/python -I /workspace/.vscode-remote/extensions/ms-python.python-2024.4.1-universal/python_files/get_output_via_markers.py /workspace/.vscode-remote/extensions/ms-python.python-2024.4.1-universal/python_files/interpreterInfo.py
+2024-06-20 20:21:57.583 [info] > /bin/python3 -I /workspace/.vscode-remote/extensions/ms-python.python-2024.4.1-universal/python_files/get_output_via_markers.py /workspace/.vscode-remote/extensions/ms-python.python-2024.4.1-universal/python_files/interpreterInfo.py
+2024-06-20 20:21:57.608 [info] > /usr/bin/python3 -I /workspace/.vscode-remote/extensions/ms-python.python-2024.4.1-universal/python_files/get_output_via_markers.py /workspace/.vscode-remote/extensions/ms-python.python-2024.4.1-universal/python_files/interpreterInfo.py
+2024-06-20 20:21:57.655 [info] Python interpreter path: ~/.pyenv/shims/python
+2024-06-20 20:21:58.863 [info] Starting Jedi language server for django_blog.

@@ -1,0 +1,63 @@
+2024-06-22 12:55:56.665 [info] Log level: Info
+2024-06-22 12:55:56.665 [info] Validating found git in: "git"
+2024-06-22 12:55:56.665 [info] Using git "2.43.2" from "git"
+2024-06-22 12:55:56.665 [info] > git rev-parse --show-toplevel [1ms]
+2024-06-22 12:55:56.665 [info] > git rev-parse --git-dir --git-common-dir [4ms]
+2024-06-22 12:55:56.665 [info] Open repository: /workspace/django_blog
+2024-06-22 12:55:56.665 [info] > git config --get commit.template [12ms]
+2024-06-22 12:55:56.665 [info] > git rev-parse --show-toplevel [16ms]
+2024-06-22 12:55:56.665 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2024-06-22 12:55:56.665 [info] > git rev-parse --show-toplevel [1ms]
+2024-06-22 12:55:56.665 [warning] ENOENT: no such file or directory, open '/workspace/django_blog/.git/refs/remotes/origin/main'
+2024-06-22 12:55:56.665 [info] > git rev-parse refs/remotes/origin/main [44ms]
+2024-06-22 12:55:56.665 [info] > git rev-parse --show-toplevel [46ms]
+2024-06-22 12:55:56.665 [info] > git status -z -uall [6ms]
+2024-06-22 12:55:56.667 [info] > git merge-base refs/heads/main refs/remotes/origin/main [5ms]
+2024-06-22 12:55:56.670 [info] > git rev-parse --show-toplevel [13ms]
+2024-06-22 12:55:56.673 [info] > git config --get commit.template [6ms]
+2024-06-22 12:55:56.675 [info] > git rev-parse --show-toplevel [3ms]
+2024-06-22 12:55:56.675 [info] > git rev-list --count --left-right refs/heads/main...refs/remotes/origin/main [5ms]
+2024-06-22 12:55:56.684 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2024-06-22 12:55:56.684 [info] > git diff --name-status -z --diff-filter=ADMR 4fbb0fb743a9177b3b444223ea816fc1eddd07b1...refs/remotes/origin/main [6ms]
+2024-06-22 12:55:56.687 [warning] ENOENT: no such file or directory, open '/workspace/django_blog/.git/refs/remotes/origin/main'
+2024-06-22 12:55:56.687 [info] > git rev-parse --show-toplevel [4ms]
+2024-06-22 12:55:56.750 [info] > git rev-parse refs/remotes/origin/main [63ms]
+2024-06-22 12:55:56.752 [info] > git rev-parse --show-toplevel [3ms]
+2024-06-22 12:55:56.755 [info] > git status -z -uall [3ms]
+2024-06-22 12:55:56.757 [info] > git rev-parse --show-toplevel [2ms]
+2024-06-22 12:55:56.761 [info] > git rev-parse --show-toplevel [2ms]
+2024-06-22 12:55:57.254 [info] > git check-ignore -v -z --stdin [2ms]
+2024-06-22 12:55:58.326 [info] > git show --textconv :env.py [3ms]
+2024-06-22 12:55:58.327 [info] > git ls-files --stage -- /workspace/django_blog/env.py [1ms]
+2024-06-22 12:55:59.019 [info] > git config --local branch.main.github-pr-owner-number [102ms]
+2024-06-22 12:55:59.019 [warning] git config failed: Failed to execute git
+2024-06-22 12:58:47.948 [info] > git check-ignore -v -z --stdin [1ms]
+2024-06-22 12:58:50.143 [info] > git show --textconv :codestar/settings.py [3ms]
+2024-06-22 12:58:50.144 [info] > git ls-files --stage -- /workspace/django_blog/codestar/settings.py [1ms]
+2024-06-22 12:58:50.147 [info] > git cat-file -s 2a3d3976fcbb6ae5fbc98ed66f05ed70c4ca8dd5 [1ms]
+2024-06-22 13:00:58.596 [info] > git config --local branch.main.github-pr-owner-number [1ms]
+2024-06-22 13:00:58.596 [warning] git config failed: Failed to execute git
+2024-06-22 13:05:58.603 [info] > git config --local branch.main.github-pr-owner-number [1ms]
+2024-06-22 13:05:58.603 [warning] git config failed: Failed to execute git
+2024-06-22 13:10:58.608 [info] > git config --local branch.main.github-pr-owner-number [0ms]
+2024-06-22 13:10:58.608 [warning] git config failed: Failed to execute git
+2024-06-22 13:15:58.612 [info] > git config --local branch.main.github-pr-owner-number [1ms]
+2024-06-22 13:15:58.612 [warning] git config failed: Failed to execute git
+2024-06-22 13:20:58.618 [info] > git config --local branch.main.github-pr-owner-number [0ms]
+2024-06-22 13:20:58.618 [warning] git config failed: Failed to execute git
+2024-06-22 13:25:58.623 [info] > git config --local branch.main.github-pr-owner-number [1ms]
+2024-06-22 13:25:58.624 [warning] git config failed: Failed to execute git
+2024-06-22 13:30:58.629 [info] > git config --local branch.main.github-pr-owner-number [1ms]
+2024-06-22 13:30:58.629 [warning] git config failed: Failed to execute git
+2024-06-22 13:35:58.634 [info] > git config --local branch.main.github-pr-owner-number [1ms]
+2024-06-22 13:35:58.634 [warning] git config failed: Failed to execute git
+2024-06-22 13:40:58.640 [info] > git config --local branch.main.github-pr-owner-number [0ms]
+2024-06-22 13:40:58.640 [warning] git config failed: Failed to execute git
+2024-06-22 13:45:58.644 [info] > git config --local branch.main.github-pr-owner-number [1ms]
+2024-06-22 13:45:58.644 [warning] git config failed: Failed to execute git
+2024-06-22 13:50:58.650 [info] > git config --local branch.main.github-pr-owner-number [0ms]
+2024-06-22 13:50:58.650 [warning] git config failed: Failed to execute git
+2024-06-22 13:55:58.655 [info] > git config --local branch.main.github-pr-owner-number [1ms]
+2024-06-22 13:55:58.655 [warning] git config failed: Failed to execute git
+2024-06-22 14:00:58.660 [info] > git config --local branch.main.github-pr-owner-number [1ms]
+2024-06-22 14:00:58.660 [warning] git config failed: Failed to execute git

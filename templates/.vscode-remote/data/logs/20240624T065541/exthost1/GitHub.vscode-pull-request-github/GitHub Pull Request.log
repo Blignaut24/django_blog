@@ -1,0 +1,39 @@
+2024-06-24 06:56:05.707 [warning] /home/gitpod/.ssh/config: ENOENT: no such file or directory, open '/home/gitpod/.ssh/config'
+2024-06-24 06:56:05.707 [info] Activation> Extension version: 0.90.0
+2024-06-24 06:56:06.319 [info] Looking for git repository
+2024-06-24 06:56:06.319 [info] Found 0 repositories during activation
+2024-06-24 06:56:06.319 [info] Git repository found, initializing review manager and pr tree view.
+2024-06-24 06:56:06.322 [info] Registering git provider
+2024-06-24 06:56:06.322 [info] Review+0> Validate state in progress
+2024-06-24 06:56:06.322 [info] Review+0> Validating state...
+2024-06-24 06:56:06.401 [info] Found GitHub remote for folder /workspace/django_blog
+2024-06-24 06:56:06.690 [info] Trying to use globalState for assignableUsers.
+2024-06-24 06:56:06.789 [info] Review+0> No matching pull request metadata found locally for current branch main
+2024-06-24 06:56:06.875 [info] Using globalState assignableUsers for 1.
+2024-06-24 06:56:07.047 [info] Review+0> No matching pull request metadata found on GitHub for current branch main
+2024-06-24 07:03:38.693 [info] Repo state for file:///workspace/django_blog changed.
+2024-06-24 07:03:38.693 [info] Repo file:///workspace/django_blog has already been setup.
+2024-06-24 08:51:52.352 [info] Review+0> Validate state in progress
+2024-06-24 08:51:52.352 [info] Review+0> Validating state...
+2024-06-24 08:51:52.482 [info] Found GitHub remote for folder /workspace/django_blog
+2024-06-24 08:51:52.483 [info] Using in-memory cached assignable users.
+2024-06-24 08:51:52.488 [info] Review+0> No matching pull request metadata found locally for current branch main
+2024-06-24 08:51:52.702 [info] Review+0> No matching pull request metadata found on GitHub for current branch main
+2024-06-24 08:51:57.371 [info] Review+0> Validate state in progress
+2024-06-24 08:51:57.371 [info] Review+0> Validating state...
+2024-06-24 08:51:57.403 [info] Found GitHub remote for folder /workspace/django_blog
+2024-06-24 08:51:57.403 [info] Using in-memory cached assignable users.
+2024-06-24 08:51:57.495 [info] Review+0> No matching pull request metadata found locally for current branch main
+2024-06-24 08:51:57.752 [info] Review+0> No matching pull request metadata found on GitHub for current branch main
+2024-06-24 08:54:33.096 [info] Review+0> Validate state in progress
+2024-06-24 08:54:33.096 [info] Review+0> Validating state...
+2024-06-24 08:54:33.226 [info] Found GitHub remote for folder /workspace/django_blog
+2024-06-24 08:54:33.227 [info] Using in-memory cached assignable users.
+2024-06-24 08:54:33.231 [info] Review+0> No matching pull request metadata found locally for current branch main
+2024-06-24 08:54:33.463 [info] Review+0> No matching pull request metadata found on GitHub for current branch main
+2024-06-24 08:54:45.455 [info] Review+0> Validate state in progress
+2024-06-24 08:54:45.455 [info] Review+0> Validating state...
+2024-06-24 08:54:45.489 [info] Found GitHub remote for folder /workspace/django_blog
+2024-06-24 08:54:45.489 [info] Using in-memory cached assignable users.
+2024-06-24 08:54:45.586 [info] Review+0> No matching pull request metadata found locally for current branch main
+2024-06-24 08:54:45.845 [info] Review+0> No matching pull request metadata found on GitHub for current branch main

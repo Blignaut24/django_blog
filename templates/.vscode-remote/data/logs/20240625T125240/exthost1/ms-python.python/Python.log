@@ -1,0 +1,23 @@
+2024-06-25 12:52:54.561 [info] Default formatter is set to null for workspace /workspace/django_blog
+2024-06-25 12:52:54.561 [info] Test server listening.
+2024-06-25 12:52:54.561 [info] Python interpreter path: ~/.pyenv/shims/python
+2024-06-25 12:52:54.743 [info] > ~/.pyenv/bin/pyenv which python
+2024-06-25 12:52:54.743 [info] cwd: .
+2024-06-25 12:52:56.364 [info] Starting Jedi language server for django_blog.
+2024-06-25 13:08:59.693 [info] Discover tests for workspace name: django_blog - uri: /workspace/django_blog/codestar/settings.py
+2024-06-25 13:09:03.073 [info] Discover tests for workspace name: django_blog - uri: /workspace/django_blog/codestar/settings.py
+2024-06-25 13:09:18.729 [info] Running installed packages checker:  /home/gitpod/.pyenv/shims/python /workspace/.vscode-remote/extensions/ms-python.python-2024.4.1-universal/python_files/installed_check.py /workspace/django_blog/requirements.txt
+2024-06-25 13:09:18.729 [info] > ~/.pyenv/shims/python /workspace/.vscode-remote/extensions/ms-python.python-2024.4.1-universal/python_files/installed_check.py ./requirements.txt
+2024-06-25 13:17:21.132 [info] Discover tests for workspace name: django_blog - uri: /workspace/django_blog/codestar/settings.py
+2024-06-25 13:17:25.330 [info] Discover tests for workspace name: django_blog - uri: /workspace/django_blog/codestar/settings.py
+2024-06-25 13:21:57.465 [info] Discover tests for workspace name: django_blog - uri: /workspace/django_blog/codestar/settings.py
+2024-06-25 13:22:06.211 [info] Discover tests for workspace name: django_blog - uri: /workspace/django_blog/codestar/settings.py
+2024-06-25 13:22:14.637 [info] Discover tests for workspace name: django_blog - uri: /workspace/django_blog/codestar/settings.py
+2024-06-25 13:25:10.072 [info] Discover tests for workspace name: django_blog - uri: /workspace/django_blog/codestar/settings.py
+2024-06-25 13:25:16.228 [info] Discover tests for workspace name: django_blog - uri: /workspace/django_blog/codestar/settings.py
+2024-06-25 13:28:14.141 [info] Discover tests for workspace name: django_blog - uri: /workspace/django_blog/codestar/settings.py
+2024-06-25 13:28:27.615 [info] Discover tests for workspace name: django_blog - uri: /workspace/django_blog/codestar/settings.py
+2024-06-25 13:32:50.866 [info] Discover tests for workspace name: django_blog - uri: /workspace/django_blog/codestar/settings.py
+2024-06-25 13:37:17.221 [info] Discover tests for workspace name: django_blog - uri: /workspace/django_blog/codestar/settings.py
+2024-06-25 13:38:15.547 [info] Discover tests for workspace name: django_blog - uri: /workspace/django_blog/codestar/urls.py
+2024-06-25 13:38:19.298 [info] Discover tests for workspace name: django_blog - uri: /workspace/django_blog/codestar/urls.py

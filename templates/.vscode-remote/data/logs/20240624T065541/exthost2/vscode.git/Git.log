@@ -1,0 +1,38 @@
+2024-06-24 07:32:38.053 [info] Log level: Info
+2024-06-24 07:32:38.053 [info] Validating found git in: "git"
+2024-06-24 07:32:38.053 [info] Using git "2.43.2" from "git"
+2024-06-24 07:32:38.053 [info] > git rev-parse --show-toplevel [1ms]
+2024-06-24 07:32:38.053 [info] > git rev-parse --git-dir --git-common-dir [8ms]
+2024-06-24 07:32:38.053 [info] Open repository: /workspace/django_blog
+2024-06-24 07:32:38.053 [info] > git config --get commit.template [3ms]
+2024-06-24 07:32:38.053 [info] > git rev-parse --show-toplevel [5ms]
+2024-06-24 07:32:38.053 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2024-06-24 07:32:38.053 [info] > git rev-parse --show-toplevel [2ms]
+2024-06-24 07:32:38.053 [info] > git status -z -uall [6ms]
+2024-06-24 07:32:38.053 [info] > git rev-parse --show-toplevel [30ms]
+2024-06-24 07:32:38.053 [info] > git merge-base refs/heads/main refs/remotes/origin/main [12ms]
+2024-06-24 07:32:38.053 [info] > git rev-parse --show-toplevel [18ms]
+2024-06-24 07:32:38.053 [info] > git config --get commit.template [13ms]
+2024-06-24 07:32:38.053 [info] > git rev-list --count --left-right refs/heads/main...refs/remotes/origin/main [7ms]
+2024-06-24 07:32:38.053 [info] > git rev-parse --show-toplevel [22ms]
+2024-06-24 07:32:38.053 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [7ms]
+2024-06-24 07:32:38.053 [info] > git diff --name-status -z --diff-filter=ADMR 276b2445af8650ff8e2d8dcc9d30b0398a076413...refs/remotes/origin/main [25ms]
+2024-06-24 07:32:38.053 [info] > git rev-parse --show-toplevel [1ms]
+2024-06-24 07:32:38.053 [info] > git rev-parse --show-toplevel [4ms]
+2024-06-24 07:32:38.054 [info] > git status -z -uall [6ms]
+2024-06-24 07:32:38.054 [info] > git rev-parse --show-toplevel [2ms]
+2024-06-24 07:32:38.258 [info] > git rev-parse --show-toplevel [200ms]
+2024-06-24 07:32:38.266 [info] > git rev-parse --show-toplevel [3ms]
+2024-06-24 07:32:38.573 [info] > git check-ignore -v -z --stdin [1ms]
+2024-06-24 07:32:38.580 [info] > git rev-parse --show-toplevel [311ms]
+2024-06-24 07:32:39.436 [info] > git check-ignore -v -z --stdin [4ms]
+2024-06-24 07:32:40.703 [info] > git config --local branch.main.github-pr-owner-number [111ms]
+2024-06-24 07:32:40.703 [warning] git config failed: Failed to execute git
+2024-06-24 07:33:50.914 [info] > git check-ignore -v -z --stdin [1ms]
+2024-06-24 07:34:20.361 [info] > git config --get commit.template [4ms]
+2024-06-24 07:34:20.361 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2024-06-24 07:34:20.366 [info] > git status -z -uall [2ms]
+2024-06-24 07:34:24.799 [info] > git show --textconv :admin.py [3ms]
+2024-06-24 07:34:24.800 [info] > git ls-files --stage -- /workspace/django_blog/admin.py [1ms]
+2024-06-24 07:37:40.263 [info] > git config --local branch.main.github-pr-owner-number [1ms]
+2024-06-24 07:37:40.263 [warning] git config failed: Failed to execute git

@@ -1,0 +1,106 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "13. Authentication",
+  "steps": [
+    {
+      "file": "codestar/settings.py",
+      "description": "**I Think Therefore I Blog > Authentication Django AllAuth**\n\n1. In codestar/settings.py, set your DEBUG\nvalue to True\n\n**Install and wire up Allauth**\n\n3. Install the Allauth package.\n\n`pip3 install django-allauth~=0.57.0`\n\n\n4. Add the django-allauth package to the requirements.txt file.\n\n`pip3 freeze --local > requirements.txt`\n",
+      "line": 31
+    },
+    {
+      "file": "codestar/settings.py",
+      "description": "**I Think Therefore I Blog > Authentication Django AllAuth**\n\n5. Open the codestar/settings.py file and add the following apps to INSTALLED_APPS. Make sure to add them in the same order as shown in the image.\n\n```\nINSTALLED_APPS = [\n    # …\n    'django.contrib.staticfiles',\n    'django.contrib.sites',\n    'allauth',\n    'allauth.account',\n    'allauth.socialaccount',\n    'django_summernote',\n    # …\n]\n```\nNote: The 'django.contrib.sites' app is a built-in Django package, and the remaining are apps created by the AllAuth package",
+      "line": 47,
+      "selection": {
+        "start": {
+          "line": 8,
+          "character": 5
+        },
+        "end": {
+          "line": 12,
+          "character": 29
+        }
+      }
+    },
+    {
+      "file": "codestar/settings.py",
+      "description": "**I Think Therefore I Blog > Authentication Django AllAuth**\n\n6. Also, add the following constants in codestar/settings.py directly below the INSTALLED_APPS list.\n```\nSITE_ID = 1\nLOGIN_REDIRECT_URL = '/'\nLOGOUT_REDIRECT_URL = '/'\n```\nNote: We need to add a SITE_ID of 1 so that Django can handle multiple sites from one database. We need to give each project an ID value so that the database is aware of which project is contacting it. We only have one site here using our one database, but we'll still need to tell Django the site number of 1 explicitly.\n\nThe redirection URLs are also added so that after we've logged in or logged out, the site will automatically redirect us to the home page.",
+      "line": 57,
+      "selection": {
+        "start": {
+          "line": 5,
+          "character": 1
+        },
+        "end": {
+          "line": 7,
+          "character": 26
+        }
+      }
+    },
+    {
+      "file": "codestar/settings.py",
+      "description": "**I Think Therefore I Blog > Authentication Django AllAuth**\n\n7. Append the following line to the list of MIDDLEWARE in codestar/settings.py.\n\nMIDDLEWARE = [\n    # …\n    `'allauth.account.middleware.AccountMiddleware',`\n]\n\nNote: This is the middleware for the allauth.account app you added to INSTALLED_APPS. It adds additional functionality to the project's account user authentication.\n",
+      "line": 70,
+      "selection": {
+        "start": {
+          "line": 7,
+          "character": 5
+        },
+        "end": {
+          "line": 7,
+          "character": 53
+        }
+      }
+    },
+    {
+      "file": "codestar/settings.py",
+      "description": "\n8. Below the AUTH PASSWORD VALIDATORS, in\ncodestar/settings.py, add:\n```\nACCOUNT EMAIL VERIFICATION = 'none'\n```\nNote: We are not using email verification\nin this project, so this line informs Django\nnot to expect it. Without this line, you\nwould get Internal Server errors (code\nSOO) during login and registration.\n\n9. Save all the files and migrate.\n```\npython3 manage. py migrate\n```\nNote: Just as with django_summernote\npreviously, you do not need\nmakemigrations as the migrations\ndirectory and files already exist in the\naccount, site and socialaccount apps.",
+      "line": 143
+    },
+    {
+      "file": "codestar/urls.py",
+      "description": "**I Think Therefore I Blog > Authentication Django AllAuth**\n\nIO. Open the codestar/urls.py file and\ninclude the path of accounts in the\nurlpatterns below about.\n\nurlpatterns =\n`path( \"accounts/ \" ,include( \"allauth. urls\" ) ) ,`",
+      "line": 26
+    },
+    {
+      "file": "templates/base.html",
+      "description": "\n11. Open the base.html template and assign the new URLs to variables using the as keyword.\n\n{% url 'about' as about_url %}\n```\n{% url 'account_login' as login_url %}\n{% url 'account_signup' as signup_url %}\n{% url 'account_logout' as logout_url %}\n```",
+      "line": 5,
+      "selection": {
+        "start": {
+          "line": 6,
+          "character": 1
+        },
+        "end": {
+          "line": 6,
+          "character": 39
+        }
+      }
+    },
+    {
+      "file": "templates/base.html",
+      "description": "\n12. Also, in base.html, add Logout, Register\nand Login links, with their template tags\ndirectly below the About link.\n\n\n  {% if user.is_authenticated %}\n                    <li class=\"nav-item\">\n                        <a class=\"nav-link {% if request.path == logout_url %}active{% endif %}\" aria-current=\"page\" \n                        href=\"{% url 'account_logout' %}\">Logout</a>\n                    </li>\n                    {% else %}\n                    <li class=\"nav-item\">\n                        <a class=\"nav-link {% if request.path == signup_url %}active{% endif %}\" aria-current=\"page\"\n                            href=\"{% url 'account_signup' %}\">Register</a>\n                    </li>\n                    <li class=\"nav-item\">\n                        <a class=\"nav-link {% if request.path == login_url %}active{% endif %}\" aria-current=\"page\" \n                        href=\"{% url 'account_login' %}\">Login</a>\n                    </li>\n                    {% endif %}\n\nNote: The URLs and views these link to are\nin the allauth.accounts app, so you don't\nhave to create them.",
+      "line": 54
+    },
+    {
+      "file": "templates/base.html",
+      "description": "\n\n13. Run the Django server from the\nterminal and open the browser. Note that\nthere is no CSS styling on the Register and\nLogin pages.\n\n`python3 manage . py runserver`\n\n14. From the terminal, check the location\nof your django-allauth package files on\nyour computer. Copy the file path labelled\nLocation:\nYou will need this in the next step.\n\n`pip3 show django-allauth`\n\n15. Copy the allauth template files to the\nprojects templates directory using this\nterminal command where <Location> is\nthe file path you copied in the previous\nstep.\n\n`cp -r <Location>/a11auth/temp1ates/*. /templates/`\n\nNote: The route to your site package files\nmay differ in your directory structure from\nthe image. The path in the image is where\nthe django-allauth files are located on the\ncomputer used when writing this topic.",
+      "line": 102
+    },
+    {
+      "file": "templates/account/login.html",
+      "description": "16. Open the\ntemplates/account/login.html file and\nreplace the code with all the code in this\nfile.",
+      "line": 1
+    },
+    {
+      "file": "templates/account/logout.html",
+      "description": "\n17. Open the templates/accounts/logout.html file and replace the code with all the code in this file.\n\nNote: You will update the signup template code in an upcoming topic.\n\nSource code\n\n18. Run the Django server from the terminal and open the browser. Open the login, then logout pages and note that they are now styled to match the rest of the project.\n\n`python3 manage.py runserver`",
+      "line": 1
+    },
+    {
+      "file": "codestar/settings.py",
+      "description": "",
+      "line": 57
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+2024-06-24 22:26:10.493 [info] 
+
+
+
+
+2024-06-24 22:26:10.512 [info] Extension host agent started.
+2024-06-24 22:26:10.642 [info] Extension 'gitpod.gitpod-theme' v0.0.2 is already installed. Use '--force' option to update to latest version or provide '@<version>' to install a specific version, for example: 'gitpod.gitpod-theme@1.2.3'.
+2024-06-24 22:26:10.642 [info] Extension 'github.vscode-pull-request-github' v0.90.0 is already installed. Use '--force' option to update to latest version or provide '@<version>' to install a specific version, for example: 'github.vscode-pull-request-github@1.2.3'.
+2024-06-24 22:26:19.906 [info] [100.64.239.96][e52e9d97][ExtensionHostConnection] New connection established.
+2024-06-24 22:26:19.910 [info] [100.64.239.96][6b3281b4][ManagementConnection] New connection established.
+2024-06-24 22:26:20.169 [info] [100.64.239.96][e52e9d97][ExtensionHostConnection] <506> Launched Extension Host Process.
+2024-06-24 22:27:16.141 [info] [100.64.239.96][6b3281b4][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2024-06-24 22:27:16.185 [info] [100.64.239.96][e52e9d97][ExtensionHostConnection] <506> Extension Host Process exited with code: 0, signal: null.

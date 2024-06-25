@@ -1,0 +1,17 @@
+2024-06-23 13:50:44.016 [info] 
+
+
+
+
+2024-06-23 13:50:44.033 [info] Extension host agent started.
+2024-06-23 13:50:44.154 [info] Extension 'gitpod.gitpod-theme' v0.0.2 is already installed. Use '--force' option to update to latest version or provide '@<version>' to install a specific version, for example: 'gitpod.gitpod-theme@1.2.3'.
+2024-06-23 13:50:44.155 [info] Extension 'github.vscode-pull-request-github' v0.90.0 is already installed. Use '--force' option to update to latest version or provide '@<version>' to install a specific version, for example: 'github.vscode-pull-request-github@1.2.3'.
+2024-06-23 13:50:53.483 [info] [100.64.224.160][4cba7a1e][ExtensionHostConnection] New connection established.
+2024-06-23 13:50:53.488 [info] [100.64.179.18][e780b147][ManagementConnection] New connection established.
+2024-06-23 13:50:53.775 [info] [100.64.224.160][4cba7a1e][ExtensionHostConnection] <504> Launched Extension Host Process.
+2024-06-23 13:51:00.181 [info] Getting Manifest... esbenp.prettier-vscode
+2024-06-23 13:51:00.388 [info] Installing extension: esbenp.prettier-vscode file:///workspace/.vscode-remote/extensions/extensions.json
+2024-06-23 13:51:00.388 [info] Installing the extension without checking dependencies and pack esbenp.prettier-vscode
+2024-06-23 13:51:00.765 [info] Extracted extension to file:///workspace/.vscode-remote/extensions/esbenp.prettier-vscode-10.4.0-universal: esbenp.prettier-vscode
+2024-06-23 13:51:00.767 [info] Renamed to /workspace/.vscode-remote/extensions/esbenp.prettier-vscode-10.4.0-universal
+2024-06-23 13:51:00.820 [info] Extension installed successfully: esbenp.prettier-vscode file:///workspace/.vscode-remote/extensions/extensions.json

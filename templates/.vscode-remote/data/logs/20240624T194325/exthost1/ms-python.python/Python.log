@@ -1,0 +1,6 @@
+2024-06-24 19:43:38.907 [info] Default formatter is set to null for workspace /workspace/django_blog
+2024-06-24 19:43:38.914 [info] Test server listening.
+2024-06-24 19:43:38.915 [info] Python interpreter path: ~/.pyenv/shims/python
+2024-06-24 19:43:39.680 [info] > ~/.pyenv/bin/pyenv which python
+2024-06-24 19:43:39.680 [info] cwd: .
+2024-06-24 19:43:41.250 [info] Starting Jedi language server for django_blog.

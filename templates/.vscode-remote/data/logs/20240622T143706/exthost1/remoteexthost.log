@@ -1,0 +1,31 @@
+2024-06-22 14:37:17.244 [info] Extension host with pid 505 started
+2024-06-22 14:37:17.244 [error] Error: EEXIST: file already exists, open '/workspace/.vscode-remote/data/User/workspaceStorage/27890e22/vscode.lock'
+2024-06-22 14:37:17.246 [info] Lock '/workspace/.vscode-remote/data/User/workspaceStorage/27890e22/vscode.lock': Could not acquire lock, checking if the file is stale.
+2024-06-22 14:37:17.247 [info] Lock '/workspace/.vscode-remote/data/User/workspaceStorage/27890e22/vscode.lock': The lock looks stale, waiting for 2s.
+2024-06-22 14:37:17.380 [info] ExtensionService#_doActivateExtension gitpod.gitpod-web, startup: false, activationEvent: 'onAuthenticationRequest:gitpod'
+2024-06-22 14:37:17.381 [info] ExtensionService#_doActivateExtension ms-python.python, startup: false, activationEvent: 'onLanguage:python', root cause: ms-python.debugpy
+2024-06-22 14:37:17.381 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2024-06-22 14:37:18.382 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2024-06-22 14:37:18.382 [info] ExtensionService#_doActivateExtension christian-kohler.path-intellisense, startup: true, activationEvent: '*'
+2024-06-22 14:37:18.382 [info] ExtensionService#_doActivateExtension johnpapa.vscode-peacock, startup: true, activationEvent: '*'
+2024-06-22 14:37:18.382 [info] ExtensionService#_doActivateExtension oderwat.indent-rainbow, startup: true, activationEvent: '*'
+2024-06-22 14:37:18.383 [info] ExtensionService#_doActivateExtension pucelle.vscode-css-navigation, startup: true, activationEvent: '*'
+2024-06-22 14:37:19.247 [info] Lock '/workspace/.vscode-remote/data/User/workspaceStorage/27890e22/vscode.lock': The lock looks stale even after waiting for 2s.
+2024-06-22 14:37:19.247 [info] Lock '/workspace/.vscode-remote/data/User/workspaceStorage/27890e22/vscode.lock': Deleting a stale lock.
+2024-06-22 14:37:19.264 [info] Lock '/workspace/.vscode-remote/data/User/workspaceStorage/27890e22/vscode.lock': Lock acquired.
+2024-06-22 14:37:19.771 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2024-06-22 14:37:19.771 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2024-06-22 14:37:20.163 [info] ExtensionService#_doActivateExtension ms-python.debugpy, startup: false, activationEvent: 'onLanguage:python'
+2024-06-22 14:37:21.341 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2024-06-22 14:37:21.341 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2024-06-22 14:37:21.434 [info] ExtensionService#_doActivateExtension redhat.vscode-yaml, startup: false, activationEvent: 'onLanguage:yaml'
+2024-06-22 14:37:21.894 [info] Eager extensions activated
+2024-06-22 14:37:21.894 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2024-06-22 14:37:21.894 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2024-06-22 14:37:21.894 [info] ExtensionService#_doActivateExtension aaron-bond.better-comments, startup: false, activationEvent: 'onStartupFinished'
+2024-06-22 14:37:21.894 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onStartupFinished', root cause: GitHub.vscode-pull-request-github
+2024-06-22 14:37:21.894 [info] ExtensionService#_doActivateExtension Gruntfuggly.todo-tree, startup: false, activationEvent: 'onStartupFinished'
+2024-06-22 14:37:21.895 [info] ExtensionService#_doActivateExtension vscode-icons-team.vscode-icons, startup: false, activationEvent: 'onStartupFinished'
+2024-06-22 14:37:22.182 [warning] [redhat.vscode-yaml] Accessing a resource scoped configuration without providing a resource is not expected. To get the effective value for '[yaml]', provide the URI of a resource or 'null' for any resource.
+2024-06-22 14:37:22.183 [warning] [redhat.vscode-yaml] Accessing a resource scoped configuration without providing a resource is not expected. To get the effective value for '[yaml]', provide the URI of a resource or 'null' for any resource.
+2024-06-22 14:37:22.274 [info] ExtensionService#_doActivateExtension GitHub.vscode-pull-request-github, startup: false, activationEvent: 'onStartupFinished'

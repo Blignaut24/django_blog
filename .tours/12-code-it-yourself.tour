@@ -1,0 +1,86 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "12. Code It Yourself",
+  "steps": [
+    {
+      "file": "about/models.py",
+      "description": "**I Think Therefore I Blog > Code it yourself > Challenge: Create the About app**\n\nType python3 manage.py startapp about in the terminal, then add 'about'\n\n",
+      "line": 13,
+      "selection": {
+        "start": {
+          "line": 1,
+          "character": 1
+        },
+        "end": {
+          "line": 1,
+          "character": 82
+        }
+      }
+    },
+    {
+      "file": "codestar/settings.py",
+      "description": "**I Think Therefore I Blog > Code it yourself > Challenge: Create the About app**\n\nAdd 'about', to the INSTALLED_APPS list in settings.py:\n\n```\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'blog',\n    'django_summernote',\n    'about',\n]\n```",
+      "line": 50
+    },
+    {
+      "file": "about/models.py",
+      "description": "**I Think Therefore I Blog > Code it yourself > Challenge: Create the About app**\n\n- Your *about/models.py* file should look like this: code \n```\nfrom django.db import models\n\n\nclass About(models.Model):\n    title = models.CharField(max_length=200)\n    updated_on = models.DateTimeField(auto_now=True)\n    content = models.TextField()\n\n    def __str__(self):\n        return self.title\n```\n\n- Run `python3 manage.py makemigrations` and `python3 manage.py migrate` from the terminal after creating the model.",
+      "line": 1,
+      "selection": {
+        "start": {
+          "line": 1,
+          "character": 1
+        },
+        "end": {
+          "line": 1,
+          "character": 82
+        }
+      }
+    },
+    {
+      "file": "about/views.py",
+      "description": "**I Think Therefore I Blog > Code it yourself > Challenge: Create the About app**\n\nYour **about/views.py** file should look like this:\n\n```\nfrom django.shortcuts import render\nfrom .models import About\n\n\ndef about_me(request):\n    \"\"\"\n    Renders the About page\n    \"\"\"\n    about = About.objects.all().order_by('-updated_on').first()\n\n    return render(\n        request,\n        \"about/about.html\",\n        {\"about\": about},\n    )\n```\n\n",
+      "line": 1
+    },
+    {
+      "file": "templates/base.html",
+      "description": "**I Think Therefore I Blog > Code it yourself > Challenge: Create the About app**\n\n- This code should now appear in the **templates/base.html** file:\n```\n{% load static %}\n{% url 'home' as home_url %}\n{% url 'about' as about_url %} # Code Insert\n\n<!DOCTYPE html>\n…\n       <ul class=\"navbar-nav me-auto mb-2 mb-lg-0\">\n            <li class=\"nav-item\">\n              <a\n                class=\"nav-link\n                {% if request.path == home_url %}active{%endif%}\"\n                aria-current=\"page\"\n                href=\"{% url 'home' %}\"\n                >Home</a\n              >\n              # Code Insert -Beginning\n            </li> \n            <li class=\"nav-item\">\n              <a\n                class=\"nav-link\n                {% if request.path == about_url %}active{%endif%}\"\n                aria-current=\"page\"\n                href=\"{% url 'about' %}\"\n                >About</a\n              >\n            </li>\n            # Code Insert -End\n          </ul>\n\n```\n\n",
+      "line": 4,
+      "selection": {
+        "start": {
+          "line": 1,
+          "character": 1
+        },
+        "end": {
+          "line": 1,
+          "character": 82
+        }
+      }
+    },
+    {
+      "file": "about/templates/about/about.html",
+      "description": "**I Think Therefore I Blog > Code it yourself > Challenge: Create the About app**\n\n- This code should now appear in the **about/templates/about/about.html** file:\n\n```\n{% extends 'base.html' %}\n{% block content %}\n{% load static %}\n<div class=\"container mt-5\">\n  <div class=\"row\">\n    <div class=\"col-4 text-center\">\n      <img src=\"{% static 'images/nobody.jpg' %}\" width=\"75%\" />\n    </div>\n    <div class=\"col-8\">\n      <!-- Title goes between these h2 tags -->\n      <h2>{{ about.title }}</h2> # Code Snippet - Begin\n      <!-- Content goes directly underneath this -->\n      {{ about.content | safe }} # Code Snippet - Begin\n    </div>\n  </div>\n  <div class=\"row\">\n    <div class=\"col text-right\">\n      <!-- Updated on field goes in here -->\n\n      <p class=\"text-end\"><em>Updated on: {{ about.updated_on }} # Code Snippet - Begin\n      </em></p>\n    </div>\n  </div>\n</div>\n{% endblock content %}\n```",
+      "line": 10
+    },
+    {
+      "file": "about/urls.py",
+      "description": "**I Think Therefore I Blog > Code it yourself > Challenge: Create the About app**\n\n- Your **about/urls.py** file should look like this:\n```\nfrom . import views\nfrom django.urls import path\n\nurlpatterns = [\n    path('', views.about_me, name='about'),\n]\n```",
+      "line": 1,
+      "selection": {
+        "start": {
+          "line": 1,
+          "character": 1
+        },
+        "end": {
+          "line": 1,
+          "character": 82
+        }
+      }
+    },
+    {
+      "file": "codestar/urls.py",
+      "description": "**I Think Therefore I Blog > Code it yourself > Challenge: Create the About app**\n\n- Your **codestar/urls.py** file should look like this:\n\n```\n   path(\"about/\", include(\"about.urls\"), name=\"about-urls\"),\n```\n\n",
+      "line": 22
+    }
+  ]
+}

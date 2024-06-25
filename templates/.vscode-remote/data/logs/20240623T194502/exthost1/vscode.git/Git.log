@@ -1,0 +1,36 @@
+2024-06-23 19:45:16.402 [info] Log level: Info
+2024-06-23 19:45:16.402 [info] Validating found git in: "git"
+2024-06-23 19:45:16.402 [info] Using git "2.43.2" from "git"
+2024-06-23 19:45:16.402 [info] > git rev-parse --show-toplevel [73ms]
+2024-06-23 19:45:16.402 [info] > git rev-parse --git-dir --git-common-dir [4ms]
+2024-06-23 19:45:16.402 [info] Open repository: /workspace/django_blog
+2024-06-23 19:45:16.402 [info] > git rev-parse --show-toplevel [34ms]
+2024-06-23 19:45:16.402 [info] > git config --get commit.template [36ms]
+2024-06-23 19:45:16.402 [info] > git rev-parse --show-toplevel [5ms]
+2024-06-23 19:45:16.402 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-06-23 19:45:16.402 [warning] ENOENT: no such file or directory, open '/workspace/django_blog/.git/refs/remotes/origin/main'
+2024-06-23 19:45:16.402 [info] > git rev-parse refs/remotes/origin/main [27ms]
+2024-06-23 19:45:16.402 [info] > git rev-parse --show-toplevel [33ms]
+2024-06-23 19:45:16.402 [info] > git status -z -uall [91ms]
+2024-06-23 19:45:16.402 [info] > git merge-base refs/heads/main refs/remotes/origin/main [8ms]
+2024-06-23 19:45:16.402 [info] > git rev-parse --show-toplevel [103ms]
+2024-06-23 19:45:16.402 [info] > git config --get commit.template [5ms]
+2024-06-23 19:45:16.402 [info] > git rev-list --count --left-right refs/heads/main...refs/remotes/origin/main [3ms]
+2024-06-23 19:45:16.406 [info] > git rev-parse --show-toplevel [8ms]
+2024-06-23 19:45:16.407 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2024-06-23 19:45:16.407 [info] > git diff --name-status -z --diff-filter=ADMR 4fbb0fb743a9177b3b444223ea816fc1eddd07b1...refs/remotes/origin/main [6ms]
+2024-06-23 19:45:16.563 [warning] ENOENT: no such file or directory, open '/workspace/django_blog/.git/refs/remotes/origin/main'
+2024-06-23 19:45:16.568 [info] > git rev-parse refs/remotes/origin/main [4ms]
+2024-06-23 19:45:16.570 [info] > git rev-parse --show-toplevel [161ms]
+2024-06-23 19:45:16.574 [info] > git status -z -uall [4ms]
+2024-06-23 19:45:16.578 [info] > git rev-parse --show-toplevel [5ms]
+2024-06-23 19:45:16.585 [info] > git rev-parse --show-toplevel [4ms]
+2024-06-23 19:45:16.599 [info] > git rev-parse --show-toplevel [12ms]
+2024-06-23 19:45:16.642 [info] > git rev-parse --show-toplevel [41ms]
+2024-06-23 19:45:16.652 [info] > git rev-parse --show-toplevel [6ms]
+2024-06-23 19:45:17.088 [info] > git check-ignore -v -z --stdin [1ms]
+2024-06-23 19:45:17.895 [info] > git show --textconv :codestar/settings.py [10ms]
+2024-06-23 19:45:17.896 [info] > git ls-files --stage -- /workspace/django_blog/codestar/settings.py [9ms]
+2024-06-23 19:45:17.901 [info] > git cat-file -s 2a3d3976fcbb6ae5fbc98ed66f05ed70c4ca8dd5 [3ms]
+2024-06-23 19:45:18.767 [info] > git config --local branch.main.github-pr-owner-number [105ms]
+2024-06-23 19:45:18.767 [warning] git config failed: Failed to execute git

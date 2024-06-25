@@ -1,0 +1,15 @@
+2024-06-20 20:20:40.452 [warning] /home/gitpod/.ssh/config: ENOENT: no such file or directory, open '/home/gitpod/.ssh/config'
+2024-06-20 20:20:40.452 [info] Activation> Extension version: 0.90.0
+2024-06-20 20:20:41.217 [info] Looking for git repository
+2024-06-20 20:20:41.217 [info] Found 0 repositories during activation
+2024-06-20 20:20:41.217 [info] Git repository found, initializing review manager and pr tree view.
+2024-06-20 20:20:41.220 [info] Registering git provider
+2024-06-20 20:20:41.220 [info] Review+0> Validate state in progress
+2024-06-20 20:20:41.220 [info] Review+0> Validating state...
+2024-06-20 20:20:41.267 [info] Found GitHub remote for folder /workspace/django_blog
+2024-06-20 20:20:41.526 [info] Trying to use globalState for assignableUsers.
+2024-06-20 20:20:41.636 [info] Review+0> No matching pull request metadata found locally for current branch main
+2024-06-20 20:20:41.692 [info] GlobalState does not exist for assignableUsers.
+2024-06-20 20:20:41.919 [info] Review+0> No matching pull request metadata found on GitHub for current branch main
+2024-06-20 20:21:49.450 [info] Repo state for file:///workspace/django_blog changed.
+2024-06-20 20:21:49.450 [info] Repo file:///workspace/django_blog has already been setup.

@@ -1,0 +1,554 @@
+2024-06-23 19:48:07.142 [info] Extension host with pid 1420 started
+2024-06-23 19:48:07.145 [info] Lock '/workspace/.vscode-remote/data/User/workspaceStorage/27890e22/vscode.lock': Lock acquired.
+2024-06-23 19:48:07.237 [info] ExtensionService#_doActivateExtension gitpod.gitpod-web, startup: false, activationEvent: 'onAuthenticationRequest:gitpod'
+2024-06-23 19:48:07.238 [info] ExtensionService#_doActivateExtension ms-python.python, startup: false, activationEvent: 'onLanguage:python', root cause: ms-python.debugpy
+2024-06-23 19:48:07.238 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2024-06-23 19:48:07.829 [info] ExtensionService#_doActivateExtension ms-python.debugpy, startup: false, activationEvent: 'onLanguage:python'
+2024-06-23 19:48:07.949 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2024-06-23 19:48:07.949 [info] ExtensionService#_doActivateExtension christian-kohler.path-intellisense, startup: true, activationEvent: '*'
+2024-06-23 19:48:07.949 [info] ExtensionService#_doActivateExtension johnpapa.vscode-peacock, startup: true, activationEvent: '*'
+2024-06-23 19:48:07.949 [info] ExtensionService#_doActivateExtension oderwat.indent-rainbow, startup: true, activationEvent: '*'
+2024-06-23 19:48:07.950 [info] ExtensionService#_doActivateExtension pucelle.vscode-css-navigation, startup: true, activationEvent: '*'
+2024-06-23 19:48:08.296 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2024-06-23 19:48:08.296 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2024-06-23 19:48:08.400 [info] ExtensionService#_doActivateExtension redhat.vscode-yaml, startup: false, activationEvent: 'onLanguage:yaml'
+2024-06-23 19:48:08.849 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2024-06-23 19:48:08.849 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2024-06-23 19:48:09.067 [info] Eager extensions activated
+2024-06-23 19:48:09.067 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2024-06-23 19:48:09.067 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2024-06-23 19:48:09.068 [info] ExtensionService#_doActivateExtension aaron-bond.better-comments, startup: false, activationEvent: 'onStartupFinished'
+2024-06-23 19:48:09.068 [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+2024-06-23 19:48:09.068 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onStartupFinished', root cause: GitHub.vscode-pull-request-github
+2024-06-23 19:48:09.068 [info] ExtensionService#_doActivateExtension Gruntfuggly.todo-tree, startup: false, activationEvent: 'onStartupFinished'
+2024-06-23 19:48:09.068 [info] ExtensionService#_doActivateExtension vscode-icons-team.vscode-icons, startup: false, activationEvent: 'onStartupFinished'
+2024-06-23 19:48:09.393 [warning] [redhat.vscode-yaml] Accessing a resource scoped configuration without providing a resource is not expected. To get the effective value for '[yaml]', provide the URI of a resource or 'null' for any resource.
+2024-06-23 19:48:09.394 [warning] [redhat.vscode-yaml] Accessing a resource scoped configuration without providing a resource is not expected. To get the effective value for '[yaml]', provide the URI of a resource or 'null' for any resource.
+2024-06-23 19:48:09.487 [info] ExtensionService#_doActivateExtension GitHub.vscode-pull-request-github, startup: false, activationEvent: 'onStartupFinished'
+2024-06-23 20:09:06.813 [info] ExtensionService#_doActivateExtension vscode.simple-browser, startup: false, activationEvent: 'onOpenExternalUri:https'
+2024-06-23 20:21:35.917 [info] ExtensionService#_doActivateExtension vscode.html-language-features, startup: false, activationEvent: 'onLanguage:html'
+2024-06-23 20:23:06.722 [warning] [redhat.vscode-yaml] Accessing a resource scoped configuration without providing a resource is not expected. To get the effective value for '[yaml]', provide the URI of a resource or 'null' for any resource.
+2024-06-23 20:23:06.733 [warning] [redhat.vscode-yaml] Accessing a resource scoped configuration without providing a resource is not expected. To get the effective value for '[yaml]', provide the URI of a resource or 'null' for any resource.
+2024-06-23 20:23:06.911 [info] ExtensionService#_doActivateExtension vsls-contrib.codetour, startup: false, activationEvent: 'onStartupFinished'
+2024-06-23 20:24:27.787 [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:markdown'
+2024-06-23 20:24:27.788 [info] ExtensionService#_doActivateExtension vscode.markdown-language-features, startup: false, activationEvent: 'onLanguage:markdown'
+2024-06-23 20:24:28.108 [info] ExtensionService#_doActivateExtension vscode.markdown-math, startup: false, activationEvent: 'api', root cause: vscode.markdown-language-features
+2024-06-23 20:25:26.997 [error] Error: Cannot resolve tree item for element 0/0:11. Views Part 2/0:#1 - blog//urls.py from extension vsls-contrib.codetour
+	at /ide/out/vs/workbench/api/node/extensionHostProcess.js:155:45737
+2024-06-23 20:29:35.025 [error] Error: unknown thread
+    at n.k (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:2579:40496)
+    at n.deleteCommentThread (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:2579:39942)
+    at g.$deleteCommentThread (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:2579:43105)
+    at v.S (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:14599)
+    at v.Q (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:14365)
+    at v.M (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:13398)
+    at v.L (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:12233)
+    at u.value (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:10929)
+    at h.y (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:89:659)
+    at h.fire (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:89:876)
+2024-06-23 20:29:35.025 [error] Error: unknown thread
+    at n.k (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:2579:40496)
+    at n.deleteCommentThread (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:2579:39942)
+    at g.$deleteCommentThread (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:2579:43105)
+    at v.S (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:14599)
+    at v.Q (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:14365)
+    at v.M (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:13398)
+    at v.L (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:12233)
+    at u.value (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:10929)
+    at h.y (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:89:659)
+    at h.fire (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:89:876)
+2024-06-23 20:29:35.026 [error] Error: unknown thread
+    at n.k (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:2579:40496)
+    at n.deleteCommentThread (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:2579:39942)
+    at g.$deleteCommentThread (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:2579:43105)
+    at v.S (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:14599)
+    at v.Q (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:14365)
+    at v.M (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:13398)
+    at v.L (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:12233)
+    at u.value (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:10929)
+    at h.y (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:89:659)
+    at h.fire (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:89:876)
+2024-06-23 20:29:35.026 [error] Error: unknown thread
+    at n.k (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:2579:40496)
+    at n.deleteCommentThread (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:2579:39942)
+    at g.$deleteCommentThread (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:2579:43105)
+    at v.S (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:14599)
+    at v.Q (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:14365)
+    at v.M (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:13398)
+    at v.L (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:12233)
+    at u.value (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:10929)
+    at h.y (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:89:659)
+    at h.fire (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:89:876)
+2024-06-23 20:29:35.026 [error] Error: unknown thread
+    at n.k (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:2579:40496)
+    at n.deleteCommentThread (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:2579:39942)
+    at g.$deleteCommentThread (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:2579:43105)
+    at v.S (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:14599)
+    at v.Q (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:14365)
+    at v.M (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:13398)
+    at v.L (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:12233)
+    at u.value (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:10929)
+    at h.y (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:89:659)
+    at h.fire (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:89:876)
+2024-06-23 20:29:35.026 [error] Error: unknown thread
+    at n.k (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:2579:40496)
+    at n.deleteCommentThread (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:2579:39942)
+    at g.$deleteCommentThread (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:2579:43105)
+    at v.S (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:14599)
+    at v.Q (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:14365)
+    at v.M (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:13398)
+    at v.L (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:12233)
+    at u.value (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:10929)
+    at h.y (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:89:659)
+    at h.fire (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:89:876)
+2024-06-23 20:29:45.386 [warning] TextEditor is closed/disposed
+2024-06-23 20:29:45.386 [warning] TextEditor is closed/disposed
+2024-06-23 20:29:45.386 [warning] TextEditor is closed/disposed
+2024-06-23 20:29:45.386 [warning] TextEditor is closed/disposed
+2024-06-23 20:29:45.387 [warning] TextEditor is closed/disposed
+2024-06-23 20:29:45.387 [warning] TextEditor is closed/disposed
+2024-06-23 20:30:46.803 [error] Error: unknown thread
+    at n.k (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:2579:40496)
+    at n.deleteCommentThread (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:2579:39942)
+    at g.$deleteCommentThread (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:2579:43105)
+    at v.S (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:14599)
+    at v.Q (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:14365)
+    at v.M (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:13398)
+    at v.L (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:12233)
+    at u.value (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:10929)
+    at h.y (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:89:659)
+    at h.fire (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:89:876)
+2024-06-23 20:30:46.803 [error] Error: unknown thread
+    at n.k (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:2579:40496)
+    at n.deleteCommentThread (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:2579:39942)
+    at g.$deleteCommentThread (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:2579:43105)
+    at v.S (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:14599)
+    at v.Q (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:14365)
+    at v.M (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:13398)
+    at v.L (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:12233)
+    at u.value (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:10929)
+    at h.y (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:89:659)
+    at h.fire (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:89:876)
+2024-06-23 20:30:46.803 [error] Error: unknown thread
+    at n.k (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:2579:40496)
+    at n.deleteCommentThread (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:2579:39942)
+    at g.$deleteCommentThread (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:2579:43105)
+    at v.S (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:14599)
+    at v.Q (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:14365)
+    at v.M (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:13398)
+    at v.L (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:12233)
+    at u.value (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:10929)
+    at h.y (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:89:659)
+    at h.fire (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:89:876)
+2024-06-23 20:30:46.803 [error] Error: unknown thread
+    at n.k (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:2579:40496)
+    at n.deleteCommentThread (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:2579:39942)
+    at g.$deleteCommentThread (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:2579:43105)
+    at v.S (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:14599)
+    at v.Q (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:14365)
+    at v.M (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:13398)
+    at v.L (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:12233)
+    at u.value (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:10929)
+    at h.y (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:89:659)
+    at h.fire (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:89:876)
+2024-06-23 20:30:46.804 [error] Error: unknown thread
+    at n.k (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:2579:40496)
+    at n.deleteCommentThread (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:2579:39942)
+    at g.$deleteCommentThread (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:2579:43105)
+    at v.S (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:14599)
+    at v.Q (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:14365)
+    at v.M (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:13398)
+    at v.L (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:12233)
+    at u.value (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:10929)
+    at h.y (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:89:659)
+    at h.fire (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:89:876)
+2024-06-23 20:31:35.387 [error] Error: unknown thread
+    at n.k (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:2579:40496)
+    at n.deleteCommentThread (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:2579:39942)
+    at g.$deleteCommentThread (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:2579:43105)
+    at v.S (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:14599)
+    at v.Q (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:14365)
+    at v.M (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:13398)
+    at v.L (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:12233)
+    at u.value (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:10929)
+    at h.y (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:89:659)
+    at h.fire (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:89:876)
+2024-06-23 20:31:35.387 [error] Error: unknown thread
+    at n.k (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:2579:40496)
+    at n.deleteCommentThread (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:2579:39942)
+    at g.$deleteCommentThread (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:2579:43105)
+    at v.S (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:14599)
+    at v.Q (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:14365)
+    at v.M (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:13398)
+    at v.L (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:12233)
+    at u.value (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:10929)
+    at h.y (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:89:659)
+    at h.fire (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:89:876)
+2024-06-23 20:34:18.288 [info] ExtensionService#_doActivateExtension vscode.media-preview, startup: false, activationEvent: 'onCustomEditor:imagePreview.previewEditor'
+2024-06-23 20:34:36.075 [warning] TextEditor is closed/disposed
+2024-06-23 20:34:36.075 [warning] TextEditor is closed/disposed
+2024-06-23 20:34:36.076 [warning] TextEditor is closed/disposed
+2024-06-23 20:34:36.076 [warning] TextEditor is closed/disposed
+2024-06-23 20:34:36.076 [warning] TextEditor is closed/disposed
+2024-06-23 20:34:36.076 [warning] TextEditor is closed/disposed
+2024-06-23 20:34:36.076 [warning] TextEditor is closed/disposed
+2024-06-23 20:34:36.077 [warning] TextEditor is closed/disposed
+2024-06-23 20:34:36.077 [warning] TextEditor is closed/disposed
+2024-06-23 20:34:36.077 [warning] TextEditor is closed/disposed
+2024-06-23 20:34:36.077 [warning] TextEditor is closed/disposed
+2024-06-23 20:35:22.397 [error] Error: Cannot resolve tree item for element 0/0:11. Views Part 2/0:#5 - blog//templates/blog/post_detail.html from extension vsls-contrib.codetour
+	at /ide/out/vs/workbench/api/node/extensionHostProcess.js:155:45737
+2024-06-23 20:35:24.037 [error] Error: unknown thread
+    at n.k (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:2579:40496)
+    at n.deleteCommentThread (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:2579:39942)
+    at g.$deleteCommentThread (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:2579:43105)
+    at v.S (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:14599)
+    at v.Q (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:14365)
+    at v.M (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:13398)
+    at v.L (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:12233)
+    at u.value (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:10929)
+    at h.y (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:89:659)
+    at h.fire (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:89:876)
+2024-06-23 20:35:24.037 [error] Error: unknown thread
+    at n.k (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:2579:40496)
+    at n.deleteCommentThread (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:2579:39942)
+    at g.$deleteCommentThread (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:2579:43105)
+    at v.S (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:14599)
+    at v.Q (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:14365)
+    at v.M (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:13398)
+    at v.L (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:12233)
+    at u.value (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:10929)
+    at h.y (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:89:659)
+    at h.fire (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:89:876)
+2024-06-23 20:35:24.037 [error] Error: unknown thread
+    at n.k (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:2579:40496)
+    at n.deleteCommentThread (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:2579:39942)
+    at g.$deleteCommentThread (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:2579:43105)
+    at v.S (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:14599)
+    at v.Q (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:14365)
+    at v.M (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:13398)
+    at v.L (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:12233)
+    at u.value (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:10929)
+    at h.y (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:89:659)
+    at h.fire (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:89:876)
+2024-06-23 20:35:24.037 [error] Error: unknown thread
+    at n.k (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:2579:40496)
+    at n.deleteCommentThread (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:2579:39942)
+    at g.$deleteCommentThread (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:2579:43105)
+    at v.S (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:14599)
+    at v.Q (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:14365)
+    at v.M (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:13398)
+    at v.L (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:12233)
+    at u.value (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:10929)
+    at h.y (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:89:659)
+    at h.fire (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:89:876)
+2024-06-23 20:35:30.524 [warning] TextEditor is closed/disposed
+2024-06-23 20:35:30.524 [warning] TextEditor is closed/disposed
+2024-06-23 20:35:30.524 [warning] TextEditor is closed/disposed
+2024-06-23 20:35:30.524 [warning] TextEditor is closed/disposed
+2024-06-23 20:35:30.524 [warning] TextEditor is closed/disposed
+2024-06-23 20:35:30.524 [warning] TextEditor is closed/disposed
+2024-06-23 20:35:30.524 [warning] TextEditor is closed/disposed
+2024-06-23 20:35:30.524 [warning] TextEditor is closed/disposed
+2024-06-23 20:35:30.524 [warning] TextEditor is closed/disposed
+2024-06-23 20:35:30.524 [warning] TextEditor is closed/disposed
+2024-06-23 20:35:30.524 [warning] TextEditor is closed/disposed
+2024-06-23 20:35:30.524 [warning] TextEditor is closed/disposed
+2024-06-23 20:38:41.343 [error] Error: unknown thread
+    at n.k (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:2579:40496)
+    at n.deleteCommentThread (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:2579:39942)
+    at g.$deleteCommentThread (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:2579:43105)
+    at v.S (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:14599)
+    at v.Q (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:14365)
+    at v.M (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:13398)
+    at v.L (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:12233)
+    at u.value (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:10929)
+    at h.y (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:89:659)
+    at h.fire (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:89:876)
+2024-06-23 20:38:41.344 [error] Error: unknown thread
+    at n.k (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:2579:40496)
+    at n.deleteCommentThread (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:2579:39942)
+    at g.$deleteCommentThread (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:2579:43105)
+    at v.S (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:14599)
+    at v.Q (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:14365)
+    at v.M (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:13398)
+    at v.L (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:12233)
+    at u.value (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:10929)
+    at h.y (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:89:659)
+    at h.fire (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:89:876)
+2024-06-23 20:43:22.629 [error] Error: unknown thread
+    at n.k (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:2579:40496)
+    at n.deleteCommentThread (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:2579:39942)
+    at g.$deleteCommentThread (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:2579:43105)
+    at v.S (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:14599)
+    at v.Q (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:14365)
+    at v.M (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:13398)
+    at v.L (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:12233)
+    at u.value (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:1887:10929)
+    at h.y (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:89:659)
+    at h.fire (https://ide.codeinstitute-ide.net/blobserve/869456089606.dkr.ecr.eu-west-1.amazonaws.com/public-cache/b4b1c2l9/application/ide/code:commit-518f23b3b895cd544bd6b3dd383af95c350718cc/__files__/out/vs/workbench/workbench.web.main.js:89:876)
+2024-06-23 22:21:18.511 [info] Extension host terminating: received terminate message from renderer
+2024-06-23 22:21:18.512 [info] Lock '/workspace/.vscode-remote/data/User/workspaceStorage/27890e22/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
+2024-06-23 22:21:18.531 [error] An error occurred when deactivating the subscriptions for extension 'Gruntfuggly.todo-tree':
+2024-06-23 22:21:18.531 [error] AggregateError: Encountered errors while disposing of store
+	at f (/ide/out/vs/workbench/api/node/extensionHostProcess.js:30:820)
+	at u.eb (/ide/out/vs/workbench/api/node/extensionHostProcess.js:159:9991)
+	at /ide/out/vs/workbench/api/node/extensionHostProcess.js:159:7867
+	at Array.map (<anonymous>)
+	at u.$ (/ide/out/vs/workbench/api/node/extensionHostProcess.js:159:7854)
+	at u.terminate (/ide/out/vs/workbench/api/node/extensionHostProcess.js:159:8127)
+	at f.terminate (/ide/out/vs/workbench/api/node/extensionHostProcess.js:163:1513)
+	at t (/ide/out/vs/workbench/api/node/extensionHostProcess.js:176:10459)
+	at n.value (/ide/out/vs/workbench/api/node/extensionHostProcess.js:176:8427)
+	at l.y (/ide/out/vs/workbench/api/node/extensionHostProcess.js:82:664)
+	at l.fire (/ide/out/vs/workbench/api/node/extensionHostProcess.js:82:881)
+	at s.fire (/ide/out/vs/workbench/api/node/extensionHostProcess.js:107:14502)
+	at h.z (/ide/out/vs/workbench/api/node/extensionHostProcess.js:107:17638)
+	at n.value (/ide/out/vs/workbench/api/node/extensionHostProcess.js:107:16019)
+	at l.y (/ide/out/vs/workbench/api/node/extensionHostProcess.js:82:664)
+	at l.fire (/ide/out/vs/workbench/api/node/extensionHostProcess.js:82:881)
+	at u.acceptChunk (/ide/out/vs/workbench/api/node/extensionHostProcess.js:107:12248)
+	at n.value (/ide/out/vs/workbench/api/node/extensionHostProcess.js:107:11518)
+	at l.y (/ide/out/vs/workbench/api/node/extensionHostProcess.js:82:664)
+	at l.fire (/ide/out/vs/workbench/api/node/extensionHostProcess.js:82:881)
+	at n.z (/ide/out/vs/workbench/api/node/extensionHostProcess.js:173:20477)
+2024-06-23 22:21:18.539 [error] Canceled: Canceled
+	at new A (/ide/out/vs/workbench/api/node/extensionHostProcess.js:143:50615)
+	at E.U (/ide/out/vs/workbench/api/node/extensionHostProcess.js:150:6007)
+	at z.<computed>.M.charCodeAt.R.CharCode.DollarSign.z.<computed> (/ide/out/vs/workbench/api/node/extensionHostProcess.js:150:3091)
+	at h.g (/ide/out/vs/workbench/api/node/extensionHostProcess.js:153:199937)
+	at h.executeCommand (/ide/out/vs/workbench/api/node/extensionHostProcess.js:153:199375)
+	at I.registerCommand.description (/ide/out/vs/workbench/api/node/extensionHostProcess.js:153:198699)
+	at h (/ide/out/vs/workbench/api/node/extensionHostProcess.js:153:200476)
+	at h.g (/ide/out/vs/workbench/api/node/extensionHostProcess.js:153:199468)
+	at h.executeCommand (/ide/out/vs/workbench/api/node/extensionHostProcess.js:153:199375)
+	at Object.executeCommand (/ide/out/vs/workbench/api/node/extensionHostProcess.js:163:22742)
+	at n.O [as value] (/ide/extensions/git/dist/main.js:2:945191)
+	at l.y (/ide/out/vs/workbench/api/node/extensionHostProcess.js:82:664)
+	at l.z (/ide/out/vs/workbench/api/node/extensionHostProcess.js:82:734)
+	at l.fire (/ide/out/vs/workbench/api/node/extensionHostProcess.js:82:950)
+	at Object.p [as dispose] (/ide/extensions/git/dist/main.js:2:964275)
+	at /ide/extensions/git/dist/main.js:2:970313
+	at Array.forEach (<anonymous>)
+	at f.dispose (/ide/extensions/git/dist/main.js:2:970299)
+	at a.<anonymous> (/ide/out/vs/workbench/api/node/extensionHostProcess.js:151:4032)
+	at a.dispose (/ide/out/vs/workbench/api/node/extensionHostProcess.js:151:4129)
+	at a.<anonymous> (/ide/extensions/git/dist/main.js:2:947448)
+	at a.dispose (/ide/out/vs/workbench/api/node/extensionHostProcess.js:151:4129)
+	at f (/ide/out/vs/workbench/api/node/extensionHostProcess.js:30:744)
+	at u.eb (/ide/out/vs/workbench/api/node/extensionHostProcess.js:159:9991)
+	at /ide/out/vs/workbench/api/node/extensionHostProcess.js:159:7867
+	at Array.map (<anonymous>)
+	at u.$ (/ide/out/vs/workbench/api/node/extensionHostProcess.js:159:7854)
+	at u.terminate (/ide/out/vs/workbench/api/node/extensionHostProcess.js:159:8127)
+	at f.terminate (/ide/out/vs/workbench/api/node/extensionHostProcess.js:163:1513)
+	at t (/ide/out/vs/workbench/api/node/extensionHostProcess.js:176:10459)
+	at n.value (/ide/out/vs/workbench/api/node/extensionHostProcess.js:176:8427)
+	at l.y (/ide/out/vs/workbench/api/node/extensionHostProcess.js:82:664)
+	at l.fire (/ide/out/vs/workbench/api/node/extensionHostProcess.js:82:881)
+	at s.fire (/ide/out/vs/workbench/api/node/extensionHostProcess.js:107:14502)
+	at h.z (/ide/out/vs/workbench/api/node/extensionHostProcess.js:107:17638)
+	at n.value (/ide/out/vs/workbench/api/node/extensionHostProcess.js:107:16019)
+	at l.y (/ide/out/vs/workbench/api/node/extensionHostProcess.js:82:664)
+	at l.fire (/ide/out/vs/workbench/api/node/extensionHostProcess.js:82:881)
+	at u.acceptChunk (/ide/out/vs/workbench/api/node/extensionHostProcess.js:107:12248)
+	at n.value (/ide/out/vs/workbench/api/node/extensionHostProcess.js:107:11518)
+	at l.y (/ide/out/vs/workbench/api/node/extensionHostProcess.js:82:664)
+	at l.fire (/ide/out/vs/workbench/api/node/extensionHostProcess.js:82:881)
+	at n.z (/ide/out/vs/workbench/api/node/extensionHostProcess.js:173:20477) setContext undefined
+2024-06-23 22:21:18.540 [error] Canceled: Canceled
+	at new A (/ide/out/vs/workbench/api/node/extensionHostProcess.js:143:50615)
+	at E.U (/ide/out/vs/workbench/api/node/extensionHostProcess.js:150:6007)
+	at z.<computed>.M.charCodeAt.R.CharCode.DollarSign.z.<computed> (/ide/out/vs/workbench/api/node/extensionHostProcess.js:150:3091)
+	at h.g (/ide/out/vs/workbench/api/node/extensionHostProcess.js:153:199937)
+	at h.executeCommand (/ide/out/vs/workbench/api/node/extensionHostProcess.js:153:199375)
+	at I.registerCommand.description (/ide/out/vs/workbench/api/node/extensionHostProcess.js:153:198699)
+	at h (/ide/out/vs/workbench/api/node/extensionHostProcess.js:153:200476)
+	at h.g (/ide/out/vs/workbench/api/node/extensionHostProcess.js:153:199468)
+	at h.executeCommand (/ide/out/vs/workbench/api/node/extensionHostProcess.js:153:199375)
+	at Object.executeCommand (/ide/out/vs/workbench/api/node/extensionHostProcess.js:163:22742)
+	at set hasGitHubRepositories [as hasGitHubRepositories] (/ide/extensions/github/dist/extension.js:2:322969)
+	at /ide/extensions/github/dist/extension.js:2:323928
+	at n.value (/ide/extensions/git/dist/main.js:2:1050764)
+	at l.y (/ide/out/vs/workbench/api/node/extensionHostProcess.js:82:664)
+	at l.z (/ide/out/vs/workbench/api/node/extensionHostProcess.js:82:734)
+	at l.fire (/ide/out/vs/workbench/api/node/extensionHostProcess.js:82:950)
+	at Object.p [as dispose] (/ide/extensions/git/dist/main.js:2:964275)
+	at /ide/extensions/git/dist/main.js:2:970313
+	at Array.forEach (<anonymous>)
+	at f.dispose (/ide/extensions/git/dist/main.js:2:970299)
+	at a.<anonymous> (/ide/out/vs/workbench/api/node/extensionHostProcess.js:151:4032)
+	at a.dispose (/ide/out/vs/workbench/api/node/extensionHostProcess.js:151:4129)
+	at a.<anonymous> (/ide/extensions/git/dist/main.js:2:947448)
+	at a.dispose (/ide/out/vs/workbench/api/node/extensionHostProcess.js:151:4129)
+	at f (/ide/out/vs/workbench/api/node/extensionHostProcess.js:30:744)
+	at u.eb (/ide/out/vs/workbench/api/node/extensionHostProcess.js:159:9991)
+	at /ide/out/vs/workbench/api/node/extensionHostProcess.js:159:7867
+	at Array.map (<anonymous>)
+	at u.$ (/ide/out/vs/workbench/api/node/extensionHostProcess.js:159:7854)
+	at u.terminate (/ide/out/vs/workbench/api/node/extensionHostProcess.js:159:8127)
+	at f.terminate (/ide/out/vs/workbench/api/node/extensionHostProcess.js:163:1513)
+	at t (/ide/out/vs/workbench/api/node/extensionHostProcess.js:176:10459)
+	at n.value (/ide/out/vs/workbench/api/node/extensionHostProcess.js:176:8427)
+	at l.y (/ide/out/vs/workbench/api/node/extensionHostProcess.js:82:664)
+	at l.fire (/ide/out/vs/workbench/api/node/extensionHostProcess.js:82:881)
+	at s.fire (/ide/out/vs/workbench/api/node/extensionHostProcess.js:107:14502)
+	at h.z (/ide/out/vs/workbench/api/node/extensionHostProcess.js:107:17638)
+	at n.value (/ide/out/vs/workbench/api/node/extensionHostProcess.js:107:16019)
+	at l.y (/ide/out/vs/workbench/api/node/extensionHostProcess.js:82:664)
+	at l.fire (/ide/out/vs/workbench/api/node/extensionHostProcess.js:82:881)
+	at u.acceptChunk (/ide/out/vs/workbench/api/node/extensionHostProcess.js:107:12248)
+	at n.value (/ide/out/vs/workbench/api/node/extensionHostProcess.js:107:11518)
+	at l.y (/ide/out/vs/workbench/api/node/extensionHostProcess.js:82:664)
+	at l.fire (/ide/out/vs/workbench/api/node/extensionHostProcess.js:82:881)
+	at n.z (/ide/out/vs/workbench/api/node/extensionHostProcess.js:173:20477) setContext undefined
+2024-06-23 22:21:18.540 [error] Canceled: Canceled
+	at new A (/ide/out/vs/workbench/api/node/extensionHostProcess.js:143:50615)
+	at E.U (/ide/out/vs/workbench/api/node/extensionHostProcess.js:150:6007)
+	at z.<computed>.M.charCodeAt.R.CharCode.DollarSign.z.<computed> (/ide/out/vs/workbench/api/node/extensionHostProcess.js:150:3091)
+	at h.g (/ide/out/vs/workbench/api/node/extensionHostProcess.js:153:199937)
+	at h.executeCommand (/ide/out/vs/workbench/api/node/extensionHostProcess.js:153:199375)
+	at I.registerCommand.description (/ide/out/vs/workbench/api/node/extensionHostProcess.js:153:198699)
+	at h (/ide/out/vs/workbench/api/node/extensionHostProcess.js:153:200476)
+	at h.g (/ide/out/vs/workbench/api/node/extensionHostProcess.js:153:199468)
+	at h.executeCommand (/ide/out/vs/workbench/api/node/extensionHostProcess.js:153:199375)
+	at Object.executeCommand (/ide/out/vs/workbench/api/node/extensionHostProcess.js:163:22742)
+	at e (/workspace/.vscode-remote/extensions/github.vscode-pull-request-github-0.90.0-universal/dist/extension.js:2015:1695)
+	at Object.n [as setContext] (/workspace/.vscode-remote/extensions/github.vscode-pull-request-github-0.90.0-universal/dist/extension.js:2015:1810)
+	at zp.updateActiveReviewCount (/workspace/.vscode-remote/extensions/github.vscode-pull-request-github-0.90.0-universal/dist/extension.js:2088:23127)
+	at zp.removeRepo (/workspace/.vscode-remote/extensions/github.vscode-pull-request-github-0.90.0-universal/dist/extension.js:2088:24310)
+	at n.value (/workspace/.vscode-remote/extensions/github.vscode-pull-request-github-0.90.0-universal/dist/extension.js:2201:4212)
+	at l.y (/ide/out/vs/workbench/api/node/extensionHostProcess.js:82:664)
+	at l.z (/ide/out/vs/workbench/api/node/extensionHostProcess.js:82:734)
+	at l.fire (/ide/out/vs/workbench/api/node/extensionHostProcess.js:82:950)
+	at n.value (/workspace/.vscode-remote/extensions/github.vscode-pull-request-github-0.90.0-universal/dist/extension.js:1983:446997)
+	at l.y (/ide/out/vs/workbench/api/node/extensionHostProcess.js:82:664)
+	at l.fire (/ide/out/vs/workbench/api/node/extensionHostProcess.js:82:881)
+	at /workspace/.vscode-remote/extensions/github.vscode-pull-request-github-0.90.0-universal/dist/extension.js:2088:28026
+	at n.value (/ide/extensions/git/dist/main.js:2:1050764)
+	at l.y (/ide/out/vs/workbench/api/node/extensionHostProcess.js:82:664)
+	at l.z (/ide/out/vs/workbench/api/node/extensionHostProcess.js:82:734)
+	at l.fire (/ide/out/vs/workbench/api/node/extensionHostProcess.js:82:950)
+	at Object.p [as dispose] (/ide/extensions/git/dist/main.js:2:964275)
+	at /ide/extensions/git/dist/main.js:2:970313
+	at Array.forEach (<anonymous>)
+	at f.dispose (/ide/extensions/git/dist/main.js:2:970299)
+	at a.<anonymous> (/ide/out/vs/workbench/api/node/extensionHostProcess.js:151:4032)
+	at a.dispose (/ide/out/vs/workbench/api/node/extensionHostProcess.js:151:4129)
+	at a.<anonymous> (/ide/extensions/git/dist/main.js:2:947448)
+	at a.dispose (/ide/out/vs/workbench/api/node/extensionHostProcess.js:151:4129)
+	at f (/ide/out/vs/workbench/api/node/extensionHostProcess.js:30:744)
+	at u.eb (/ide/out/vs/workbench/api/node/extensionHostProcess.js:159:9991)
+	at /ide/out/vs/workbench/api/node/extensionHostProcess.js:159:7867
+	at Array.map (<anonymous>)
+	at u.$ (/ide/out/vs/workbench/api/node/extensionHostProcess.js:159:7854)
+	at u.terminate (/ide/out/vs/workbench/api/node/extensionHostProcess.js:159:8127)
+	at f.terminate (/ide/out/vs/workbench/api/node/extensionHostProcess.js:163:1513)
+	at t (/ide/out/vs/workbench/api/node/extensionHostProcess.js:176:10459)
+	at n.value (/ide/out/vs/workbench/api/node/extensionHostProcess.js:176:8427)
+	at l.y (/ide/out/vs/workbench/api/node/extensionHostProcess.js:82:664)
+	at l.fire (/ide/out/vs/workbench/api/node/extensionHostProcess.js:82:881)
+	at s.fire (/ide/out/vs/workbench/api/node/extensionHostProcess.js:107:14502)
+	at h.z (/ide/out/vs/workbench/api/node/extensionHostProcess.js:107:17638)
+	at n.value (/ide/out/vs/workbench/api/node/extensionHostProcess.js:107:16019)
+	at l.y (/ide/out/vs/workbench/api/node/extensionHostProcess.js:82:664)
+	at l.fire (/ide/out/vs/workbench/api/node/extensionHostProcess.js:82:881)
+	at u.acceptChunk (/ide/out/vs/workbench/api/node/extensionHostProcess.js:107:12248)
+	at n.value (/ide/out/vs/workbench/api/node/extensionHostProcess.js:107:11518)
+	at l.y (/ide/out/vs/workbench/api/node/extensionHostProcess.js:82:664)
+	at l.fire (/ide/out/vs/workbench/api/node/extensionHostProcess.js:82:881)
+	at n.z (/ide/out/vs/workbench/api/node/extensionHostProcess.js:173:20477) setContext undefined
+2024-06-23 22:21:18.540 [error] Canceled: Canceled
+	at new A (/ide/out/vs/workbench/api/node/extensionHostProcess.js:143:50615)
+	at E.U (/ide/out/vs/workbench/api/node/extensionHostProcess.js:150:6007)
+	at z.<computed>.M.charCodeAt.R.CharCode.DollarSign.z.<computed> (/ide/out/vs/workbench/api/node/extensionHostProcess.js:150:3091)
+	at h.g (/ide/out/vs/workbench/api/node/extensionHostProcess.js:153:199937)
+	at h.executeCommand (/ide/out/vs/workbench/api/node/extensionHostProcess.js:153:199375)
+	at I.registerCommand.description (/ide/out/vs/workbench/api/node/extensionHostProcess.js:153:198699)
+	at h (/ide/out/vs/workbench/api/node/extensionHostProcess.js:153:200476)
+	at h.g (/ide/out/vs/workbench/api/node/extensionHostProcess.js:153:199468)
+	at h.executeCommand (/ide/out/vs/workbench/api/node/extensionHostProcess.js:153:199375)
+	at Object.executeCommand (/ide/out/vs/workbench/api/node/extensionHostProcess.js:163:22742)
+	at e (/workspace/.vscode-remote/extensions/github.vscode-pull-request-github-0.90.0-universal/dist/extension.js:2015:1695)
+	at Object.n [as setContext] (/workspace/.vscode-remote/extensions/github.vscode-pull-request-github-0.90.0-universal/dist/extension.js:2015:1810)
+	at Um.setReviewModeContexts (/workspace/.vscode-remote/extensions/github.vscode-pull-request-github-0.90.0-universal/dist/extension.js:2188:15250)
+	at Um.removePrFromView (/workspace/.vscode-remote/extensions/github.vscode-pull-request-github-0.90.0-universal/dist/extension.js:2188:15877)
+	at Jc.clear (/workspace/.vscode-remote/extensions/github.vscode-pull-request-github-0.90.0-universal/dist/extension.js:2069:25776)
+	at Jc.dispose (/workspace/.vscode-remote/extensions/github.vscode-pull-request-github-0.90.0-universal/dist/extension.js:2071:167)
+	at $m.removeReviewManager (/workspace/.vscode-remote/extensions/github.vscode-pull-request-github-0.90.0-universal/dist/extension.js:2188:47227)
+	at n.value (/workspace/.vscode-remote/extensions/github.vscode-pull-request-github-0.90.0-universal/dist/extension.js:2201:4229)
+	at l.y (/ide/out/vs/workbench/api/node/extensionHostProcess.js:82:664)
+	at l.z (/ide/out/vs/workbench/api/node/extensionHostProcess.js:82:734)
+	at l.fire (/ide/out/vs/workbench/api/node/extensionHostProcess.js:82:950)
+	at n.value (/workspace/.vscode-remote/extensions/github.vscode-pull-request-github-0.90.0-universal/dist/extension.js:1983:446997)
+	at l.y (/ide/out/vs/workbench/api/node/extensionHostProcess.js:82:664)
+	at l.fire (/ide/out/vs/workbench/api/node/extensionHostProcess.js:82:881)
+	at /workspace/.vscode-remote/extensions/github.vscode-pull-request-github-0.90.0-universal/dist/extension.js:2088:28026
+	at n.value (/ide/extensions/git/dist/main.js:2:1050764)
+	at l.y (/ide/out/vs/workbench/api/node/extensionHostProcess.js:82:664)
+	at l.z (/ide/out/vs/workbench/api/node/extensionHostProcess.js:82:734)
+	at l.fire (/ide/out/vs/workbench/api/node/extensionHostProcess.js:82:950)
+	at Object.p [as dispose] (/ide/extensions/git/dist/main.js:2:964275)
+	at /ide/extensions/git/dist/main.js:2:970313
+	at Array.forEach (<anonymous>)
+	at f.dispose (/ide/extensions/git/dist/main.js:2:970299)
+	at a.<anonymous> (/ide/out/vs/workbench/api/node/extensionHostProcess.js:151:4032)
+	at a.dispose (/ide/out/vs/workbench/api/node/extensionHostProcess.js:151:4129)
+	at a.<anonymous> (/ide/extensions/git/dist/main.js:2:947448)
+	at a.dispose (/ide/out/vs/workbench/api/node/extensionHostProcess.js:151:4129)
+	at f (/ide/out/vs/workbench/api/node/extensionHostProcess.js:30:744)
+	at u.eb (/ide/out/vs/workbench/api/node/extensionHostProcess.js:159:9991)
+	at /ide/out/vs/workbench/api/node/extensionHostProcess.js:159:7867
+	at Array.map (<anonymous>)
+	at u.$ (/ide/out/vs/workbench/api/node/extensionHostProcess.js:159:7854)
+	at u.terminate (/ide/out/vs/workbench/api/node/extensionHostProcess.js:159:8127)
+	at f.terminate (/ide/out/vs/workbench/api/node/extensionHostProcess.js:163:1513)
+	at t (/ide/out/vs/workbench/api/node/extensionHostProcess.js:176:10459)
+	at n.value (/ide/out/vs/workbench/api/node/extensionHostProcess.js:176:8427)
+	at l.y (/ide/out/vs/workbench/api/node/extensionHostProcess.js:82:664)
+	at l.fire (/ide/out/vs/workbench/api/node/extensionHostProcess.js:82:881)
+	at s.fire (/ide/out/vs/workbench/api/node/extensionHostProcess.js:107:14502)
+	at h.z (/ide/out/vs/workbench/api/node/extensionHostProcess.js:107:17638)
+	at n.value (/ide/out/vs/workbench/api/node/extensionHostProcess.js:107:16019)
+	at l.y (/ide/out/vs/workbench/api/node/extensionHostProcess.js:82:664)
+	at l.fire (/ide/out/vs/workbench/api/node/extensionHostProcess.js:82:881)
+	at u.acceptChunk (/ide/out/vs/workbench/api/node/extensionHostProcess.js:107:12248)
+	at n.value (/ide/out/vs/workbench/api/node/extensionHostProcess.js:107:11518)
+	at l.y (/ide/out/vs/workbench/api/node/extensionHostProcess.js:82:664)
+	at l.fire (/ide/out/vs/workbench/api/node/extensionHostProcess.js:82:881)
+	at n.z (/ide/out/vs/workbench/api/node/extensionHostProcess.js:173:20477) setContext undefined
+2024-06-23 22:21:18.541 [error] Canceled: Canceled
+	at new A (/ide/out/vs/workbench/api/node/extensionHostProcess.js:143:50615)
+	at E.U (/ide/out/vs/workbench/api/node/extensionHostProcess.js:150:6007)
+	at z.<computed>.M.charCodeAt.R.CharCode.DollarSign.z.<computed> (/ide/out/vs/workbench/api/node/extensionHostProcess.js:150:3091)
+	at h.g (/ide/out/vs/workbench/api/node/extensionHostProcess.js:153:199937)
+	at h.executeCommand (/ide/out/vs/workbench/api/node/extensionHostProcess.js:153:199375)
+	at I.registerCommand.description (/ide/out/vs/workbench/api/node/extensionHostProcess.js:153:198699)
+	at h (/ide/out/vs/workbench/api/node/extensionHostProcess.js:153:200476)
+	at h.g (/ide/out/vs/workbench/api/node/extensionHostProcess.js:153:199468)
+	at h.executeCommand (/ide/out/vs/workbench/api/node/extensionHostProcess.js:153:199375)
+	at Object.executeCommand (/ide/out/vs/workbench/api/node/extensionHostProcess.js:163:22742)
+	at G2.reset (/workspace/.vscode-remote/extensions/github.vscode-pull-request-github-0.90.0-universal/dist/extension.js:2188:8858)
+	at G2.dispose (/workspace/.vscode-remote/extensions/github.vscode-pull-request-github-0.90.0-universal/dist/extension.js:2188:9129)
+	at f (/ide/out/vs/workbench/api/node/extensionHostProcess.js:30:744)
+	at u.eb (/ide/out/vs/workbench/api/node/extensionHostProcess.js:159:9991)
+	at /ide/out/vs/workbench/api/node/extensionHostProcess.js:159:7867
+	at Array.map (<anonymous>)
+	at u.$ (/ide/out/vs/workbench/api/node/extensionHostProcess.js:159:7854)
+	at u.terminate (/ide/out/vs/workbench/api/node/extensionHostProcess.js:159:8127)
+	at f.terminate (/ide/out/vs/workbench/api/node/extensionHostProcess.js:163:1513)
+	at t (/ide/out/vs/workbench/api/node/extensionHostProcess.js:176:10459)
+	at n.value (/ide/out/vs/workbench/api/node/extensionHostProcess.js:176:8427)
+	at l.y (/ide/out/vs/workbench/api/node/extensionHostProcess.js:82:664)
+	at l.fire (/ide/out/vs/workbench/api/node/extensionHostProcess.js:82:881)
+	at s.fire (/ide/out/vs/workbench/api/node/extensionHostProcess.js:107:14502)
+	at h.z (/ide/out/vs/workbench/api/node/extensionHostProcess.js:107:17638)
+	at n.value (/ide/out/vs/workbench/api/node/extensionHostProcess.js:107:16019)
+	at l.y (/ide/out/vs/workbench/api/node/extensionHostProcess.js:82:664)
+	at l.fire (/ide/out/vs/workbench/api/node/extensionHostProcess.js:82:881)
+	at u.acceptChunk (/ide/out/vs/workbench/api/node/extensionHostProcess.js:107:12248)
+	at n.value (/ide/out/vs/workbench/api/node/extensionHostProcess.js:107:11518)
+	at l.y (/ide/out/vs/workbench/api/node/extensionHostProcess.js:82:664)
+	at l.fire (/ide/out/vs/workbench/api/node/extensionHostProcess.js:82:881)
+	at n.z (/ide/out/vs/workbench/api/node/extensionHostProcess.js:173:20477) setContext undefined
+2024-06-23 22:21:18.548 [info] Extension host with pid 1420 exiting with code 0

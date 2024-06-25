@@ -1,0 +1,121 @@
+2024-06-20 20:20:20.392 [info] 
+
+
+
+
+2024-06-20 20:20:20.407 [info] Extension host agent started.
+2024-06-20 20:20:20.424 [info] Started initializing default profile extensions in extensions installation folder. file:///workspace/.vscode-remote/extensions
+2024-06-20 20:20:20.518 [info] Completed initializing default profile extensions in extensions installation folder. file:///workspace/.vscode-remote/extensions
+2024-06-20 20:20:20.533 [info] Extension 'gitpod.gitpod-theme' v0.0.2 is already installed. Use '--force' option to update to latest version or provide '@<version>' to install a specific version, for example: 'gitpod.gitpod-theme@1.2.3'.
+2024-06-20 20:20:21.315 [info] Installing builtin extension 'github.vscode-pull-request-github'...
+2024-06-20 20:20:21.331 [info] Getting Manifest... github.vscode-pull-request-github
+2024-06-20 20:20:21.498 [info] Installing extension: github.vscode-pull-request-github file:///workspace/.vscode-remote/extensions/extensions.json
+2024-06-20 20:20:22.154 [info] Extracted extension to file:///workspace/.vscode-remote/extensions/github.vscode-pull-request-github-0.90.0-universal: github.vscode-pull-request-github
+2024-06-20 20:20:22.157 [info] Renamed to /workspace/.vscode-remote/extensions/github.vscode-pull-request-github-0.90.0-universal
+2024-06-20 20:20:22.201 [info] Extension installed successfully: github.vscode-pull-request-github file:///workspace/.vscode-remote/extensions/extensions.json
+2024-06-20 20:20:22.201 [info] Extension 'github.vscode-pull-request-github' v0.90.0 was successfully installed.
+2024-06-20 20:20:32.099 [info] [100.64.224.160][cce2cc0a][ManagementConnection] New connection established.
+2024-06-20 20:20:34.811 [info] Getting Manifest... vscode-icons-team.vscode-icons
+2024-06-20 20:20:35.009 [info] Installing extension: vscode-icons-team.vscode-icons file:///workspace/.vscode-remote/extensions/extensions.json
+2024-06-20 20:20:35.010 [info] Installing the extension without checking dependencies and pack vscode-icons-team.vscode-icons
+2024-06-20 20:20:35.811 [info] Extracted extension to file:///workspace/.vscode-remote/extensions/vscode-icons-team.vscode-icons-12.8.0-universal: vscode-icons-team.vscode-icons
+2024-06-20 20:20:35.814 [info] Renamed to /workspace/.vscode-remote/extensions/vscode-icons-team.vscode-icons-12.8.0-universal
+2024-06-20 20:20:35.852 [info] Extension installed successfully: vscode-icons-team.vscode-icons file:///workspace/.vscode-remote/extensions/extensions.json
+2024-06-20 20:20:36.234 [info] Getting Manifest... gruntfuggly.todo-tree
+2024-06-20 20:20:36.399 [info] Installing extension: gruntfuggly.todo-tree file:///workspace/.vscode-remote/extensions/extensions.json
+2024-06-20 20:20:36.399 [info] Installing the extension without checking dependencies and pack gruntfuggly.todo-tree
+2024-06-20 20:20:36.680 [info] Extracted extension to file:///workspace/.vscode-remote/extensions/gruntfuggly.todo-tree-0.0.215-universal: gruntfuggly.todo-tree
+2024-06-20 20:20:36.682 [info] Renamed to /workspace/.vscode-remote/extensions/gruntfuggly.todo-tree-0.0.215-universal
+2024-06-20 20:20:36.719 [info] Extension installed successfully: gruntfuggly.todo-tree file:///workspace/.vscode-remote/extensions/extensions.json
+2024-06-20 20:20:37.110 [info] Getting Manifest... oderwat.indent-rainbow
+2024-06-20 20:20:37.275 [info] Installing extension: oderwat.indent-rainbow file:///workspace/.vscode-remote/extensions/extensions.json
+2024-06-20 20:20:37.275 [info] Installing the extension without checking dependencies and pack oderwat.indent-rainbow
+2024-06-20 20:20:37.888 [info] Extracted extension to file:///workspace/.vscode-remote/extensions/oderwat.indent-rainbow-8.3.1-universal: oderwat.indent-rainbow
+2024-06-20 20:20:37.891 [info] Renamed to /workspace/.vscode-remote/extensions/oderwat.indent-rainbow-8.3.1-universal
+2024-06-20 20:20:37.938 [info] Extension installed successfully: oderwat.indent-rainbow file:///workspace/.vscode-remote/extensions/extensions.json
+2024-06-20 20:20:38.089 [info] [100.64.224.160][a849f60b][ExtensionHostConnection] New connection established.
+2024-06-20 20:20:38.094 [info] [100.64.224.160][a849f60b][ExtensionHostConnection] <818> Launched Extension Host Process.
+2024-06-20 20:20:38.333 [info] Getting Manifest... adpyke.codesnap
+2024-06-20 20:20:38.502 [info] Installing extension: adpyke.codesnap file:///workspace/.vscode-remote/extensions/extensions.json
+2024-06-20 20:20:38.502 [info] Installing the extension without checking dependencies and pack adpyke.codesnap
+2024-06-20 20:20:39.605 [info] Extracted extension to file:///workspace/.vscode-remote/extensions/adpyke.codesnap-1.3.4-universal: adpyke.codesnap
+2024-06-20 20:20:39.608 [info] Renamed to /workspace/.vscode-remote/extensions/adpyke.codesnap-1.3.4-universal
+2024-06-20 20:20:39.679 [info] Extension installed successfully: adpyke.codesnap file:///workspace/.vscode-remote/extensions/extensions.json
+2024-06-20 20:20:40.418 [info] Getting Manifest... aaron-bond.better-comments
+2024-06-20 20:20:40.589 [info] Installing extension: aaron-bond.better-comments file:///workspace/.vscode-remote/extensions/extensions.json
+2024-06-20 20:20:40.589 [info] Installing the extension without checking dependencies and pack aaron-bond.better-comments
+2024-06-20 20:20:40.850 [info] Extracted extension to file:///workspace/.vscode-remote/extensions/aaron-bond.better-comments-3.0.2-universal: aaron-bond.better-comments
+2024-06-20 20:20:40.852 [info] Renamed to /workspace/.vscode-remote/extensions/aaron-bond.better-comments-3.0.2-universal
+2024-06-20 20:20:40.888 [info] Extension installed successfully: aaron-bond.better-comments file:///workspace/.vscode-remote/extensions/extensions.json
+2024-06-20 20:20:41.387 [info] Getting Manifest... johnpapa.vscode-peacock
+2024-06-20 20:20:41.567 [info] Installing extension: johnpapa.vscode-peacock file:///workspace/.vscode-remote/extensions/extensions.json
+2024-06-20 20:20:41.568 [info] Installing the extension without checking dependencies and pack johnpapa.vscode-peacock
+2024-06-20 20:20:41.785 [info] Extracted extension to file:///workspace/.vscode-remote/extensions/johnpapa.vscode-peacock-4.2.2-universal: johnpapa.vscode-peacock
+2024-06-20 20:20:41.787 [info] Renamed to /workspace/.vscode-remote/extensions/johnpapa.vscode-peacock-4.2.2-universal
+2024-06-20 20:20:41.824 [info] Extension installed successfully: johnpapa.vscode-peacock file:///workspace/.vscode-remote/extensions/extensions.json
+2024-06-20 20:20:42.223 [info] Getting Manifest... pucelle.vscode-css-navigation
+2024-06-20 20:20:42.448 [info] Installing extension: pucelle.vscode-css-navigation file:///workspace/.vscode-remote/extensions/extensions.json
+2024-06-20 20:20:42.448 [info] Installing the extension without checking dependencies and pack pucelle.vscode-css-navigation
+2024-06-20 20:20:42.807 [info] Extracted extension to file:///workspace/.vscode-remote/extensions/pucelle.vscode-css-navigation-1.13.2-universal: pucelle.vscode-css-navigation
+2024-06-20 20:20:42.808 [info] Renamed to /workspace/.vscode-remote/extensions/pucelle.vscode-css-navigation-1.13.2-universal
+2024-06-20 20:20:42.857 [info] Extension installed successfully: pucelle.vscode-css-navigation file:///workspace/.vscode-remote/extensions/extensions.json
+2024-06-20 20:20:43.251 [info] Getting Manifest... johnpapa.winteriscoming
+2024-06-20 20:20:43.454 [info] Installing extension: johnpapa.winteriscoming file:///workspace/.vscode-remote/extensions/extensions.json
+2024-06-20 20:20:43.454 [info] Installing the extension without checking dependencies and pack johnpapa.winteriscoming
+2024-06-20 20:20:43.712 [info] Extracted extension to file:///workspace/.vscode-remote/extensions/johnpapa.winteriscoming-1.4.4-universal: johnpapa.winteriscoming
+2024-06-20 20:20:43.713 [info] Renamed to /workspace/.vscode-remote/extensions/johnpapa.winteriscoming-1.4.4-universal
+2024-06-20 20:20:43.767 [info] Extension installed successfully: johnpapa.winteriscoming file:///workspace/.vscode-remote/extensions/extensions.json
+2024-06-20 20:20:44.171 [info] Getting Manifest... christian-kohler.path-intellisense
+2024-06-20 20:20:44.357 [info] Installing extension: christian-kohler.path-intellisense file:///workspace/.vscode-remote/extensions/extensions.json
+2024-06-20 20:20:44.357 [info] Installing the extension without checking dependencies and pack christian-kohler.path-intellisense
+2024-06-20 20:20:44.587 [info] Extracted extension to file:///workspace/.vscode-remote/extensions/christian-kohler.path-intellisense-2.8.0-universal: christian-kohler.path-intellisense
+2024-06-20 20:20:44.588 [info] Renamed to /workspace/.vscode-remote/extensions/christian-kohler.path-intellisense-2.8.0-universal
+2024-06-20 20:20:44.626 [info] Extension installed successfully: christian-kohler.path-intellisense file:///workspace/.vscode-remote/extensions/extensions.json
+2024-06-20 20:20:48.426 [info] Getting Manifest... johnpapa.winteriscoming
+2024-06-20 20:20:48.426 [info] Getting Manifest... aaron-bond.better-comments
+2024-06-20 20:20:48.426 [info] Getting Manifest... adpyke.codesnap
+2024-06-20 20:20:48.426 [info] Getting Manifest... johnpapa.vscode-peacock
+2024-06-20 20:20:48.426 [info] Getting Manifest... oderwat.indent-rainbow
+2024-06-20 20:20:48.426 [info] Getting Manifest... pucelle.vscode-css-navigation
+2024-06-20 20:20:48.426 [info] Getting Manifest... christian-kohler.path-intellisense
+2024-06-20 20:20:48.426 [info] Getting Manifest... vscode-icons-team.vscode-icons
+2024-06-20 20:20:48.426 [info] Getting Manifest... gruntfuggly.todo-tree
+2024-06-20 20:20:48.645 [info] Installing extension: pucelle.vscode-css-navigation file:///workspace/.vscode-remote/extensions/extensions.json
+2024-06-20 20:20:48.645 [info] Installing extension: aaron-bond.better-comments file:///workspace/.vscode-remote/extensions/extensions.json
+2024-06-20 20:20:48.645 [info] Installing extension: johnpapa.vscode-peacock file:///workspace/.vscode-remote/extensions/extensions.json
+2024-06-20 20:20:48.645 [info] Installing extension: johnpapa.winteriscoming file:///workspace/.vscode-remote/extensions/extensions.json
+2024-06-20 20:20:48.645 [info] Installing extension: christian-kohler.path-intellisense file:///workspace/.vscode-remote/extensions/extensions.json
+2024-06-20 20:20:48.645 [info] Installing extension: adpyke.codesnap file:///workspace/.vscode-remote/extensions/extensions.json
+2024-06-20 20:20:48.645 [info] Installing extension: vscode-icons-team.vscode-icons file:///workspace/.vscode-remote/extensions/extensions.json
+2024-06-20 20:20:48.645 [info] Installing extension: oderwat.indent-rainbow file:///workspace/.vscode-remote/extensions/extensions.json
+2024-06-20 20:20:48.645 [info] Installing extension: gruntfuggly.todo-tree file:///workspace/.vscode-remote/extensions/extensions.json
+2024-06-20 20:20:48.645 [info] Installing the extension without checking dependencies and pack pucelle.vscode-css-navigation
+2024-06-20 20:20:48.645 [info] Installing the extension without checking dependencies and pack aaron-bond.better-comments
+2024-06-20 20:20:48.645 [info] Installing the extension without checking dependencies and pack johnpapa.vscode-peacock
+2024-06-20 20:20:48.645 [info] Installing the extension without checking dependencies and pack johnpapa.winteriscoming
+2024-06-20 20:20:48.645 [info] Installing the extension without checking dependencies and pack christian-kohler.path-intellisense
+2024-06-20 20:20:48.646 [info] Installing the extension without checking dependencies and pack adpyke.codesnap
+2024-06-20 20:20:48.646 [info] Installing the extension without checking dependencies and pack vscode-icons-team.vscode-icons
+2024-06-20 20:20:48.646 [info] Installing the extension without checking dependencies and pack oderwat.indent-rainbow
+2024-06-20 20:20:48.646 [info] Installing the extension without checking dependencies and pack gruntfuggly.todo-tree
+2024-06-20 20:20:49.373 [info] Extension installed successfully: pucelle.vscode-css-navigation file:///workspace/.vscode-remote/extensions/extensions.json
+2024-06-20 20:20:49.373 [info] Extension installed successfully: aaron-bond.better-comments file:///workspace/.vscode-remote/extensions/extensions.json
+2024-06-20 20:20:49.373 [info] Extension installed successfully: johnpapa.vscode-peacock file:///workspace/.vscode-remote/extensions/extensions.json
+2024-06-20 20:20:49.373 [info] Extension installed successfully: johnpapa.winteriscoming file:///workspace/.vscode-remote/extensions/extensions.json
+2024-06-20 20:20:49.373 [info] Extension installed successfully: christian-kohler.path-intellisense file:///workspace/.vscode-remote/extensions/extensions.json
+2024-06-20 20:20:49.373 [info] Extension installed successfully: adpyke.codesnap file:///workspace/.vscode-remote/extensions/extensions.json
+2024-06-20 20:20:49.373 [info] Extension installed successfully: vscode-icons-team.vscode-icons file:///workspace/.vscode-remote/extensions/extensions.json
+2024-06-20 20:20:49.373 [info] Extension installed successfully: oderwat.indent-rainbow file:///workspace/.vscode-remote/extensions/extensions.json
+2024-06-20 20:20:49.373 [info] Extension installed successfully: gruntfuggly.todo-tree file:///workspace/.vscode-remote/extensions/extensions.json
+2024-06-20 20:21:54.448 [info] Getting Manifest... ms-python.python
+2024-06-20 20:21:54.712 [info] Installing extension: ms-python.python file:///workspace/.vscode-remote/extensions/extensions.json
+2024-06-20 20:21:55.024 [info] Getting Manifest... ms-python.debugpy
+2024-06-20 20:21:55.242 [info] Installing extension: ms-python.debugpy file:///workspace/.vscode-remote/extensions/extensions.json
+2024-06-20 20:21:55.828 [info] Extracted extension to file:///workspace/.vscode-remote/extensions/ms-python.debugpy-2024.6.0-linux-x64: ms-python.debugpy
+2024-06-20 20:21:55.830 [info] Renamed to /workspace/.vscode-remote/extensions/ms-python.debugpy-2024.6.0-linux-x64
+2024-06-20 20:21:56.683 [info] Extracted extension to file:///workspace/.vscode-remote/extensions/ms-python.python-2024.4.1-universal: ms-python.python
+2024-06-20 20:21:56.687 [info] Renamed to /workspace/.vscode-remote/extensions/ms-python.python-2024.4.1-universal
+2024-06-20 20:21:56.737 [info] Extension installed successfully: ms-python.debugpy file:///workspace/.vscode-remote/extensions/extensions.json
+2024-06-20 20:21:56.737 [info] Extension installed successfully: ms-python.python file:///workspace/.vscode-remote/extensions/extensions.json
+2024-06-20 20:35:05.219 [info] [100.64.224.160][cce2cc0a][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2024-06-20 20:35:05.272 [info] [100.64.224.160][a849f60b][ExtensionHostConnection] <818> Extension Host Process exited with code: 0, signal: null.
