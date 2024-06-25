@@ -1,0 +1,81 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "14. Views Part 3",
+  "steps": [
+    {
+      "file": "blog/templates/blog/post_detail.html",
+      "description": "\n8. Open the blog/templates/blog/post_detail.html file and add the following code below the existing post.content DTL variable.\n\n        <p class=\"card-text\">{{ post.content | safe }}</p>\n      </div>\n    </div>\n  </div>\n  <!-- Displaying count of comments -->\n  <div class=\"row\">\n    <div class=\"col-12\">\n      <strong class=\"text-secondary\">\n        <i class=\"far fa-comments\"></i> {{ comment_count }}\n      </strong>\n    </div>\n    <div class=\"col-12\">\n      <hr>\n    </div>\n  </div>\n  <!-- Displaying Comments -->\n  <div class=\"row\">\n    <div class=\"col-md-8 card mb-4  mt-3 \">\n      <h3>Comments:</h3>\n      <div class=\"card-body\">\n        <!-- We want a for loop inside the empty control tags\n          to iterate through each comment in comments -->\n        {% for comment in comments %}\n        <div class=\"p-2 comments\n          {% if not comment.approved and comment.author == user %}\n          faded{% elif not comment.approved %} d-none{% endif %}\">\n          <p class=\"font-weight-bold\">\n            {{ comment.author }}\n            <span class=\"font-weight-normal\">\n              {{ comment.created_on }}\n            </span> wrote:\n          </p>\n          <div id=\"comment{{ comment.id }}\">\n            {{ comment.body | linebreaks }}\n          </div>\n          {% if not comment.approved and comment.author == user %}\n          <p class=\"approval\">\n            This comment is awaiting approval\n          </p>\n          {% endif %}\n        </div>\n        <!-- Our for loop ends here -->\n        {% endfor %}\n      </div>\n    </div>\n  </div>\n</div>\n{% endblock content %}\n\n\n9. Now, if you click on the Google-Fu post, you will see a comment count and the comment below the post.\n\nNote: If your browser displays the cached page, you may need a hard refresh to view this change.\n\nNote: As only one comment was approved, the count is 1.\n\nNow you have a working feature, it is a good time to git add and commit.",
+      "line": 47
+    },
+    {
+      "file": "blog/templates/blog/post_detail.html",
+      "description": "Adding a comment form\n10. Pip install the two packages django-\ncrispy-forms and crispy-bootstrap.\npip3 install django-crispy-\ncrispy-bootstrap5w=Ø.7\n11. Add the packages to\nrequirements.txt.",
+      "line": 43
+    },
+    {
+      "file": "codestar/settings.py",
+      "description": "12. Open codestar/settings.py and add the apps to INSTALLED_APPS.\n\nINSTALLED_APPS = [\n    # …\n    'allauth.socialaccount',\n    'crispy_forms',\n    'crispy_bootstrap5',\n    'django_summernote',\n    # …\n]\nNote: Even though we've added these to INSTALLED_APPS there are no migrations files to migrate in this instance.",
+      "line": 51
+    },
+    {
+      "file": "codestar/settings.py",
+      "description": "13. Also, in codestar/settings.py, add\nthe following two constants.\nCRISPY ALLOWED TEMPLATE PACKS =\n\"bootstrap5\"\nCRISPY TEMPLATE PACK =\n\"bootstrap5\"\nThese constants set bootstraps as the\nallowed template pack and as the\ndefault template pack for your project.\nThis choice of default template pack is\nto match the Bootstrap5 CSS and JS\nfiles already used in our project\nbase.html template.",
+      "line": 62
+    },
+    {
+      "file": "blog/forms.py",
+      "description": "14. Add a new forms.py file to the blog app.\n\n15. Add a form for comments within the blog/forms.py file.\n```\nfrom .models import Comment\nfrom django import forms\n\n\nclass CommentForm(forms.ModelForm):\n    class Meta:\n        model = Comment\n        fields = ('body',)\n```",
+      "line": 1
+    },
+    {
+      "file": "about/templates/about/forms.py",
+      "description": "15. Add a form for comments within the blog/forms.py file.\n\nfrom .models import Comment\nfrom django import forms\n\n\nclass CommentForm(forms.ModelForm):\n    class Meta:\n        model = Comment\n        fields = ('body',)",
+      "line": 1
+    },
+    {
+      "file": "about/views.py",
+      "description": "16. Open the blog/views.py file and import the Comment form.\n\nfrom .models import Post\nfrom .forms import CommentForm",
+      "line": 5
+    },
+    {
+      "file": "about/views.py",
+      "description": "\n16. Open the blog/views.py file and import the Comment form.\n\nfrom .models import Post\nfrom .forms import CommentForm\n\n",
+      "line": 5
+    },
+    {
+      "file": "about/views.py",
+      "description": "17. In blog/views.py, within the post_detail view, create a variable comment_form and assign the class CommentForm() to it.\n\nAdd this comment_form variable to the context in the render helper function.\ndef post_detail(request, slug):\n    # …\n    comment_count = post.comments.filter(approved=True).count()\n    comment_form = CommentForm()\n\n    return render(\n        request,\n        \"blog/post_detail.html\",\n        {\n            \"post\": post,\n            \"comments\": comments,\n            \"comment_count\": comment_count,\n            \"comment_form\": comment_form,\n        },\n    )",
+      "line": 45
+    },
+    {
+      "file": "blog/templates/blog/post_detail.html",
+      "description": "18. Open the blog/templates/blog/post_detail.html template and load the crispy forms DTL tags.\n\n{% load static %}\n{% load crispy_forms_tags %}",
+      "line": 3
+    },
+    {
+      "file": "blog/templates/blog/post_detail.html",
+      "description": "19. In the post_detail.html, add the comment form below the post.\n\n        <!-- Our for loop ends here -->\n        {% endfor %}\n      </div>\n    </div>\n    <!-- Creating New Comments -->\n    <div class=\"col-md-4 card mb-4 mt-3\">\n      <div class=\"card-body\">\n        {% if user.is_authenticated %}\n        <h3>Leave a comment:</h3>\n        <p>Posting as: {{ user.username }}</p>\n        <form id=\"commentForm\" method=\"post\"\n          style=\"margin-top: 1.3em;\">\n          {{ comment_form | crispy }}\n          {% csrf_token %}\n          <button id=\"submitButton\" type=\"submit\"\n            class=\"btn btn-signup btn-lg\">Submit</button>\n        </form>\n        {% else %}\n        <p>Log in to leave a comment</p>\n        {% endif %}\n      </div>\n    </div>\n  </div>\n</div>\n\n{% endblock content %}",
+      "line": 71
+    },
+    {
+      "file": "blog/views.py",
+      "description": "\nHandle the POST request from the comment form\n21. Next, let's add the form functionality. In blog/views.py, within the post_detail view, add the following code.\n\ncomment_count = post.comments.filter(approved=True).count()\n  \nif request.method == \"POST\":\n    comment_form = CommentForm(data=request.POST)\n    if comment_form.is_valid():\n        comment = comment_form.save(commit=False)\n        comment.author = request.user\n        comment.post = post\n        comment.save()\n\ncomment_form = CommentForm()\n\nreturn render(",
+      "line": 33
+    },
+    {
+      "file": "blog/views.py",
+      "description": "Display a confirmation message\n23. Let's further improve the UX by giving the user a success message. First, add an import to the blog/views.py file for messages.\n\nfrom django.views import generic\nfrom django.contrib import messages\nfrom .models import Post",
+      "line": 3
+    },
+    {
+      "file": "blog/views.py",
+      "description": "24. In blog/views.py, within the post_detail view, add the following code to display a success message string.\n\n    comment.post = post\n    comment.save()\n    messages.add_message(\n        request, messages.SUCCESS,\n        'Comment submitted and awaiting approval'\n    )\n\ncomment_form = CommentForm()\n\nreturn render(",
+      "line": 40
+    },
+    {
+      "file": "templates/base.html",
+      "description": "\n25. Open the base.html template, and add the following code to display messages between the nav and the main elements.\n\n</nav>\n<!-- displaying Django messages -->\n<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col-md-8 offset-md-2\">\n      {% for message in messages %}\n      <div class=\"alert {{ message.tags }} alert-dismissible\n        fade show\" id=\"msg\" role=\"alert\">\n        {{ message | safe }}\n        <button type=\"button\" class=\"btn-close\"\n          data-bs-dismiss=\"alert\" aria-label=\"Close\"></button>\n      </div>\n      {% endfor %}\n    </div>\n  </div>\n</div>\n<main class=\"flex-shrink-0 main-bg\">",
+      "line": 76
+    }
+  ]
+}
